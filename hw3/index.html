@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw3</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<header id="top">
+		<h1><strong>Emmet</strong> in Visual Studio Code</h1>
+		<p>Support for Emmet snippets and expansion is built right into Visual Studio Code, <em class="marked">no extension required</em>. Emmet 2.0 has support for the majority of the <a href="https://docs.emmet.io/actions/" class="link-to" target="_parent">Emmet Actions</a> including expanding <a class="link-to" href="https://docs.emmet.io/cheat-sheet/" target="_blank">Emmet abbreviations and snippets</a>.</p>
+		<nav>
+			<ul>
+				<li><a href="#abbreviations">How to expand Emmet abbreviations and snippets</a></li>
+				<li><a href="#tab">Using <strong>Tab</strong> for Emmet expansions</a></li>
+				<li><a href="#quickSuggestions">Emmet when quickSuggestions are disabled</a></li>
+				<li><a href="#disable-suggestions">Disable Emmet in suggestions</a></li>
+				<li><a href="#multi-cursors">Emmet with multi-cursors</a></li>
+				<li><a href="#filters">Using filters </a>
+					<ul>
+						<li><a href="#bem-filter">BEM filter (bem)</a></li>
+						<li><a href="#comment-filter">Comment filter (c)</a></li>
+						<li><a href="#trim-filter">Trim filter (t)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<main>
+		<section>
+			<h2 class="section-header" id="abbreviations">How to expand Emmet abbreviations and snippets <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p class="section-text">
+				Emmet abbreviation and snippet expansions are enabled by default in <b>html</b>, <b>haml</b>, <b>pug</b>, <b>slim</b>, <b>jsx</b>, <b>xml</b>, <b>xsl</b>, <b>css</b>, <b>scss</b>, <b>sass</b>, <b>less</b> and <b>stylus files</b>, as well as any language that inherits from any of the above like handlebars and <b>php</b>.
+			</p>
+			<img src="https://code.visualstudio.com/assets/docs/editor/emmet/emmet.gif" alt="Emmet in suggestion/auto-completion list" title="Emmet in suggestion/auto-completion list">
+			<p class="section-text">When you start typing an Emmet abbreviation, you will see the abbreviation displayed in the suggestion list. If you have the suggestion documentation fly-out open, you will see a preview of the expansion as you type. If you are in a stylesheet file, the expanded abbreviation shows up in the suggestion list sorted among the other CSS suggestions.</p>
+		</section>
+
+		<section>
+			<h2 class="section-title" id="tab">Using Tab for Emmet expansions <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p class="section-text">If you want to use the <mark class="some-mark">Tab</mark> key for expanding the Emmet abbreviations, add the following setting:</p>
+			<code class="some-code"><em>"emmet.triggerExpansionOnTab": true</em></code>
+			<p class="section-text">This setting allows using the <mark class="some-mark">Tab</mark> key for indentation when text is not an Emmet abbreviation.</p>
+		</section>
+
+		<section>
+			<h2 class="section-title" id="quickSuggestions">Emmet when quickSuggestions are disabled <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>
+				If you have disabled the <mark class="red"><span class="settingsJson">editor.quickSuggestions</span></mark> <a class="link-to" href="https://code.visualstudio.com/docs/getstarted/settings" title="go_to" target="_blank">setting</a>, you won't see suggestions as you type. You can still trigger suggestions manually by pressing Ctrl+Space and see the preview.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="section-title" id="disable-suggestions">Disable Emmet in suggestions <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>
+				If you don't want to see Emmet abbreviations in suggestions at all, then use the following setting:
+			</p>
+			<code class="some-code"><em>"emmet.showExpandedAbbreviation": "never"</em></code>
+			<p>
+				You can still use the command Emmet: Expand Abbreviation to expand your abbreviations. You can also bind any keyboard shortcut to the command id <mark class="red"><span class="settingsJson">editor.emmet.action.expandAbbreviation</span></mark> as well.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="section-title" id="multi-cursors">Emmet with multi-cursors <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>You can use most of the Emmet actions with multi-cursors as well:
+			</p>
+			<img src="img/emmet-multi-cursor.gif" alt="Emmet with multi-cursors">
+		</section>
+		<section>
+			<h2 class="section-title" id="filters">Using filters <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>
+				Filters are special post-processors that modify the expanded abbreviation before it is output to the editor. There are 2 ways to use filters; either globally through the emmet.syntaxProfiles setting or directly in the current abbreviation.
+			</p>
+			<p>Below is an example of the first approach using the emmet.syntaxProfiles setting to apply the bem filter for all the abbreviations in HTML files:</p>
+			<pre>
+				<code class="some-code">"emmet.syntaxProfiles": {
+					"html": {
+					"filters": "bem"
+					}
+					}
+				</code>
+			</pre>
+			<p>To provide a filter for just the current abbreviation, append the filter to your abbreviation. For example, <mark class="red">div#page|c</mark> will apply the comment filter to the <mark class="red">div#page</mark> abbreviation.</p>
+		</section>
+		<section>
+			<h2 class="section-title" id="BEM-filter">BEM filter (bem)<a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>If you use the <a class="link-to" href="http://getbem.com/">Block Element Modifier</a> (BEM) way of writing HTML, then <mark class="red">bem</mark> filters are very handy for you to use. To learn more about how to use bem filters, read <mark class="red">BEM</mark> filter in Emmet.
+			</p>
+			<p>You can customize this filter by using the <mark class="red">bem.elementSeparator</mark> and <mark class="red">bem.modifierSeparator</mark> preferences as documented in Emmet Preferences.
+			</p>
+		</section>
+		<section>
+			<h2 class="section-title" id="comment-filter">Comment filter (c) <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>
+				This filter adds comments around important tags. By default, "important tags" are those tags with id and/or class attribute.
+			</p>
+			<p>For example <mark class="red">div>div#page>p.title+p|c</mark> will be expanded to:
+			</p>
+			<img src="img/bem-comments.png" alt="expanded comments BEM">
+			<p>You can customize this filter by using the <mark class="red">filter.commentTrigger</mark>, <mark class="red">filter.commentAfter</mark> and <mark class="red">filter.commentBefore</mark> preferences as documented in Emmet Preferences.</p>
+			<p>The format for the <mark class="red">filter.commentAfter</mark> preference is different in VS Code Emmet 2.0.</p>
+			<p>For example, instead of:</p>
+			<img src="img/bem1.png" alt="instead of">
+			<p>in VS Code, you would use a simpler:</p>
+			<img src="img/bem2.png" alt="you would use a simpler">
+		</section>
+
+		<section>
+			<h2 class="section-title" id="trim-filter">Trim filter (t) <a class="menu-link" href="#top"><span class="go-to-menu">^^ go to the top</span></a></h2>
+			<p>
+				This filter is applicable only when providing abbreviations for the <strong>Emmet: Wrap with Abbreviation</strong> command. It <a class="link-to" href="https://docs.emmet.io/actions/wrap-with-abbreviation/#removing-list-markers" target="_blank">removes line markers</a> from wrapped lines.
+			</p>
+		</section>
+
+		<aside>
+			<nav class="aside-nav">
+				<ul>
+					<li><a href="#abbreviations">How to expand Emmet abbreviations and snippets</a></li>
+					<li><a href="#tab">Using <strong>Tab</strong> for Emmet expansions</a></li>
+					<li><a href="#quickSuggestions">Emmet when quickSuggestions are disabled</a></li>
+					<li><a href="#disable-suggestions">Disable Emmet in suggestions</a></li>
+					<li><a href="#multi-cursors">Emmet with multi-cursors</a></li>
+					<li><a href="#filters">Using filters </a>
+						<ul>
+							<li><a href="#bem-filter">BEM filter (bem)</a></li>
+							<li><a href="#comment-filter">Comment filter (c)</a></li>
+							<li><a href="#trim-filter">Trim filter (t)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+	</main>
+	<footer>
+		<hr>
+		<h2>some footer info</h2>
+		<a class="to-top" href="#top"><b><em>Go to the top</em> of the page</b></a>
+	</footer>
+
+
+
+
+</body>
+
+</html>

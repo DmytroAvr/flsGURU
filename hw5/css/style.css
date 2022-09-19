@@ -1,0 +1,173 @@
+/* import first */
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Iso:regular&display=swap');
+
+/* our added fonts */
+@font-face {
+	font-family: 'Blazed';
+	src: url("../fonts/Blazed.woff2") format("woff2"), url("../fonts/Blazed.woff") format("woff");
+	font-display: swap;
+	font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+	font-family: 'Kingthings Xander';
+	src: url("../fonts/Kingthings_Xander.woff2") format("woff2"), url("../fonts/Kingthings_Xander.woff") format("woff");
+	font-display: swap;
+	font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+	font-family: 'Magic Retro';
+	src: url("../fonts/Magic_Retro.woff2") format("woff2"), url("../fonts/Magic_Retro.woff") format("woff");
+	font-display: swap;
+	font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+	font-family: 'PaladinFLF';
+	src: url("../fonts/PaladinFLF.woff2") format("woff2"), url("../fonts/PaladinFLF.woff") format("woff");
+	font-display: swap;
+	font-weight: normal;
+   font-style: normal;
+}
+
+/* my style */
+
+
+
+/* my homework styleSheets */
+.header {
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+.logo {
+	margin: 0px 0px 20px 0px;
+}
+.header__navigation {
+}
+.navigation {
+	color: rgba(14, 14, 129, 0.833);
+	font-family: "PaladinFLF",serif;
+	letter-spacing: 10px;
+	margin: 0px 0px 30px 0px;
+	line-height: 1.5;
+}
+.navigation a {
+	font-size: 50px;
+}
+.title {
+	text-decoration: underline;
+	font-family: "Blazed", sans-serif;
+	text-align: right;
+	margin: 0px 100px 0px 0px;
+	text-shadow: 10px -3px 11px rgba(51, 68, 34, 0.394)
+}
+.letter {
+	font-size: 20px;
+}
+.title > .letter {
+	font-size: 20px;
+	color: greenyellow;
+}
+.title > .letter + .letter{
+	font-size: 30px;
+	color: red;
+}
+.title > .letter + .letter + .letter{
+	font-size: 10px;
+	color: green;
+}
+.title > .letter + .letter + .letter + .letter{
+	font-size: 40px;
+	color: purple;
+}
+.title > .letter + .letter + .letter + .letter + .letter {
+	font-size: 20px;
+	color: blue;
+}
+
+.title > .letter + .letter + .letter + .letter + .letter + .letter {
+	font-size: 70px;
+	color: orangered;
+}
+
+.bread-crumbs {
+	margin: 0px 0px 30px 30px;
+	font-family: "Magic Retro", sans-serif;
+}
+.bread-crumbs li {
+	font-size: 30px;
+}
+.bread-crumbs a {
+	font-size: 30px;
+}
+section {
+	margin: 0px 0px 30px 30px;
+	text-indent: 20px
+}
+section h2 {
+	font-size: 30px;
+	color: rgba(25, 56, 30, 0.683);
+	margin: 0px 0px 15px 10px;
+	text-shadow: 5px 2px 3px rgb(141, 75, 75);
+	text-decoration: underline;
+}
+section p {
+	line-height: 1.2;
+	margin: 0px 0px 10px 0px;
+}
+.main-theme {
+	text-align: center;
+	color: rgba(255, 255, 255, 0);
+	font-size: 100px;
+	text-shadow: 0px 0px 1px rgba(227, 68, 68, 0.742);
+}
+.main-theme span {
+	font-size: 100px;
+	text-shadow: 0px 0px 1px rgba(227, 68, 68, 0.742);
+	text-decoration: underline;	
+}
+.main-theme > span + span {
+	text-shadow: 0px 0px 8px rgba(227, 68, 68, 0.742);
+	text-decoration: none;	
+}
+.main-theme > span + span +  span{
+	text-shadow: 0px 0px 13px rgba(206, 100, 100, 0.614);
+	text-decoration: none;	
+	font-family: "Rubik Iso", sans-serif;
+}
+
+.hide {
+	color: rgba(255, 255, 255, 0);
+	text-shadow: none;
+	text-decoration: none;
+}
+.day-1 {
+
+}
+.day-2 {
+}
+.day-7 p ~ p {
+	font-size: 10px;
+	color: rgba(52, 10, 10, 0.368);
+}
+.change {
+}
+.change > p + p {
+	color: green;
+	font-size: 30px;
+}
+.change > p + p + p {
+	color: black;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+}
+
+.percentage {
+	font-size: 20px;
+	font-family: "Kingthings Xander", sans-serif;
+}
+
+
+

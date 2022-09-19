@@ -1,0 +1,136 @@
+/* import resetcss  */
+@import url(reset.css);
+
+
+/* add with google fonts app */
+/* add separately  
+		&display=swap 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+/*
+font-family: 'Roboto';
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Rubik+Maze:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zen+Kurenaido:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caladea:regular,700&display=swap");
+
+/*
+font-family: "Rubik Maze"
+font-family: "Zen Kurenaido"
+font-family: "Caladea"
+*/
+/* start from downloaded fonts */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Black.woff2") format("woff2"), url("../fonts/lato/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"), url("../fonts/lato/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+/* ======== */
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/larsseit/Larsseit-Bold.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/larsseit/Larsseit-Medium.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/larsseit/Larsseit-Regular.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+/* 
+@import MUST be on top 
+ */
+
+.test {
+	font-family: "Lato";
+}
+.nav__item {
+	font-family: "Caladea";
+}
+nav > a ~ a  ~ a {
+	color: red;
+	font-weight: 700;
+}
+nav > a {
+	color: green;
+	font-family: "Roboto";
+	font-weight: 900;
+}
+nav > a ~ a {
+	color: blue;
+	font-family: "Zen Kurenaido";
+}
+.syntax {
+	color: yellow;
+}
+.syntax +ul {
+	color: blue;
+}
+.syntax {
+}
+.keyword {
+	color: grey;
+	font-family: "Rubik Maze";
+}
+.relative {
+}
+.numeric-keyword {
+	font-family: "Larsseit";
+	font-weight: 500;
+}
+.numeric-keyword + ul {
+	color: red;
+}
+.global-values {
+}
+.relative-weights {
+}
+.relative-weights {
+	color: #021;
+}
+.relative-weights ~ table th {
+	font-family: "Lato";
+	color: red;
+}
+.relative-weights ~ table td {
+	font-family: "Larsseit";
+	font-weight: 400;
+	color: green;
+}
+.name-mapping {
+	font-family: "Larsseit";
+	font-weight: bold;
+}
+.variable-fonts {
+}
+.variable-fonts__picture {
+}
+.compatibility {
+}

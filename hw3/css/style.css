@@ -1,0 +1,46 @@
+h1 {
+	color: #951;
+}
+h2 {
+	color: #172;
+}
+p {
+	color: #232;
+}
+.marked {
+	color: #1b1616;
+}
+.link-to {
+}
+.aside-nav {
+}
+.aside-nav ul {
+	color: rgb(172, 18, 18);
+}
+.section-header {
+}
+.menu-link {
+	color: rgb(228, 28, 28);
+}
+.go-to-menu {
+}
+.section-text {
+}
+.section-title {
+}
+.some-mark {
+	color: #555;
+}
+.some-code p {
+	color: rgb(120, 20, 20);
+}
+.red {
+}
+.settingsJson {
+}
+.to-top {
+}
+
+section > p {
+	color: #444;
+}

@@ -1,0 +1,27 @@
+@import url("reset.css");
+/* import fonts */
+@import url("https://fonts.googleapis.com/css?family=Cairo+Play:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alumni+Sans+Collegiate+One:regular&display=swap");
+
+/* fonts from "fonts" */
+@font-face {
+	font-family: "NautilusPompilius";
+	src: url("../fonts/NautilusPompilius.woff2") format(woff2), url("../fonts/NautilusPompilius.woff") format(woff);
+	font-display: swap;
+	font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+	font-family: "teddy bear";
+	src: url("../fonts/teddy_bear.woff2") format(woff2), url("../fonts/teddy_bear.woff") format(woff);
+	font-display: swap;
+	font-weight: normal;
+   font-style: normal;
+}
+
+h1 {
+	font-family: "teddy bear", sans-serif;
+}
+h2 {
+	font-family: "NautilusPompilius", sans-serif;
+}

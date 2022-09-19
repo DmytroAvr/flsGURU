@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet">
+	<title>hw4</title>
+</head>
+
+<body>
+	<header>
+		<div class="test">
+			<h2>Test Lato font-family</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa recusandae quo illum? Voluptatibus, cum! Labore quos, tempore molestiae modi nostrum eligendi hic dolor saepe inventore, voluptates quibusdam nihil, sapiente consectetur.</p>
+			<p>Лорем ипсум долор сит амет, но нибх феугиат сед, мел ет ассуеверит цонсеяуунтур. Веро дебет цонсеяуунтур ид меа, меа еиус платонем ех, ноструд цопиосае те при. Усу виси молестие аппареат ет, нумяуам суавитате сцрипторем еа вис. Етиам цонгуе алияуип еу хис, еа доцтус аццусата инимицус еам. Еум ех лаудем орнатус, ин яуи синт омнес.
+			</p>
+			<br>
+		</div>
+		<nav>
+			<a class="nav__item" href="#" target="_blank">References</a> <span>&#8594;</span>
+			<a class="nav__item" href="#" target="_blank">CSS</a> <span>&#8594;</span>
+			<a class="nav__item">font-weight</a>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>font-weight</h1>
+			<h2>CSS property</h2>
+			<p>The <b>font-weight</b> <a href="#">CSS</a> property sets the weight (or boldness) of the font. The weights available depend on the <a href="">font-family</a> that is currently set.</p>
+		</section>
+		<section>
+			<h2>Syntax</h2>
+			<hr>
+			<h3 class="syntax keyword">Keyword values</h3>
+			<ul>
+				<li>font-weight: normal;</li>
+				<li>font-weight: bold;</li>
+			</ul>
+			<h3 class="syntax relative">Keyword values relative to the parent</h3>
+			<ul class="relative">
+				<li>font-weight: lighter;</li>
+				<li>font-weight: bolder;</li>
+			</ul>
+			<h3 class="syntax numeric-keyword">Numeric keyword values</h3>
+			<ul class="numeric-keyword">
+				<li>font-weight: 100;</li>
+				<li>font-weight: 200;</li>
+				<li>font-weight: 300;</li>
+				<li>font-weight: 400;</li>
+				<li>font-weight: 500;</li>
+				<li>font-weight: 600;</li>
+				<li>font-weight: 700;</li>
+				<li>font-weight: 800;</li>
+				<li>font-weight: 900;</li>
+			</ul>
+			<h3 class="syntax global-values">Global values</h3>
+			<ul class="global-values">
+				<li>font-weight: inherit;</li>
+				<li>font-weight: initial;</li>
+				<li>font-weight: revert;</li>
+				<li>font-weight: revert-layer;</li>
+				<li>font-weight: unset;</li>
+			</ul>
+			<p>The <b>font-weight</b> property is specified using any one of the values listed below.</p>
+		</section>
+		<section>
+			<h2 class="relative-weights">Meaning of relative weights</h2>
+			<p>When <b>lighter</b> or <b>bolder</b> is specified, the below chart shows how the absolute font weight of the element is determined.</p>
+			<p>Note that when using relative weights, only four font weights are considered — thin (100), normal (400), bold (700), and heavy (900). If a font-family has more weights available, they are ignored for the purposes of relative weight calculation.</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Inherited value</th>
+						<th>bolder</th>
+						<th>lighter</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>100</td>
+						<td>400</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>200</td>
+						<td>400</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>300</td>
+						<td>400</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>400</td>
+						<td>700</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>500</td>
+						<td>700</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>600</td>
+						<td>900</td>
+						<td>400</td>
+					</tr>
+					<tr>
+						<td>700</td>
+						<td>900</td>
+						<td>400</td>
+					</tr>
+					<tr>
+						<td>800</td>
+						<td>900</td>
+						<td>700</td>
+					</tr>
+					<tr>
+						<td>900</td>
+						<td>900</td>
+						<td>700</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h2 class="name-mapping">Common weight name mapping</h2>
+			<p>The numerical values <i>100</i> to <i>900</i> roughly correspond to the following common weight names (see the OpenType specification):</p>
+			<dl>
+				<dt>Value</dt>
+				<dd>Common weight name</dd>
+				<dt>100</dt>
+				<dd>Thin (Hairline)</dd>
+				<dt>200</dt>
+				<dd>Extra Light (Ultra Light)</dd>
+				<dt>300</dt>
+				<dd>Light</dd>
+				<dt>400</dt>
+				<dd>Normal (Regular)</dd>
+				<dt>500</dt>
+				<dd>Medium</dd>
+				<dt>600</dt>
+				<dd>Semi Bold (Demi Bold)</dd>
+				<dt>700</dt>
+				<dd>Bold </dd>
+				<dt>800</dt>
+				<dd>Extra Bold (Ultra Bold)</dd>
+				<dt>900</dt>
+				<dd>Black (Heavy)</dd>
+				<dt>950</dt>
+				<dd>Extra Black (Ultra Black)</dd>
+			</dl>
+
+		</section>
+		<section>
+			<h2 class="variable-fonts">Variable fonts</h2>
+			<img class="variable-fonts__picture" src="img/example.png" alt="Interactive editor example">
+		</section>
+		<section>
+			<h2 class="compatibility">Browser compatibility</h2>
+			<img class="variable-fonts__picture" src="img/compatibility.png" alt="Browser compatibility of 'font-weight' and number syntax">
+		</section>
+	</main>
+	<footer>
+		<h2>some fun</h2>
+		<img src="https://thispersondoesnotexist.com/image" alt="person what does not exists">
+	</footer>
+</body>
+
+</html>
