@@ -34,7 +34,8 @@ body {
 }
 
 .header {
-	margin: 30px 0px 118px 0px;
+	margin: 0px 0px 118px 0px;
+	padding-top: 30px;
 	text-align: center;
 	height: 20px;
 	color: rgba(103, 38, 38, 0.399);
@@ -53,6 +54,8 @@ body {
 .article__image {
 	/*width: 810px;*/
 	max-width: 100%;
+	/* CENTER ONLY BLOCK */
+	display: block;
 	margin: 0px auto 60px;
 }
 .section p {
@@ -118,28 +121,54 @@ margin: 0px 0px 60px 0px;
 }
 .myPart {
 	padding-top: 30px;
+	font-size: 0;
+	max-width: 560px;
+	margin: 0 auto;
 }
 .myPart div {
 	height: 100px;
 	width: 100px;
+	margin: 0px 40px 0px 0px;
 }
 .myPart__title {
 	text-align: center;
 	margin: 0px 0px 30px 0px;
 	font-weight: bold;
 	text-decoration: line-through;
+	font-size: 40px;
+}
+
+.myPart__title div {
+	font-size: 20px;
 }
 .block1 {
+	color: white;
 	background-color: #123;
+	display: inline-block;
+	overflow: hidden;
+	outline: 1px solid green;
 }
 .block2 {
+	color: rgba(255, 255, 255, 0.35);
 	background-color: #234;
+	display: inline-block;
+	overflow: auto;
+	outline: 1px dotted blue;
+	box-shadow: 0px 0px 80px 5px blueviolet;
 }
 .block3 {
 	background-color: #345;
+	display: inline-block;
+	overflow-x: scroll;
+	outline: 1px dashed red;
 }
 .block4 {
 	background-color: #678;
+	display: inline-block;
+	overflow: scroll;
+	border: 1px solid yellow;
+	border-bottom-right-radius: 40px;
+	box-shadow: 0px 0px 40px 5px black;
 }
 .footer {
 	text-align: center;
@@ -149,9 +178,12 @@ margin: 0px 0px 60px 0px;
 
 .footer__link{
 	padding: 20px;
+	display: inline-block;
+	background-color: rgba(19, 139, 53, 0.076);
+	border-radius: 40px;
 }
 .footer__link > span {
-	font-size: 40px;
+	font-size: 30px;
 	margin: 0px 0px 0px 20px;
 
 }

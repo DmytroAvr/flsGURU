@@ -469,13 +469,40 @@ box-sizing: <b>content-box</b> - (за замовченням) додає від
 	<b>overflow:</b><i>visible</i> (show all context + uder container), <i>hidden</i>(hidden all context + under), <i>scroll</i> (for scrolling content), <i>auto</i>
   
    <!-- display -->
-	
-	<b>display:</b> <i>block</i>; <i>inline-block</i>; <i>inline</i>;
-
+<br/>
+    <b>display:</b> <i>block</i>; <i>inline-block</i>; <i>inline</i>; <i>none</i>;
+<br/>
     <!-- space -->
     <b>how to delate space between objects</b>
     <https://youtu.be/jwX0RLmYNSY?t=3254>
-
+     add <b>font-size: 0</b> for deleting spaces
+<br/>
+<!-- border -->
+border: товщина, стиль, колір
+<br/><b>
+	
+	!important^
+	border: 1px solid #333;
+	when hower:
+	border: 1px solid transparent;
+</b>
+<br/>
+box-shadow: x y blur size color;
+inset - inside shadow/ 
+box-shadow: inset x y blur size color;
+<br/>
+<br/>
+about opacitu: 0 
+<https://youtu.be/jwX0RLmYNSY?t=6722>
+<br/>
+<br/>
+visibility: visible; hidden;
+<br/>
+ЦУНТРОВАТЬ   center:
+1) display: block !!only!!;
+2) less <b>wigth </b>than parent block has
+3) margin: 0 auto; 
+<https://youtu.be/jwX0RLmYNSY?t=8707>
 </details>
 
 <br/>
