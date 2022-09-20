@@ -451,6 +451,34 @@ box-sizing: <b>content-box</b> - (за замовченням) додає від
 </details>
 
 <br/>
+<!-- Example -->
+
+<details>
+  <summary>about</summary>
+  <!-- text -->
+  <b>width</b>
+	width - exactly that size what we want 
+	max-width:   maximum size of width
+	min-width:   minimum width size
+	<br/>
+	<b>height</b>
+		height - exactly that size what we want 
+	max-height:   maximum size of height
+	min-width:   minimum height size    <!-- *use* -->
+	<br/>
+	<b>overflow:</b><i>visible</i> (show all context + uder container), <i>hidden</i>(hidden all context + under), <i>scroll</i> (for scrolling content), <i>auto</i>
+  
+   <!-- display -->
+	
+	<b>display:</b> <i>block</i>; <i>inline-block</i>; <i>inline</i>;
+
+    <!-- space -->
+    <b>how to delate space between objects</b>
+    <https://youtu.be/jwX0RLmYNSY?t=3254>
+
+</details>
+
+<br/>
 <!-- for Example -->
 <!-- for Example -->
 <!-- for Example -->
@@ -460,14 +488,6 @@ box-sizing: <b>content-box</b> - (за замовченням) додає від
 <!-- for Example -->
 
 <br/><br/><br/>
-
-<br/>
-<!-- Example -->
-
-<details>
-  <summary>Example</summary>
-  <!-- text -->
-</details>
 
 <br/>
 <!-- Example -->

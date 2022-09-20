@@ -34,10 +34,15 @@ body {
 }
 
 .header {
-	margin: 0px 0px 118px 0px;
+	margin: 30px 0px 118px 0px;
+	text-align: center;
+	height: 20px;
+	color: rgba(103, 38, 38, 0.399);
+	text-decoration: underline;
+	text-shadow: 0px 0px 20px #000;
 }
 .main {
-	width: 810px;
+	max-width: 810px;
 	margin: 0 auto;
 }
 .article {
@@ -46,7 +51,8 @@ body {
 	margin: 0px 0px 45px 0px;
 }
 .article__image {
-	max-width: 810px;
+	/*width: 810px;*/
+	max-width: 100%;
 	margin: 0px auto 60px;
 }
 .section p {
@@ -103,8 +109,50 @@ body {
 .achieve > p ~ p {
 margin: 0px 0px 60px 0px;
 }
+
+/* block of imagination */
+
+.imagination {
+	border-top: 2px solid black;
+	margin: 0px 0px 60px 0px;
+}
+.myPart {
+	padding-top: 30px;
+}
+.myPart div {
+	height: 100px;
+	width: 100px;
+}
+.myPart__title {
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.block1 {
+	background-color: #123;
+}
+.block2 {
+	background-color: #234;
+}
+.block3 {
+	background-color: #345;
+}
+.block4 {
+	background-color: #678;
+}
 .footer {
+	text-align: center;
+	color: rgb(255, 2, 2);
+	margin: 0px 0px 60px 0px;
 }
 
+.footer__link{
+	padding: 20px;
+}
+.footer__link > span {
+	font-size: 40px;
+	margin: 0px 0px 0px 20px;
 
+}
 
