@@ -128,7 +128,7 @@ margin: 0px 0px 60px 0px;
 .myPart div {
 	height: 100px;
 	width: 100px;
-	margin: 0px 40px 0px 0px;
+	margin: 0px 40px 30px 0px;
 }
 .myPart__title {
 	text-align: center;
@@ -170,6 +170,38 @@ margin: 0px 0px 60px 0px;
 	border-bottom-right-radius: 40px;
 	box-shadow: 0px 0px 40px 5px black;
 }
+.block5{
+	display: none;
+	background-color: #465;
+		overflow: hidden;
+
+}
+.block6{
+	visibility: hidden;
+	background-color: #765;
+		display: inline-block;
+		overflow: hidden;
+
+}
+.block7{
+	opacity: 0.3;
+	background-color: #876;
+		display: inline-block;
+		overflow: hidden;
+
+}
+.block8{
+	border-radius: 50%;
+	background-color: #987;
+	display: inline-block;
+
+	overflow: hidden;
+}
+
+
+
+
+
 .footer {
 	text-align: center;
 	color: rgb(255, 2, 2);
