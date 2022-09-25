@@ -3,11 +3,11 @@
 <a href="hw4">hw4</a><br/>
 <a href="hw5">hw5</a><br/>
 <a href="hw6">hw6</a><br/>
+<a href="hw7">hw7</a><br/>
 <br/><br/><br/>
 
 <!--
 
-<p><a href="hw7">hw7</a></p>
 <p><a href="hw8">hw8</a></p>
 <p><a href="hw9">hw9</a></p>
 <p><a href="hw10">hw10</a></p>
