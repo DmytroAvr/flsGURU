@@ -1,1 +1,116 @@
 @import url(reset.css);
+
+
+
+
+
+/* settings */
+
+[class*="__container"]{
+	max-width: 1270px;  /* 1230 + 40 */
+	margin: 0 auto;
+	padding: 0 20px; /* добавити */
+}   
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #1E212C;
+}
+
+/* header */
+.header {
+}
+.header__container {
+}
+.header__nav {
+}
+.header__link {
+}
+
+/* main */
+.main {
+}
+.about-course {
+}
+.about-course__container {
+}
+.about-course__block-text{
+	max-width: 600px;
+	margin: 0 auto 0  0;
+}
+.about-course__title {
+}
+.about-course__text {
+}
+.about-course__will-learn {
+}
+
+.course-curator {
+}
+.course-curator__container{
+}
+.course-curator__block-text{
+	max-width: 600px;
+	margin: 0 0 0 auto;
+}
+.course-curator__sup-title {
+}
+.course-curator__title {
+}
+.course-curator__sub-title {
+}
+.course-curator__attributes {
+}
+.course-curator__attributes-item {
+}
+.course-curator__rate {
+}
+.course-curator__courses {
+}
+.course-curator__students {
+}
+.course-curator__about {
+}
+.course-curator__contacts {
+}
+
+
+/* footer */
+.footer {
+}
+.footer__container {
+}
+.footer__nav {
+}
+.footer__link {
+}
+
+
+/* some blocks */
+
+/* list with checked marks */
+.list-of-items {
+}
+.list-of-items__title {
+}
+.list-of-items__items {
+}
+.list-of-items__item {
+}
+
+/* social  */
+.social {
+}
+.social__link {
+}
+.social__facebook {
+}
+.social__behance {
+}
+.social__twitter {
+}
+.social__linked-in {
+}
