@@ -197,14 +197,14 @@ body {
 }
 .block4 {
 	overflow-y: auto;
-	background: rgb(10,23,255);
-	background: linear-gradient(180deg, rgba(10,23,255,1) 48%, rgba(250,255,6,1) 50%);
+	background: url(../img/google_logo.png) no-repeat 20px 20px / 20px 50px,linear-gradient(180deg, rgba(10,23,255,1) 48%, rgba(250,255,6,1) 50%);
 	opacity: 0.2;
 	color: black;
 }
 .block5 {
+	overflow-y: auto;
 	padding-top: 31px;
-	background: linear-gradient(180deg, rgba(10,23,255,0.2) 48%, rgba(250,255,6,0.2) 50%);}
+	background: url(../img/google_logo.png) repeat-x 0 150px / 10px 40px  , url(../img/google_logo.png) repeat-y 0 0 / 10px 40px  ,linear-gradient(180deg, rgba(10,23,255,0.2) 48%, rgba(250,255,6,0.2) 50%);}
 .block6 {
 }
 .block7 {
