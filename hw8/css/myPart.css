@@ -80,10 +80,21 @@
 	transition: all 0.2s ease 0s;
 }
 .kill-putin__buttons a:not(:last-child) {
-	margin: 0px 0px 15px 0px;
+	margin: 0px 0px 20px 0px;
+}
+.kill-putin__buttons a.finish {
+	margin: 40px 0px;
+
+}
+.kill-putin__buttons a:last-child {
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+
 }
 .kill-putin__buttons a:hover{
 	transform: rotate(-1deg);
+	background: linear-gradient(0deg, rgba(240,1,1,0.1) 12%, rgba(255,0,0,0.1) 98%), linear-gradient(0deg, rgba(240,237,1,1) 12%, rgba(0,31,255,1) 98%);
 	box-shadow: 5px 5px 10px 10px rgba(240,237,1,0.88);
 }
 
