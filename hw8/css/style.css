@@ -155,10 +155,22 @@ body {
 }
 .list-of-items__items {
 }
-.list-of-items__items li {
-	padding-left: 32px;
-	background: url("../img/svg/mark-checked.svg") no-repeat 0px 4px / 16px 16px ;
+.list-of-items__items li:not(:last-child) {
+	margin: 0px 0px 4px 0px;
 }
+.list-of-items__items li::before {
+	content: "";
+	background: url("../img/svg/mark-checked.svg") 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 16px;
+	transition: all 0.3s ease 0s;
+}
+.list-of-items__items li:hover::before {
+	transform: rotate(10deg);
+}
+
 
 /* social  */
 .social {
