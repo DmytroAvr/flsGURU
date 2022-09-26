@@ -9,9 +9,8 @@
 
 <!--
 
-<p><a href="hw8">hw8</a></p>
-<p><a href="hw9">hw9</a></p>
-<p><a href="hw10">hw10</a></p>
+<a href="hw9">hw9</a>
+<a href="hw10">hw10</a>
 -->
 
 <p>how to markdonwn README.md:</p>
@@ -507,6 +506,53 @@ visibility: visible; hidden;
 </details>
 
 <br/>
+
+<br/>
+<!-- Example -->
+
+<details>
+  <summary>#псевдоелементы </summary>
+	##псевдокласи стану
+
+:hover {}
+
+    <code>
+    	.block {}
+    	.block:hover .block__item {
+    	visibility: visible;
+    	opacity: 1;
+    	}
+    	.block__item {
+    	visibility: hidden;
+    	opacity: 0;
+    	}
+    </code>
+
+:active (сделать хомяка который появляется при нажатии кнопки
+try to hover me )
+
+:visited { not all parameters}
+
+:targer - получает обьект на который переходим по ссылке #id/ можно использовать для создания интерактива
+
+:first-child (зависит от вложенности )
+:last-child
+:nth-child()
+:nth-child(n+XX)
+
+p:first-of-type - первый указанного типа (даже при условии вложенности)
+p:last-of-type
+
+:not(:last-child) - все кроме
+
+##важно. имплиментуй
+
+.block >\*:last-child {
+margin-bottom: 0px;
+}
+
+</details>
+
 <!-- for Example -->
 <!-- for Example -->
 <!-- for Example -->
@@ -516,6 +562,14 @@ visibility: visible; hidden;
 <!-- for Example -->
 
 <br/><br/><br/>
+
+<br/>
+<!-- Example -->
+
+<details>
+  <summary>Example</summary>
+  <!-- text -->
+</details>
 
 <br/>
 <!-- Example -->

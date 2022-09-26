@@ -1,0 +1,9 @@
+.block {}
+.block:hover .block__item {
+	visibility: visible;
+	opacity: 1;
+}
+.block__item {
+	visibility: hidden;
+	opacity: 0;
+}
