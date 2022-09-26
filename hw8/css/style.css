@@ -207,3 +207,9 @@ body {
 .social__linked-in:hover {
 	fill: #FF3F3A;
 }
+.social__facebook:hover:focus svg,
+.social__behance:hover:focus svg,
+.social__twitter:hover:focus svg,
+.social__linked-in:hover:focus svg{
+	stroke: rgba(0, 0, 0, 0);
+}
