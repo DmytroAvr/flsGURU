@@ -551,6 +551,47 @@ p:last-of-type
 margin-bottom: 0px;
 }
 
+::before {}
+::after {} рядковi!!!!
+если использовать их с inside!!!
+строчными - слева справа
+блочные - сверху снизу
+
+span:: {
+content: ""; will create element in html.. MUST
+}
+
+ul li:before {
+content: "";
+display: inline-block;
+background: url('../img/some.png') 0 0 no-repeat;
+height: 16px;
+width: 16px;
+margin: 0px 0px 0px 10px;
+
+<!--transition: all 1s ease 0s;-->
+
+}
+
+create ordered ol list with using ::before
+ol{
+margin-top: 20px;
+margin-bottom: 20px;
+counter-reser: item; callc from there
+}
+ol li{}
+ol li::before{
+counter-increment: item;
+content: "("counter(item)"@@";
+color: red;
+font-size: 20px;
+display: inline-block;
+margin: 0px 10px 0px 0px;
+}
+ol li:not(:last-child){
+margin: 0px 0px 10px 0px;
+}
+
 </details>
 
 <!-- for Example -->
