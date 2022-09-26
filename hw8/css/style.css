@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("myPart.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
 
 
@@ -164,6 +165,13 @@ body {
 .social__link {
 	margin: 0px 24px 0px 0px ;
 }
+.social__link:focus {
+	outline: none;
+}
+.social__link:focus svg {
+	outline: 1px solid #000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .social__facebook {
 }
 .social__behance {
@@ -184,6 +192,7 @@ body {
 	width: 100%;
 	height: 100%;
 	fill: #787A80;
+	
 }
 
 .social__facebook:hover,
@@ -192,4 +201,3 @@ body {
 .social__linked-in:hover {
 	fill: #FF3F3A;
 }
-/* fill="#FF3F3A" */
