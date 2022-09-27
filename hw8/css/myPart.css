@@ -7,7 +7,6 @@
 	visibility: hidden;
 	opacity: 0;
 }
-/* fff */
 
 .practice {
 	padding-top: 100px;
@@ -16,7 +15,7 @@
 }
 .practice__container {
 	max-width: 1400px;
-	width: 100%;
+	width: 100%; 
 	margin: 0 auto;
 }
 .practice__header {
