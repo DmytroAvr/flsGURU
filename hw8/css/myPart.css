@@ -1,176 +1,202 @@
-.block {}
-.block:hover .block__item {
-	visibility: visible;
-	opacity: 1;
-}
-.block__item {
-	visibility: hidden;
-	opacity: 0;
-}
-
-.practice {
-	padding-top: 100px;
-	border-top: 1px solid red;
-	
-}
-.practice__container {
-	max-width: 1400px;
-	width: 100%; 
-	margin: 0 auto;
-}
-.practice__header {
-	text-align: center;
-	font-size: 40px;
-}
-.practice__header::before {
-	content: "";
-	background: url(../img/little-game/border-arrow.png) 0 0 / 30px 30px repeat-x;
-	height: 30px;
-	display: block;
-}
-.practice__header::after {
-	content: "";
-	background: url(../img/little-game/border-arrow1.png) 0 0 / 30px 30px repeat-x;
-	height: 30px;
-	display: block;
-}
-
-.practice__header span {
-	color: rgb(114, 0, 0);
-	text-shadow: 1px 1px 3px rgba(143, 7, 7, 0.735);
-}
-.practice__game {
-}
-.kill-putin {
-}
-.practive__container {
-	max-width: 1400px;
-	width: 100%;
-}
-.kill-putin__body-block {
-}
-.kill-putin__body {
-	position: relative;
-}
-.kill-putin__parts {
-	padding: 30px;
-	border: 5px solid yellow;
-	outline: 5px solid blue;
-	max-height: 500px;
-	position: absolute;
-}
-.kill-putin__piece {
-}
-.kill-putin__buttons {
-	padding-top: 20px;
-	max-width: 300px;
-	width: 100%;
-	margin: 0 auto;
-	font-size: 30px;
-	text-align: center;
-	height: 510px;
-}
-.kill-putin__buttons a {
-	display: block;
-	padding: 5px;
-	border: 2px solid blue;
-	border-bottom: 2px solid yellow;
-	border-radius: 40px;
-	background: linear-gradient(0deg, rgba(240,237,1,1) 12%, rgba(0,31,255,1) 98%);
-	transition: all 0.2s ease 0s;
-}
-.kill-putin__buttons a:not(:last-child) {
-	margin: 0px 0px 20px 0px;
-}
-.kill-putin__buttons a.finish {
-	margin: 40px 0px;
-
-}
-.kill-putin__buttons a:last-child {
-	font-weight: 700;
-	font-size: 30px;
-	text-transform: uppercase;
-
-}
-.kill-putin__buttons a:hover{
-	transform: rotate(-1deg);
-	background: linear-gradient(0deg, rgba(240,1,1,0.1) 12%, rgba(255,0,0,0.1) 98%), linear-gradient(0deg, rgba(240,237,1,1) 12%, rgba(0,31,255,1) 98%);
-	box-shadow: 5px 5px 10px 10px rgba(240,237,1,0.88);
-}
-
-#a {
-	z-index: 0;
-}
-#b:target {
-display: none;
-}
-#c:target {
-display: none;
-}
-#d:target {
-display: none;
-}
-#e:target {
-	display: none;
-}
-#f:target {
-	display: block;
-}
-#f {
-	z-index: 1;
-	display: none;
-}
-
-
-
-/* main game part */
-
-
 .normal-hw {
 }
 .normal-hw__container {
 }
-.normal-hw__container h2:first-of-type {
-	font-size: 30px;
+.normal-hw__container:first-of-type h2 {
 	text-align: center;
+	font-size: 30px;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+	color: black;
 }
+
 .normal-hw__part1 {
 }
+
+.pseudo-class ol {
+	width: 220px
+}
+.pseudo-class li:first-child span{
+	font-size: 40px;
+	font-weight: 900;
+	visibility: hidden;
+	line-height: 1.6;
+}
+.pseudo-class li:first-child:hover {
+	font-size: 40px;
+	font-weight: 900;
+	visibility: visible;
+}
+.pseudo-class a:visited {
+	opacity: 0.5;
+	color: red;
+}
+.pseudo-class span {
+	font-size: 20px;
+	line-height: 1;
+}
+.pseudo-class span:hover {
+	font-size: 30px;
+	line-height: 0.5;
+}
+
+.pseudo-class span:nth-child(1):hover {
+	color: blue;
+}
+.pseudo-class span:nth-child(2):hover {
+	color: rgb(232, 232, 39);
+}
+.pseudo-class input:focus {
+	border: 3px solid red;
+}
+.pseudo-class input {
+	border: 1px solid black;
+	width: 30px;
+}
+/* hw part 2 start */
 .normal-hw__part2 {
 }
-.normal-hw__part3 {
 
+/* game */
+.normal-hw__part3 {
 }
 .game {
-	margin: 0px 0px 30px 0px;
 }
 div.game__container {
-	max-width: 540px;
+	max-width: 1100px;
 	width: 100%;
-	max-height: 500px;
+	margin: 0 auto 50px;
+}
+h2.game__title::after {
+	margin-left: 380px;
+	width: 300px;
+}
+.game__field {
+	border: 4px solid #37020263;
+	box-shadow:  inset 5px 2px 50px 0px rgb(0 0 0 / 50%), 5px 7px 10px 3px rgb(0 0 0 / 50%);
+	min-height: 500px;
 	height: 100%;
-	margin: 0 auto;
 	font-size: 0;
-}
-
-.part1 {
-}
-.part2 {
-}
-.part3 {
-	display: block;
-	margin-left: auto;
-}
-.part4 {
-	display: block;
-	margin-left: auto;
-}
-.part5 {
-	display: block;
-	margin-left: 0px auto;
 
 }
-.part6 {
+/* logic */
+.part:hover + .part {
+	
 }
-.part7 {
+/* add block and position them */
+	/* header */
+.game__start {}
+.game__start span {
+	display: inline-block;
+	font-size: 20px;
+	color: whitesmoke;
+}
+.game__start.part {
+	margin-left: auto;
+	height: 40px;
+	width: 200px;
+	text-align: center;
+	visibility: visible;
+}
+.part {
+	background-color: blue;
+	height: 80px;
+	width: 40px;
+	visibility: hidden;
+	transition: all 0.4s ease 0s;
+}
+.part:hover {
+	visibility: visible;
+}
+.part:hover + .part {
+	visibility: visible;
+}
+
+	/* blocks */
+.part:nth-child(2){
+	margin: 0 160px 0 auto;
+}
+.part:nth-child(3){
+	width: 200px;
+	height: 30px;
+	margin: 0 160px 0 auto;
+}
+.part:nth-child(4){
+	width: 200px;
+	height: 30px;
+	margin: 0 320px 0 auto;
+}
+.part:nth-child(4){
+	width: 300px;
+	height: 30px;
+	margin: 0 320px 0 auto;
+	background-color: yellow;
+}
+.part:nth-child(5){
+	width: 30px;
+	height: 20px;
+	margin: 0 590px  0 auto;
+	background-color: yellow;
+}
+.part:nth-child(6){
+	width: 250px;
+	height: 30px;
+	margin: 0 370px  0 auto;
+	background-color: yellow;
+}
+.part:nth-child(7){
+	width: 50px;
+	height: 30px;
+	margin: 0 370px  0 auto;
+	background-color: rgb(255, 0, 0);
+}
+.part:last-child {
+	width: 500px;
+	height: 220px;
+	margin: 0 auto;
+	background: url(../img/main-game/congrats.gif) 0 0 no-repeat;
+}
+/* end adding block and positon them */
+
+/* elements */
+.title::after {
+	content: "";
+	display: block;
+	margin-left: 320px;
+	width: 590px;
+	border: 4px solid rgba(76, 3, 3, 0);
+	border-radius: 4px;
+	transition: all 0.5s ease 0s;
+}
+.title:hover {
+	color: rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 4px #0000003c;
+}
+.title:hover::after {
+	border: 4px solid rgba(76, 3, 3, 0.3);
+}
+
+/* numbered list + custom numbers */
+ol{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	counter-reset: item; 
+}
+ol li{}
+ol li::before{
+	counter-increment: item;
+	content: counter(item)"--";
+	color: rgb(154, 18, 18);
+	font-size: 20px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+}
+ol li:first-child:before{
+	content: "**TOP**";
+	font-weight: 700;
+	color: rgb(154, 18, 18);
+}
+
+ol li:not(:last-child){
+	margin: 0px 0px 10px 0px;
 }
