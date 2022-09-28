@@ -87,8 +87,10 @@ h2.game__title::after {
 	height: 100%;
 	font-size: 0;
 }
-
-.first-letter {
+.first-letter p {
+	display: inline-block;
+}
+.first-letter p::first-letter {
 	font-size: 32px;
 	color: blue;
 }
