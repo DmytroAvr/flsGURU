@@ -2,25 +2,22 @@
 @import url("myPart.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
 
-
-
-
 /* settings */
 
-[class*="__container"]{
-	max-width: 1270px;  /* 1230 + 40 */
-	margin: 0 auto;
-	padding: 0 20px; /* добавити */
-}   
+[class*="__container"] {
+  max-width: 1270px; /* 1230 + 40 */
+  margin: 0 auto;
+  padding: 0 20px; /* добавити */
+}
 
 body {
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.6;
-	color: #424551;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424551;
 }
- 
+
 /* header */
 .header {
 }
@@ -33,102 +30,103 @@ body {
 
 /* main */
 .main {
-
 }
 .about-course {
-	padding-top: 120px;
-	border: 1px solid rgba(255, 0, 0, 0);
+  padding-top: 120px;
+  border: 1px solid rgba(255, 0, 0, 0);
 }
 .about-course__container {
-	border: 1px solid rgba(255, 0, 0, 0);
-	margin: 0px auto 114px;
+  border: 1px solid rgba(255, 0, 0, 0);
+  margin: 0px auto 114px;
 }
-.about-course__block-text{
-	max-width: 600px;
-	margin: 0 auto 0  0;
+.about-course__block-text {
+  max-width: 600px;
+  margin: 0 auto 0 0;
 }
 .about-course__title {
-	font-weight: 900;
-	font-size: 46px;
-	line-height: 1.3;
-	color: #1E212C;
-	margin: 0px 0px 40px 0px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+  margin: 0px 0px 40px 0px;
 }
 .about-course__text {
-	margin: 0px 0px 48px 0px;
+  margin: 0px 0px 48px 0px;
 }
 .about-course__will-learn {
-/* style in list-of-items */
+  /* style in list-of-items */
 }
 
 .course-curator {
-	border: 1px solid rgba(255, 0, 0, 0);
-	padding-top: 66px;
+  border: 1px solid rgba(255, 0, 0, 0);
+  padding-top: 66px;
 }
-.course-curator__container{
-	border: 1px solid rgba(255, 0, 0, 0);
-	margin: 0px auto 180px;
+.course-curator__container {
+  border: 1px solid rgba(255, 0, 0, 0);
+  margin: 0px auto 180px;
 }
-.course-curator__block-text{
-	max-width: 600px;
-	margin: 0 0 0 auto;
+.course-curator__block-text {
+  max-width: 600px;
+  margin: 0 0 0 auto;
 }
 .course-curator__sup-title {
-	font-weight: 700;
-	line-height: 150%;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	color: #1E212C;
-	margin: 0px 0px 8px 0px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin: 0px 0px 8px 0px;
 }
 .course-curator__title {
-	font-weight: 900;
-	font-size: 46px;
-	line-height: 130%;
-	color: #1E212C;
-	margin: 0px 0px 16px 0px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin: 0px 0px 16px 0px;
 }
 .course-curator__sub-title {
-	font-size: 20px;
-	line-height: 150%;
-	color: #787A80;
-	margin: 0px 0px 32px 0px;
+  font-size: 20px;
+  line-height: 150%;
+  color: #787a80;
+  margin: 0px 0px 32px 0px;
 }
 .course-curator__attributes {
-	margin: 0px 0px 32px 0px;
+  margin: 0px 0px 32px 0px;
 }
-.course-curator__attributes  li {
-	font-weight: 700;
-	padding-left: 24px;
-	margin: 0px 0px 4px 0px;
+.course-curator__attributes li {
+  font-weight: 700;
+  padding-left: 24px;
+  margin: 0px 0px 4px 0px;
 }
-.course-curator__attributes-rate  {
-	background: url('../img/curarot/rate.svg') 0 4px / 16px 16px no-repeat;
+.course-curator__attributes-rate {
+  background: url("../img/curarot/rate.svg") 0 4px / 16px 16px no-repeat;
 }
-.course-curator__attributes-courses  {
-	background: url('../img/curarot/courses.svg') 0 4px / 16px 16px no-repeat;
+.course-curator__attributes-courses {
+  background: url("../img/curarot/courses.svg") 0 4px / 16px 16px no-repeat;
 }
-.course-curator__attributes-students  {
-	background: url('../img/curarot/students.svg') 0 4px / 16px 16px no-repeat;
+.course-curator__attributes-students {
+  background: url("../img/curarot/students.svg") 0 4px / 16px 16px no-repeat;
 }
 .course-curator__attributes .course-curator__attributes-students {
-	margin: 0px 0px 0px 0px;
-	/* hard withour :last-child)) */
+  margin: 0px 0px 0px 0px;
+  /* hard withour :last-child)) */
 }
 
 /* span */
-.course-curator__rate {}
-.course-curator__courses {}
-.course-curator__students {}
+.course-curator__rate {
+}
+.course-curator__courses {
+}
+.course-curator__students {
+}
 /* end span */
 
 .course-curator__about {
-	margin: 0px 0px 40px 0px;
+  margin: 0px 0px 40px 0px;
 }
 
 .course-curator__contacts {
 }
-
 
 /* footer */
 .footer {
@@ -140,55 +138,52 @@ body {
 .footer__link {
 }
 
-
 /* some blocks */
 
 /* list with checked marks */
 .list-of-items {
 }
 .list-of-items__title {
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 150%;
-	color: #1E212C;
-	margin: 0px 0px 24px 0px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+  margin: 0px 0px 24px 0px;
 }
 .list-of-items__items {
 }
 .list-of-items__items li:not(:last-child) {
-	margin: 0px 0px 4px 0px;
+  margin: 0px 0px 4px 0px;
 }
 .list-of-items__items li::before {
-	content: "";
-	background: url("../img/svg/mark-checked.svg") 0 0 no-repeat;
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	margin-right: 16px;
-	transition: all 0.3s ease 0s;
+  content: "";
+  background: url("../img/svg/mark-checked.svg") 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 16px;
+  transition: all 0.3s ease 0s;
 }
 .list-of-items__items li:hover::before {
-	transform: rotate(10deg);
+  transform: rotate(10deg);
 }
-
 
 /* social  */
 .social {
 }
 .social__link {
-	margin: 0px 24px 0px 0px ;
+  margin: 0px 24px 0px 0px;
 }
 .social__link:focus {
-	outline: none;
+  outline: none;
 }
 .social__link svg {
 }
 .social__link:focus svg {
-	stroke: #000;
-	stroke-width: 1px;
-	stroke-linejoin: round;
-	filter: drop-shadow(2px 2px 2px #0000009e);
-
+  stroke: #000;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  filter: drop-shadow(2px 2px 2px #0000009e);
 }
 .social__facebook {
 }
@@ -203,25 +198,24 @@ body {
 .social__behance,
 .social__twitter,
 .social__linked-in {
-	display: inline-block;
-	text-align: center;
-	max-width: 24px;
-	max-height: 24px;
-	width: 100%;
-	height: 100%;
-	fill: #787A80;
-	
+  display: inline-block;
+  text-align: center;
+  max-width: 24px;
+  max-height: 24px;
+  width: 100%;
+  height: 100%;
+  fill: #787a80;
 }
 
 .social__facebook:hover,
 .social__behance:hover,
 .social__twitter:hover,
 .social__linked-in:hover {
-	fill: #FF3F3A;
+  fill: #ff3f3a;
 }
 .social__facebook:hover:focus svg,
 .social__behance:hover:focus svg,
 .social__twitter:hover:focus svg,
-.social__linked-in:hover:focus svg{
-	stroke: rgba(0, 0, 0, 0);
+.social__linked-in:hover:focus svg {
+  stroke: rgba(0, 0, 0, 0);
 }

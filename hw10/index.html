@@ -12,11 +12,11 @@
 <body>
 	<header class="header">
 		<div class="header__container">
-			<h1>Practice of BEM methodology</h1>
+			<h1 class="header__title my-title">Practice of BEM methodology</h1>
 		</div>
 	</header>
 	<main class="page">
-		<div class="blog">
+		<article class="blog">
 			<div class="blog__container">
 				<article class="single-post">
 					<div class="single-post__container">
@@ -29,7 +29,7 @@
 							<source srcset="img/pic.jfif.webp" type="image/webp">
 							<img src="img/pic.jfif" alt="work place">
 						</picture>
-						<div class="single-post__text-body">
+						<div class="single-post__text-body list-with-items">
 							<h3>Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. </h3>
 							<p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
 							<p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
@@ -43,7 +43,7 @@
 								<li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
 								<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
 							</ul>
-							<p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+							<p>Enim, vel m assa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
 						</div>
 					</div>
 				</article>
@@ -53,7 +53,70 @@
 					</div>
 				</aside>
 			</div>
-		</div>
+		</article>
+
+		<article class="greeting">
+			<div class="greeting__container">
+				<h2 class="greating__title my-title">
+					main block with BEM methodology implementations
+				</h2>
+			</div>
+		</article>
+
+		<article class="why-createx">
+			<div class="why-createx__container">
+				<div class="why-createx__image-block">
+					<picture class="why-createx__picture">
+						<source srcset="img/why-createx.webp" type="image/webp">
+						<img src="img/why-createx.jfif" alt="why we are">
+					</picture>
+				</div>
+				<div class="why-createx__text-block list-with-items">
+					<p class="why-createx__sup-title sup-title-text">Who we are</p>
+					<h2 class="why-createx__title title">Why Createx?</h2>
+					<ul class="why-createx__list ">
+						<li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+						<li>Vulputate placerat amet pulvinar lorem nisl.</li>
+						<li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+						<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+						<li>Tincidunt sagittis neque sem ac eget.</li>
+						<li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+					</ul>
+					<button class="why-createx__button button">More about us</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="courses">
+			<div class="courses__container">
+				<div class="courses__top">
+					<div class="courses__top-text">
+						<p class="courses__top-sup-title sup-title-text">Who we are</p>
+						<h2 class="courses__top-title title">Why Createx?</h2>
+					</div>
+					<a class="courses__top-view-all button button-link" href="#">View all courses</a>
+				</div>
+				<div class="courses__cards">
+					<a class="courses__card author-card" href="#">
+						<div class="author-card__block">
+							<picture>
+								<source srcset="img/authors/Jerome_Bell.webp" type="image/webp">
+								<img src="img/authors/Jerome_Bell.jpg" alt="Jerome Bell photo">
+							</picture>
+							<div class="author-card__side-block">
+								<a class="author-card__badge author-card__badge--marketing">Marketing</a>
+								<h4 class="author-card__title">The Ultimate Google Ads Training Course</h4>
+								<div class="author-card__info">
+									<span class="author-card__price">$100</span>
+									<span class="author-card__author">by Jerome Bell</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</article>
 	</main>
 	<footer class="footer">
 
