@@ -34,6 +34,7 @@ body {
 .header {
 }
 .header__container {
+  text-align: center;
 }
 
 .header__title {
@@ -46,6 +47,14 @@ body {
   border-radius: 50px;
 }
 
+.header__ling-game {
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 3px 10px;
+  text-align: center;
+  color: yellow;
+  background-color: rgba(0, 0, 255, 0.154);
+}
 /* main block */
 .main-page {
 }
@@ -125,3 +134,137 @@ body {
 }
 .footer__container {
 }
+
+/* game */
+
+.block {
+}
+.block:hover .block__item {
+  visibility: visible;
+  opacity: 1;
+}
+.block__item {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.practice {
+  padding-top: 100px;
+  border-top: 1px solid red;
+}
+.practice__container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.practice__header {
+  text-align: center;
+  font-size: 40px;
+}
+.practice__header::before {
+  content: "";
+  background: url(../img/little-game/border-arrow.png) 0 0 / 30px 30px repeat-x;
+  height: 30px;
+  display: block;
+}
+.practice__header::after {
+  content: "";
+  background: url(../img/little-game/border-arrow1.png) 0 0 / 30px 30px repeat-x;
+  height: 30px;
+  display: block;
+}
+
+.practice__header span {
+  color: rgb(114, 0, 0);
+  text-shadow: 1px 1px 3px rgba(143, 7, 7, 0.735);
+}
+.practice__game {
+}
+.kill-putin {
+}
+.practive__container {
+  max-width: 1400px;
+  width: 100%;
+}
+.kill-putin__body-block {
+}
+.kill-putin__body {
+  position: relative;
+}
+.kill-putin__parts {
+  padding: 30px;
+  border: 5px solid yellow;
+  outline: 5px solid blue;
+  max-height: 500px;
+  position: absolute;
+}
+.kill-putin__piece {
+}
+.kill-putin__buttons {
+  padding-top: 20px;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  height: 510px;
+}
+.kill-putin__buttons a {
+  display: block;
+  padding: 5px;
+  border: 2px solid blue;
+  border-bottom: 2px solid yellow;
+  border-radius: 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(240, 237, 1, 1) 12%,
+    rgba(0, 31, 255, 1) 98%
+  );
+  transition: all 0.2s ease 0s;
+}
+.kill-putin__buttons a:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.kill-putin__buttons a.finish {
+  margin: 40px 0px;
+}
+.kill-putin__buttons a:last-child {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.kill-putin__buttons a:hover {
+  transform: rotate(-1deg);
+  background: linear-gradient(
+      0deg,
+      rgba(240, 1, 1, 0.1) 12%,
+      rgba(255, 0, 0, 0.1) 98%
+    ),
+    linear-gradient(0deg, rgba(240, 237, 1, 1) 12%, rgba(0, 31, 255, 1) 98%);
+  box-shadow: 5px 5px 10px 10px rgba(240, 237, 1, 0.88);
+}
+
+#a {
+  z-index: 0;
+}
+#b:target {
+  display: none;
+}
+#c:target {
+  display: none;
+}
+#d:target {
+  display: none;
+}
+#e:target {
+  display: none;
+}
+#f:target {
+  display: block;
+}
+#f {
+  z-index: 1;
+  display: none;
+}
+
+/* pel */
