@@ -17,6 +17,111 @@ body {
 }
 
 .wrapper {
+  overflow: hidden;
   min-height: 100%;
+  background: url("../img/road.jpg") center / cover;
 }
 
+.wrapper {
+}
+.wrapper:hover .header__title {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.078);
+  transition: all 2s ease 0s;
+}
+
+/* header block */
+.header {
+}
+.header__container {
+}
+
+.header__title {
+  color: transparent;
+  font-size: 36px;
+  background-color: transparent;
+  position: absolute;
+  margin-top: 50px;
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+
+/* main block */
+.main-page {
+}
+.car {
+}
+.car__container {
+  min-height: 100vh;
+}
+.car__container:hover .car__body {
+  left: -1500px;
+  transition: all 8s ease 0s;
+}
+.car__container:hover .car__body {
+  transform: rotate(360deg);
+}
+.car__container:hover .construct__wheel {
+  transform: rotate(-360deg);
+}
+/* have fun) */
+
+.car__body {
+  position: relative;
+  padding-top: 50%;
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 290px;
+  top: 100px;
+  left: 1500px;
+}
+.construct {
+  /*width: 100%;
+	height: 100%;*/
+  position: relative;
+}
+.construct svg {
+  position: absolute;
+}
+.construct__main-body {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.construct__bottom-body {
+  bottom: 0;
+  left: -28px;
+  z-index: 2;
+}
+.construct__top-body {
+  bottom: 91px;
+  right: 108px;
+  z-index: 0;
+}
+.construct__back-lights {
+  bottom: 38px;
+  right: 14px;
+  z-index: 3;
+}
+.construct__front-lights {
+  bottom: 35px;
+  left: -16px;
+  z-index: 3;
+}
+.construct__wheel {
+  top: -70px;
+  z-index: 4;
+  transition: all 8s ease 0s;
+}
+.construct__wheel--front {
+  left: 40px;
+}
+.construct__wheel--back {
+  right: 60px;
+}
+
+/* footer block */
+.footer {
+}
+.footer__container {
+}
