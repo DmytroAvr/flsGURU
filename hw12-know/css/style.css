@@ -1,0 +1,138 @@
+@import url(reset.css);
+
+/* main settings */
+[class*="__container"] {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  background-color: rgb(51, 51, 51);
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  padding: 30px;
+}
+
+/* blocks */
+
+/* main styles */
+
+/* header */
+.header {
+}
+
+/* main */
+.main {
+}
+
+/* figure1 */
+.figure {
+}
+.figure__container {
+  position: relative;
+  display: inline-block;
+}
+.figure__item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding-top: 90px;
+}
+.figure__item--green {
+  background: url("https://loremflickr.com/250/250") center / cover;
+  transition: all 0.3s ease 0s;
+}
+.figure__container:hover .figure__item--green {
+  background-color: rgba(22, 028, 0, 0.2);
+  transform: rotate(360deg) rotateX(60deg) skew(10deg, 10deg);
+  /*transform: skew(10deg, 10deg);*/
+
+  /* change point of transformationaa */
+  transform-origin: 0 0;
+  /*transform-origin: 10px 10px;*/
+  /*transform-origin: 10% 10%;*/
+  /*transform-origin: bottom right;*/
+  /*transform-origin: bottom; WILL BE IN CENTER*/
+}
+.figure__item--red {
+  background: url("https://loremflickr.com/200/200") center / cover;
+  transition: all 0.3s ease 0s;
+}
+.figure__item--transform {
+  /*transform: translate(100%, 100%);*/
+}
+.figure__some-text {
+  color: rgba(255, 255, 255, 0.362);
+  display: inline-block;
+}
+.figure__some-text:hover {
+  transform: scale(2, 2);
+  color: black;
+  padding-top: 140px;
+}
+.figure__some-text--position {
+  padding-top: 200px;
+}
+
+/* figure2 */
+.figure2 {
+}
+.figure2__container {
+  position: relative;
+  display: inline-block;
+
+  perspective: 400px;
+  transform-style: preserve-3d;
+  /* add to relative objects */
+  /*perspective: 400px;
+  perspective-origin: 100px 100px;*/
+}
+.figure2__item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding-top: 90px;
+}
+.figure2__item--first {
+  background: url("https://loremflickr.com/250/251") center / cover;
+  transition: all 0.3s ease 0s;
+}
+.figure2__container:hover .figure2__item--second {
+  /*transform: translate3d(10px, 10px, 10px);*/
+  /*transform: scale3d(1.1, 1.1, 1);*/
+  /*transform: rotate3d(2, 2, 2, 30deg);*/
+  transform: rotateX(180deg);
+  /*задати для батька perspective: 400px;*/
+
+  backface-visibility: hidden;
+}
+.figure2__item--second {
+  transition: all 1s ease 0s;
+  background: url("https://loremflickr.com/200/201") center / cover;
+}
+.figure2__item--transform {
+}
+.figure2__some-text {
+  color: rgba(255, 255, 255, 0.362);
+  display: inline-block;
+}
+.figure2__some-text:hover {
+}
+.figure2__some-text--position {
+  padding-top: 200px;
+}
+
+/* footer */
+.footer {
+}
