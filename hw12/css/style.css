@@ -166,6 +166,7 @@ body {
 .all-transform {
 }
 .all-transform__container {
+  perspective: 400px;
 }
 .all-transform__container > h2 {
   text-align: center;
@@ -205,7 +206,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+/*------------------------------------- */
+.item__text {
+}
 /* more */
 .item::before {
 }
@@ -233,30 +236,75 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.169);
 }
 
-.item--translate:hover {
+.item--rotate:hover {
+  transform: rotate(160deg);
 }
-
-.item__text {
+.item--rotate:hover .item__text {
+  transform: rotate(200deg);
 }
-.item--rotate {
+.item--scale:hover {
+  transform: scale(1.2);
 }
-.item--scale {
+.item--skew:hover {
+  transform: skew(10deg, 5deg);
 }
-.item--skew {
+.item--skew:hover .item__text {
+  transform: skew(-10deg, -5deg);
 }
-.item--matrix {
+.item--matrix:hover {
+  transform: matrix(0.94, -0.05, -0.03, 1.7, 19, -24);
 }
-.item--transform-origin {
+.item--transform-origin:hover {
+  transform: rotate(30deg);
+  transform-origin: top;
 }
-.item--perspective {
+.item--perspective:hover {
+  transform: rotateY(30deg);
 }
-.item--translate3d {
+.item--translate3d:hover {
+  transform: translate3d(50px, 20px, 3px);
 }
-.item--rotate3d {
+.item--rotate3d:hover {
+  transform: rotate3d(2, 2, 2, 30deg);
 }
-.item--scale3d {
+.item--scale3d:hover {
+  transform: scale3d(1.2, 1.5, 1.2);
 }
-.item--transform-style {
+.item--transform-style:hover {
+  transform: rotateY(20deg);
+  transform-style: preserve-3d;
 }
 .item--backface-visibility {
+}
+
+.item--backface-visibility {
+  transform-style: preserve-3d;
+  /* 1 создали обьём for relative*/
+}
+.item__front,
+.item__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  /* лицо и зад позиционировали в два слоя */
+  backface-visibility: hidden;
+  /* скрыли просвет блока "сзади" */
+}
+.item__front {
+  z-index: 2;
+  /*  вывели перед явно в перед. наверняка*/
+}
+.item__back {
+  transform: rotateY(-180deg);
+  background-color: rgba(210, 52, 12, 0.5);
+
+  /* отобразили содержимое блока. так как после поворота он будет +- 180deg*/
+}
+
+.item:hover.item--backface-visibility {
+  transform: rotateY(-180deg);
+  /* при hover поварачиваем весь родитель */
 }
