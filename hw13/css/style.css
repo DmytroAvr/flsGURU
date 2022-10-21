@@ -61,6 +61,7 @@ body {
 
   /* animation */
   animation: text-show 2s linear forwards;
+  animation-iteration-count: 200;
 }
 
 @keyframes text-show {
@@ -102,7 +103,8 @@ body {
   stroke-width: 30;
   stroke-dashoffset: 400;
   stroke-dasharray: 400;
-  animation: draw 2s linear forwards;
+  animation: draw 5s linear forwards;
+  animation-iteration-count: 200;
 }
 
 @keyframes draw {
