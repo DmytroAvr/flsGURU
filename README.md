@@ -20,6 +20,16 @@
 <a href="hw10">hw10</a>
 -->
 
+placeholder
+
+<http://via.placeholder.com/640x360/333/aaa>
+
+<https://loremflickr.com/200/200>
+<http://placeimg.com/640/360/any>
+<https://picsum.photos/640/360>
+
+<https://angrytools.com/css-grid/>
+
 <p>how to markdonwn README.md:</p>
 <https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>
 
