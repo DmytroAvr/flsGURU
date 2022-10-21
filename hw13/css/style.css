@@ -25,6 +25,12 @@ body {
 
 /* blocks */
 .title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 1px 6px 7px rgb(255, 251, 1);
+  color: blue;
 }
 
 /* header */
@@ -33,6 +39,9 @@ body {
 .header__container {
 }
 .header__title {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* main */
@@ -43,7 +52,50 @@ body {
 }
 .svg-animation__container {
 }
+.svg-animation__title {
+  padding-top: 20px;
+  margin: 0px auto 30px;
+  overflow: hidden;
+  width: 100px;
+  height: 60px;
+
+  /* animation */
+  animation: text-show 2s linear forwards;
+}
+
+@keyframes text-show {
+  0% {
+    width: 0;
+    color: rgba(255, 255, 0, 0.3);
+    text-shadow: 1px 6px 7px blue;
+  }
+  20% {
+    width: 100px;
+    color: yellow;
+    text-shadow: 1px 6px 7px blue;
+  }
+  40% {
+    width: 200px;
+    color: yellow;
+    text-shadow: 1px 6px 7px blue;
+  }
+  60% {
+    width: 300px;
+    color: yellow;
+    text-shadow: 1px 6px 7px blue;
+  }
+  100% {
+    width: 400px;
+    color: yellow;
+    text-shadow: 1px 6px 7px blue;
+  }
+}
+
 .svg-animation__body {
+}
+.svg-animation__body svg {
+  display: block;
+  margin: 0 auto;
 }
 .svg-animation__body path {
   stroke: green;
@@ -70,6 +122,202 @@ body {
     stroke: rgba(248, 244, 2, 1);
     stroke-dashoffset: 0;
   }
+}
+
+/* space map */
+.space {
+}
+.space__container {
+}
+.space__title {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0px 0px 30px 0px;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.space__block-map {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.space__object {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.space__object img {
+  max-width: 100px;
+  transition: all 2s ease 0s;
+}
+/*.space__object:hover img {
+  transform: scale(1.2) rotate(160deg);
+}*/
+.space__object:nth-child(even):hover img {
+  transform: scale(1.2) rotate(160deg);
+}
+.space__object:nth-child(odd):hover img {
+  transform: scale(1.2) rotate(-160deg);
+}
+.space__object:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  height: 600px;
+  width: 100px;
+  border-right: 2px solid red;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.space__object:not(:first-child) img {
+  position: absolute;
+  top: -50px;
+}
+@keyframes move-planets {
+  0% {
+    top: -300px;
+    left: -20px;
+  }
+  9% {
+    top: -250px;
+    left: -15px;
+  }
+  18% {
+    top: -200px;
+    left: -10px;
+  }
+  27% {
+    top: -150px;
+    left: -6px;
+  }
+  36% {
+    top: -100px;
+    left: -4px;
+  }
+  45% {
+    top: -50px;
+    left: -2px;
+  }
+  54% {
+    top: 0px;
+    left: -2px;
+  }
+  63% {
+    top: 50px;
+    left: -5px;
+  }
+  72% {
+    top: 100px;
+    left: -12px;
+  }
+  81% {
+    top: 150px;
+    left: -18px;
+  }
+  90% {
+    top: 200px;
+    left: -22px;
+  }
+  100% {
+    top: 250px;
+    left: -25px;
+  }
+}
+
+.space__img {
+}
+
+/* planets */
+.space__sun {
+  left: 0;
+  top: 50%;
+}
+.space__sun img {
+  /*animation: happy 3s linear 1s infinite alternate slidein;*/
+  animation: happy 3s linear infinite alternate;
+}
+@keyframes happy {
+  0% {
+    transform: rotate3d(1, 1, 1, -30deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 1, 10deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 30deg);
+  }
+}
+
+.space__mercury {
+  left: 150px;
+}
+.space__mercury img {
+  animation: move-planets 2s linear forwards;
+  animation-iteration-count: 200;
+}
+
+.space__venus {
+  left: 250px;
+}
+.space__venus img {
+  animation: move-planets 4s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__earth {
+  left: 350px;
+}
+.space__earth img {
+  animation: move-planets 5s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__mars {
+  left: 450px;
+}
+.space__mars img {
+  animation: move-planets 10s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__jupiter {
+  left: 550px;
+}
+.space__jupiter img {
+  animation: move-planets 10s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__saturn {
+  left: 650px;
+  z-index: 2;
+}
+.space__saturn img {
+  animation: move-planets 20s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__uranus {
+  left: 750px;
+}
+.space__uranus img {
+  animation: move-planets 40s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__neptune {
+  left: 850px;
+}
+.space__neptune img {
+  animation: move-planets 80s linear forwards;
+  animation-iteration-count: 200;
+}
+.space__pluto {
+  left: 950px;
+}
+.space__pluto img {
+  animation: move-planets 160s linear forwards;
+  animation-iteration-count: 200;
 }
 
 /* footer */
