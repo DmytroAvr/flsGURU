@@ -1,7 +1,9 @@
 @import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Oswald:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kanit:regular,&display=swap");
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Kanit, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -9,7 +11,7 @@ body {
 }
 [class*="__container"] {
   max-width: 1220px;
-  padding: 10px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 .wrapper {
@@ -23,24 +25,71 @@ body {
 
 /* blocks */
 .logo {
+  font-family: Oswald, serif;
   padding: 10px 15px;
   text-transform: uppercase;
   font-size: 25px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
   white-space: nowrap;
+  transition: all 0.3s ease 0s;
+}
+.logo:hover {
+  transform: scale(1.01);
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
 }
 .button {
   white-space: nowrap;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px black;
+  transition: all 0.3s ease 0s;
+  /* test */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
-.button--sign-in {
+.button:hover {
+  animation-play-state: paused;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.button:hover {
+  background-color: rgba(238, 130, 238, 0.7);
+}
+.button--sign-in::after {
+  content: "\25ba";
+  font-size: 15px;
+  padding-left: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.button--sign-in:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.button--sign-in:active {
+  margin-bottom: -2px;
+  box-shadow: 1px 1px 2px black;
 }
 
 /* main structures  */
 .header {
+  background-color: rgba(0, 128, 0, 0.1);
 }
 .header__container {
   height: 100px;
-  background-color: green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,7 +147,8 @@ body {
   /*display: block;*/
   width: 3px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
   transition: all 0.3s ease 0s;
   top: 0;
   right: 0;
@@ -109,11 +159,13 @@ body {
   top: 3px;
   right: -5px;
   rotate: -30deg;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .list-menu__item:hover::before {
   top: 3px;
   right: -14px;
   rotate: 30deg;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .list-menu__item:hover > .list-menu__sub-menu {
@@ -123,8 +175,7 @@ body {
 .list-menu__sub-menu li {
   padding: 5px 10px;
 }
-.list-menu__item:hover li:first-child {
-  background-color: rgba(255, 255, 255, 0.294);
+.list-menu__item:hover {
 }
 .list-menu__sub-menu li:hover {
   background-color: rgba(255, 255, 255, 0.294);
@@ -139,9 +190,199 @@ body {
 .header__button {
 }
 
-/* main */
+/* main ===============
+======================
+=====================*/
 .main {
 }
+
+/* buttons arrow */
+
+.justify-block {
+}
+.justify-block__container {
+  padding-top: 30px;
+}
+.justify-block__text {
+  display: flex;
+  gap: 5px;
+  margin: 0px 0px 15px 0px;
+}
+.justify-block__text span {
+  font-weight: 700;
+}
+.justify-block__row {
+  margin: 0px 0px 30px 0px;
+}
+.justify-block__blocks {
+  background-color: #333;
+  outline: 2px solid red;
+  margin: 0px 0px 30px 0px;
+}
+
+/* setting display flex */
+.bricks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 80px;
+}
+.bricks__brick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 2px solid red;
+}
+
+/* targets */
+.active {
+}
+.active__justify {
+}
+.active__justify--flex-start:target .bricks {
+  justify-content: flex-start;
+}
+.active__justify--flex-start:target .bricks__brick {
+  border: 2px solid red;
+}
+.active__justify--center:target .bricks {
+  justify-content: center;
+}
+.active__justify--center:target .bricks__brick {
+  border: 2px solid blue;
+}
+.active__justify--space-between:target .bricks {
+  justify-content: space-between;
+}
+.active__justify--space-between:target .bricks__brick {
+  border: 2px solid green;
+}
+.active__justify--space-around:target .bricks {
+  justify-content: space-around;
+}
+.active__justify--space-around:target .bricks__brick {
+  border: 2px solid violet;
+}
+.active__justify--flex-end:target .bricks {
+  justify-content: flex-end;
+}
+.active__justify--flex-end:target .bricks__brick {
+  border: 2px solid greenyellow;
+}
+
+/* buttons */
+.justify-block__buttons {
+}
+.justify-block__justify-buttons {
+}
+.buttons-justify {
+}
+.buttons-justify a {
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgba(41, 179, 23, 0.3);
+  padding: 12px 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+.buttons-justify a:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.buttons-justify__flex-start:visited {
+  border: 1px solid red;
+}
+.buttons-justify__center:visited {
+  border: 1px solid blue;
+}
+.buttons-justify__space-between:visited {
+  border: 1px solid green;
+}
+.buttons-justify__space-arround:visited {
+  border: 1px solid violet;
+}
+.buttons-justify__flex-end:visited {
+  border: 1px solid greenyellow;
+}
+
+/* fix gap */
+
+.fix-gap {
+}
+.fix-gap__container {
+  margin: 0px auto 30px;
+}
+.fix-gap__header {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  font-size: 30px;
+}
+.fix-gap__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+.fix-gap__block {
+  flex: 0 1 33.333%;
+  padding: 0 10px;
+}
+.fix-gap__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+  width: 100%;
+  height: 100px;
+  border: 1px solid yellowgreen;
+}
+
+/* some card  */
+.cards {
+}
+.cards__container {
+}
+.cards__items {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  margin: 0 -10px;
+}
+.card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  flex: 0 1 33.333%;
+  margin: 0 10px;
+}
+.card__image {
+}
+.card__text-block {
+}
+.card__header {
+}
+.card__text {
+}
+.card__button {
+}
+.button {
+}
+
+/* footer block */
 .footer {
 }
 .footer__container {
