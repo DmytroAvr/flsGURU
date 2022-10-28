@@ -403,7 +403,7 @@ body {
   transform: translateY(-100%);
 }
 .card__item:hover {
-  transform: scale(101%);
+  transform: scale(1.01);
 }
 .card__image {
   margin: 0px 0px 15px 0px;
