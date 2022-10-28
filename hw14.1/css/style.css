@@ -407,9 +407,12 @@ body {
 }
 .card__image {
   margin: 0px 0px 15px 0px;
-  max-width: 100%;
+  max-width: 400px;
   max-height: 300px;
-  text-align: center;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__image img {
   width: 100%;
