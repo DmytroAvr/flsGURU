@@ -10,9 +10,11 @@ body {
 }
 
 [class*="__container"] {
-  max-width: 1220px;
-  padding: 10px 0;
+  max-width: 1260px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* best practice  15px */
 }
 
 .wrapper {
