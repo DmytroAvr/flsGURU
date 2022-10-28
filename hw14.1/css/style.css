@@ -159,13 +159,13 @@ body {
 .list-menu__item:hover::after {
   top: 3px;
   right: -5px;
-  rotate: -30deg;
+  transform: rotate(-30deg);
   background-color: rgba(0, 0, 0, 0.4);
 }
 .list-menu__item:hover::before {
   top: 3px;
   right: -14px;
-  rotate: 30deg;
+  transform: rotate(30deg);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
