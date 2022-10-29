@@ -1,0 +1,17 @@
+@import url(reset.css);
+@import url(style.css);
+
+.button {
+  font-weight: 700;
+  /*line-height: 1.5;*/
+  letter-spacing: 0.5px;
+  color: #fff;
+  border-radius: 4px;
+  padding: 18px 40px;
+}
+.button--orange {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+
+.button--transparent {
+}
