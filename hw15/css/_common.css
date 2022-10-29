@@ -1,17 +1,40 @@
 @import url(reset.css);
 @import url(style.css);
+/*settings */
 
+.space {
+  height: 30px;
+}
+
+/* ! munu  */
+.menu {
+}
+.menu__items {
+}
+.menu__item {
+}
+.menu__link {
+  font-weight: 700;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+/* ! buttons */
 .button {
   font-weight: 700;
+  font-size: 16px;
   /*line-height: 1.5;*/
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 4px;
-  padding: 18px 40px;
+  padding: 16px 40px;
 }
 .button--orange {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
 }
-
 .button--transparent {
+  padding: 17px 40px;
+  color: #ff3f3a;
+  border: 1px solid #ff3f3a;
 }
