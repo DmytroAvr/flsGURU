@@ -1,6 +1,5 @@
-@import url(_reset.css);
-@import url(_common.css);
-
+@import url(reset.css);
+@import url(common.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
 
 [class*="__container"] {
