@@ -364,6 +364,26 @@ top: 133 / 1080 * 100
   height: 22px;
   top: 0;
   left: 0;
+  animation: ring-rotate 1s ease 0s infinite normal both;
+  animation-play-state: paused;
+}
+.list-items li:hover::before {
+  /*animation: ring-rotate 1s ease 0s 1 1s both;*/
+  animation-play-state: running;
+}
+@keyframes ring-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(30deg);
+  }
+  66% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .who-we-are__decorations div {
@@ -422,84 +442,3 @@ top: 133 / 1080 * 100
   flex: 0 0 600px;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.cards__body {
-  display: flex;
-  gap: 32px;
-
-  border: 1px solid #e5e8ed;
-  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
-    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
-    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
-  border-radius: 4px;
-}
-.cards__img {
-  flex: 0 0 214px;
-}
-.cards__img img {
-  width: 100%;
-}
-.cards__text-body {
-}
-.card-info {
-}
-.card-info__body {
-  padding-top: 32px;
-  display: flex;
-  flex-direction: column;
-}
-.card-info__body > *:not(:last-child) {
-  margin-bottom: 20px;
-}
-.card-info__badge {
-  align-self: flex-start;
-}
-.card-info__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #1e212c;
-}
-.card-info__author-block {
-  line-height: 1.5;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.card-info__author-block span {
-  font-weight: 700;
-  font-size: 18px;
-  color: #ff4242;
-}
-.card-info__author-block span::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 16px;
-  background: #787a80;
-  margin-left: 8px;
-}
-.card-info__author-block p {
-  font-size: 18px;
-  color: #787a80;
-}
-
-.badge {
-  padding: 1px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #fff;
-}
-.badge--marketing {
-  background: #03cea4;
-}
-.badge--management {
-  background: #5a87fc;
-}
