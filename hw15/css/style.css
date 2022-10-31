@@ -1,5 +1,4 @@
 @import url(reset.css);
-@import url(common.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
 
 [class*="__container"] {
@@ -68,8 +67,6 @@ body {
   align-items: center;
   gap: 36px;
 }
-.actions__button {
-}
 
 .actions__auth {
   background: url("../img/icons/user.svg") 0 4px no-repeat;
@@ -117,6 +114,9 @@ body {
   align-self: center;
 }
 .info {
+}
+.info *:not(:last-child) {
+  margin: 0px 0px 40px 0px;
 }
 .info__play {
   font-weight: 700;
@@ -201,6 +201,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .achieves {
 }
@@ -375,7 +376,7 @@ top: 133 / 1080 * 100
   0% {
     transform: rotate(0deg);
   }
-  33% {
+  40% {
     transform: rotate(30deg);
   }
   66% {
@@ -441,4 +442,3 @@ top: 133 / 1080 * 100
 .featured__block-card .cards__body {
   flex: 0 0 600px;
 }
-

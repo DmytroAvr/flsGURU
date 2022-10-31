@@ -20,19 +20,66 @@
 .button {
   font-weight: 700;
   font-size: 16px;
-  /*line-height: 1.5;*/
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 4px;
   padding: 16px 40px;
+  line-height: 1.25;
+  position: relative;
+}
+.button span {
+  position: relative;
+  z-index: 1;
 }
 .button--orange {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
 }
+.button--orange::before {
+  content: "";
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  transition: opacity 0.3s ease 0s;
+  background: linear-gradient(
+    55.95deg,
+    rgb(164, 39, 34) 0%,
+    rgb(173, 65, 3) 100%
+  );
+  opacity: 0;
+}
+.button--orange:hover::before {
+  opacity: 1;
+}
+
+.button--transparent:hover {
+  color: #fff;
+}
 .button--transparent {
-  padding: 17px 40px;
   color: #ff3f3a;
   border: 1px solid #ff3f3a;
+
+  padding: 15px 40px;
+}
+.button--transparent::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease 0s;
+}
+.button--transparent:hover::before {
+  opacity: 1;
 }
 
 /* !cards of course */
@@ -53,7 +100,15 @@
     0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
+  overflow: hidden;
 }
+.cards__body:hover {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.1),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.08),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.07);
+}
+
 .cards__img {
   flex: 0 0 214px;
 }
