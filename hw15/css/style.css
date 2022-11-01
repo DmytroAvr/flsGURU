@@ -187,7 +187,6 @@ body {
 }
 .hero__buttons {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 20px;
