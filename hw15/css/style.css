@@ -8,11 +8,11 @@
   margin: 0 auto;
 }
 body {
-  font-family: Lato, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #424551;
-  line-height: 1.6;
+	font-family: Lato, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #424551;
+	line-height: 1.6;
 }
 .wrapper {
   min-height: 100%;
