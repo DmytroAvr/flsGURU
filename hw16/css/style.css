@@ -40,28 +40,34 @@ body {
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-  position: fixed;
+  /*position: fixed;*/
 }
 .heder__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 60px;
 }
 .header__logo {
+  flex: 0 0 130px;
 }
 .header__menu {
+  flex-grow: 1;
 }
 .header__menu ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 10px;
 }
 .header__actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 15px;
 }
 
 .logo {
@@ -83,6 +89,19 @@ body {
 .actions__button {
 }
 .actions__login {
+  font-weight: 700;
+  display: inline-block;
+  height: 25px;
+}
+.actions__login::before {
+  content: "";
+  background: url("../img/icons/user.svg") 0 0 no-repeat;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 18px;
+  padding-right: 10px;
 }
 
 .button {
