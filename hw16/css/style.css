@@ -119,7 +119,7 @@ body {
 }
 .questions__img {
   flex: 0 1 35.3%;
-  align-self: center;
+  align-self: flex-start;
 }
 .questions__img img {
   width: 100%;
@@ -182,6 +182,10 @@ body {
 }
 .forms-block__input-row--message {
   flex: 0 1 100%;
+}
+.forms-block__input-row--message textarea {
+  height: 150px;
+  resize: vertical;
 }
 
 .forms-block__input-row {
