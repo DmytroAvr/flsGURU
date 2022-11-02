@@ -6,6 +6,12 @@
   white-space: nowrap;
   border-radius: 4px;
   letter-spacing: 0.5px;
+  box-shadow: 1px 4px 5px 2px rgb(0 0 0 / 20%);
+  transition: all 0.2s ease 0s;
+}
+.button:active {
+  transform: translate(0px, 2px);
+  box-shadow: 1px 2px 3px 2px rgb(0 0 0 / 20%);
 }
 .button--orange {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -17,6 +23,8 @@
   position: relative;
 }
 .button--orange::before {
+  border-radius: 4px;
+
   content: "";
   position: absolute;
   top: 0;

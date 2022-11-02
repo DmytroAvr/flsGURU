@@ -186,6 +186,7 @@ body {
 .forms-block__input-row--message textarea {
   height: 150px;
   resize: vertical;
+  /*resize: none;    better leave vertical// !!be careful*/
 }
 
 .forms-block__input-row {
