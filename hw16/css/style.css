@@ -264,8 +264,122 @@ input:required:invalid::before {
   width: 100%;
 }
 /* radio */
+.forms-block__input-row {
+}
+.forms-block__input-row--question-mood {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+.forms-block__input-row.forms-block__input-row--question-mood * {
+  margin-bottom: 0;
+}
+.mood-question {
+}
+.mood-question *:not(:first-child) {
+  margin-bottom: 30px;
+}
+.mood-question__title {
+  flex: 0 1 100%;
+  text-align: center;
+}
+.mood-question__line {
+  font-size: 0;
+}
 
+/* mood smiles chacked */
+
+.mood-question__line--angry {
+  /*display: inline-flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex: 0 1 340px;*/
+}
+.mood-question__line--expressionless input,
+.mood-question__line--happy input,
+.mood-question__line--heart-eyes input,
+.mood-question__line--angry input {
+  width: 30px;
+  height: 0;
+  position: relative;
+}
+
+.mood-question__line input::before,
+.mood-question__line input::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  /* /??? */
+  transition: all 0.3s ease 0s;
+}
+
+.mood-question__line input:checked::after {
+  opacity: 1;
+}
+.mood-question__line input:checked::before {
+  opacity: 0;
+}
+
+.mood-question__line--angry input::before {
+  background: url("../img/icons/mood/smile-angry--clear.svg") 0 0 no-repeat;
+}
+.mood-question__line--angry input::after {
+  background: url("../img/icons/mood/smile-angry--fill.svg") 0 0 no-repeat;
+  opacity: 0;
+}
+.mood-question__line--expressionless input::before {
+  background: url("../img/icons/mood/smile-expressionless--clear.svg") 0 0
+    no-repeat;
+}
+.mood-question__line--expressionless input::after {
+  background: url("../img/icons/mood/smile-expressionless--fill.svg") 0 0
+    no-repeat;
+  opacity: 0;
+}
+.mood-question__line--happy input::before {
+  background: url("../img/icons/mood/smile-happy-clear.svg") 0 0 no-repeat;
+}
+.mood-question__line--happy input::after {
+  background: url("../img/icons/mood/smile-happy-fill.svg") 0 0 no-repeat;
+  opacity: 0;
+}
+.mood-question__line--heart-eyes input::before {
+  background: url("../img/icons/mood/smile-heart-eyes--clear.svg") 0 0 no-repeat;
+}
+.mood-question__line--heart-eyes input::after {
+  background: url("../img/icons/mood/smile-heart-eyes--fill.svg") 0 0 no-repeat;
+  opacity: 0;
+}
+
+/*
+*/
+/* snippet */
+/* settings*/
+/* snippet */
+/* 
+.mood-question__line--expressionless ,
+.mood-question__line--happy ,
+.mood-question__line--heart-eyes ,
+*/
+
+.mood-question__line--expressionless {
+}
+.mood-question__line--happy {
+}
+.mood-question__line--heart-eyes {
+}
 /* radio */
+
 footer {
   background: #333;
   color: rgb(166, 154, 154);
