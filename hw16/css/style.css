@@ -107,6 +107,11 @@ body {
   position: absolute;
 }
 
+/* question */
+/* question */
+/* question */
+/* question */
+/* question */
 .questions {
   padding-top: 90px;
   padding-bottom: 180px;
@@ -130,9 +135,11 @@ body {
 .actions-block {
 }
 .actions-block > *:not(:last-child) {
-  margin: 0px 0px 40px 0px;
+  margin-bottom: 40px;
 }
 .actions-block__block-title {
+  margin-right: -5px;
+  margin-left: -5px;
 }
 
 .actions-block__block-forms {
@@ -142,10 +149,12 @@ body {
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 24px;
-  margin-left: -10px;
-  margin-right: -10px;
 
+  margin-right: -5px;
+  margin-left: -5px;
+  /*
   padding-right: 10px;
+  */
 }
 .actions-block__block-forms textarea {
   width: 100%;
@@ -192,23 +201,51 @@ body {
 .forms-block__input-row {
 }
 .forms-block__input-row--checkbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 0 1 340px;
 }
 .forms-block__input-row--checkbox label {
   padding-left: 28px;
 }
+
+/* *input settings*/
 .forms-block__input-row--checkbox input {
-  opacity: 0;
   width: 0;
   height: 0;
+  position: relative;
+}
+
+.forms-block__input-row--checkbox input::before,
+.forms-block__input-row--checkbox input::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+.forms-block__input-row--checkbox input::after {
+  background: url("../img/icons/check.svg") 2px 2px / 12px 10px no-repeat;
+  opacity: 0;
+}
+.forms-block__input-row--checkbox input:checked::after {
+  opacity: 1;
 }
 .forms-block__input-row--checkbox input::before {
   content: "";
   position: absolute;
   display: block;
-  width: 20px;
-  height: 20px;
-  background: #333;
+
+  border: 1px solid #ff3f3a;
+  border-radius: 3px;
 }
+.forms-block__input-row--checkbox input:checked::before {
+  background: #ff3f3a;
+}
+/* * end input settings */
 
 .forms-block__input-row--submit {
   flex: 1 1 auto;
@@ -216,9 +253,15 @@ body {
 .forms-block__input-row--submit button {
   width: 100%;
 }
+/* radio */
 
-.some-space {
-  height: 5000px;
-}
+/* radio */
 footer {
+  background: #333;
+  color: rgb(166, 154, 154);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
