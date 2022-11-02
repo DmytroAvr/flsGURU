@@ -197,20 +197,21 @@ body {
   resize: vertical;
   /*resize: none;    better leave vertical// !!be careful*/
 }
-
 .forms-block__input-row {
 }
+
+
+/* *checkbox settings*/
 .forms-block__input-row--checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
   justify-content: space-between;
   flex: 0 1 340px;
 }
 .forms-block__input-row--checkbox label {
   padding-left: 28px;
+  cursor: pointer;
 }
-
-/* *input settings*/
 .forms-block__input-row--checkbox input {
   width: 0;
   height: 0;
@@ -226,6 +227,7 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 .forms-block__input-row--checkbox input::after {
   background: url("../img/icons/check.svg") 2px 2px / 12px 10px no-repeat;
@@ -245,6 +247,15 @@ body {
 .forms-block__input-row--checkbox input:checked::before {
   background: #ff3f3a;
 }
+
+input:not(:placeholder-shown) {
+  /*border-color: green;*/
+}
+
+input:required:invalid::before {
+  /*background-color: rgb(22, 196, 16);*/
+}
+
 /* * end input settings */
 
 .forms-block__input-row--submit {

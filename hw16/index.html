@@ -45,18 +45,18 @@
 							<p>Any questions?</p>
 							<h2>Drop us a line</h2>
 						</div>
-						<form class="actions-block__block-forms forms-block" action="https://jsonplaceholder.typicode.com/posts">
+						<form class="actions-block__block-forms forms-block" action="https://jsonplaceholder.typicode.com/posts" method="post">
 							<div class="forms-block__input-row forms-block__input-row--first-name">
 								<label for="question-first-name">First Name*</label>
-								<input type="text" name="firstName" id="question-first-name" placeholder="Your first name">
+								<input type="text" name="firstName" id="question-first-name" placeholder="Your first name" required>
 							</div>
 							<div class="forms-block__input-row forms-block__input-row--last-name">
 								<label for="question-last-name">Last Name*</label>
-								<input type="text" name="lastName" id="question-last-name" placeholder="Your last name">
+								<input type="text" name="lastName" id="question-last-name" placeholder="Your last name" required>
 							</div>
 							<div class="forms-block__input-row forms-block__input-row--email">
 								<label for="question-email">Email*</label>
-								<input type="email" name="email" id="question-email" placeholder="Your working email">
+								<input type="email" name="email" id="question-email" placeholder="Your working email" required>
 							</div>
 							<div class="forms-block__input-row forms-block__input-row--phone">
 								<label for="question-phone">Phone</label>
@@ -64,10 +64,10 @@
 							</div>
 							<div class="forms-block__input-row forms-block__input-row--message">
 								<label for="question-message">Message*</label>
-								<textarea name="message" id="questionMessage" cols="30" rows="1" placeholder="Your message"></textarea>
+								<textarea name="message" id="questionMessage" cols="30" rows="1" placeholder="Your message" required></textarea>
 							</div>
 							<div class="forms-block__input-row forms-block__input-row--checkbox">
-								<input type="checkbox" name="questionAgree" id="question-agree">
+								<input type="checkbox" name="questionAgree" id="question-agree" required>
 								<label for="question-agree">I agree to receive communications from Createx Online School</label>
 							</div>
 							<div class="forms-block__input-row forms-block__input-row--submit">
