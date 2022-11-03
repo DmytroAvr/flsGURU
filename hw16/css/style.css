@@ -578,7 +578,7 @@ input:required:invalid::before {
 
   /* ?  */
   position: absolute;
-  top: 8px;
+  top: 3px;
   left: 0;
 }
 .reg-form__input-row--chk input:focus + label::before {
