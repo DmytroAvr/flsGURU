@@ -324,13 +324,10 @@ input:required:invalid::before {
   row-gap: 20px;
   column-gap: 30px;
 }
-.forms-block__input-row.forms-block__input-row--question-mood * {
-  margin-bottom: 0;
-}
 .mood-question {
 }
 .mood-question *:not(:first-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .mood-question__title {
   flex: 0 1 100%;
@@ -506,7 +503,7 @@ input:required:invalid::before {
 .open-reg__form-reg {
 }
 .reg-form {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .reg-form > *:not(:last-child) {
@@ -559,7 +556,7 @@ input:required:invalid::before {
 }
 
 .reg-form__input-row--chk input:checked + label::before {
-  background: #f25924 url("../img/icons/check.svg") center / 70% no-repeat;
+  background: #f25924 url("../img/icons/check.svg") center / 85% no-repeat;
 }
 
 .reg-form__input-row--chk label {
