@@ -114,7 +114,7 @@ body {
 /* question */
 .questions {
   padding-top: 90px;
-  padding-bottom: 180px;
+  padding-bottom: 60px;
 }
 .questions__container {
   display: flex;
@@ -427,6 +427,142 @@ input:required:invalid::before {
 .mood-question__line--heart-eyes {
 }
 /* radio */
+
+.custom-chk {
+  padding-top: 30px;
+}
+
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+
+.training {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.training__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.training__body {
+  margin: 0 auto;
+}
+.training__title {
+}
+.title-block {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+.training__reg {
+}
+.open-reg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.open-reg__body {
+  display: flex;
+  flex-direction: column;
+  padding-right: 48px;
+  padding-left: 48px;
+  flex: 0 1 486px;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16),
+    0px 26px 24px -10px rgba(30, 33, 44, 0.1),
+    0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+}
+.open-reg__wrap {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.open-reg__title {
+  line-height: 1.5;
+  text-align: center;
+}
+.open-reg__title > *:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.title-sing-enter:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+.title-sing-enter h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1e212c;
+}
+.title-sing-enter p {
+  font-size: 14px;
+  color: #787a80;
+}
+
+.open-reg__form-reg {
+}
+.reg-form {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.reg-form > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.reg-form__input-row > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+.reg-form__input-row label {
+  display: inline-block;
+}
+.reg-form__input-row {
+}
+
+.reg-form__input-row input {
+  padding: 11px 16px 12px;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+}
+.reg-form__input-row input::placeholder {
+  color: #9a9ca5;
+}
+.reg-form__input-row input:focus {
+  border: 1px solid rgba(255, 63, 58, 0.4);
+  box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08),
+    0px 30px 24px -10px rgba(255, 63, 58, 0.05),
+    0px 12px 10px -6px rgba(255, 63, 58, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  outline: none;
+}
+.reg-form__input-row--state {
+}
+.reg-form__input-row--chk {
+}
+.reg-form__input-row--chk {
+}
+.reg-form__input-row--chk {
+}
+
+/* Jeka */
+
+/* Jeka */
+.reg-form__input-row--row-button {
+  display: flex;
+  flex: 1 1 auto;
+}
+.reg-form__input-row--row-button button {
+  flex: 1 1 auto;
+}
+
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
+/* !!!!my treaning */
 
 footer {
   background: #333;
