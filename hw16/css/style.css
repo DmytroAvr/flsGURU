@@ -539,16 +539,61 @@ input:required:invalid::before {
 }
 .reg-form__input-row--state {
 }
-.reg-form__input-row--chk {
-}
+
 .reg-form__input-row--chk {
 }
 .reg-form__input-row--chk {
 }
 
 /* Jeka */
+/******/
+/* Кастомний чекбокс */
+.reg-form__input-row--chk {
+  position: relative;
+}
+.reg-form__input-row--chk input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
 
+.reg-form__input-row--chk input:checked + label::before {
+  background: #f25924 url("../img/icons/check.svg") center / 70% no-repeat;
+}
+
+.reg-form__input-row--chk label {
+  cursor: pointer;
+  display: inline-flex;
+  /* align-items: center; 
+   gap: 12px;*/
+
+  /* ?    */
+  padding-left: 30px;
+}
+.reg-form__input-row--chk label::before {
+  content: "";
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #e5e8ed;
+
+  /* ?  */
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.reg-form__input-row--chk input:focus + label::before {
+  border: 1px solid #f25924;
+}
+.reg-form__input-row--chk label {
+  align-self: center;
+}
+/******/
+/*========*/
 /* Jeka */
+
 .reg-form__input-row--row-button {
   display: flex;
   flex: 1 1 auto;
