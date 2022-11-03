@@ -212,7 +212,25 @@ body {
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   outline: none;
 }
-.forms-block__input-row--state input {
+.forms-block__input-row--state input:valid::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/checked-correct.svg") 0 0 no-repeat;
+}
+.forms-block__input-row--state input:invalid::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/checked-correct.svg") 0 0 no-repeat;
 }
 .forms-block__input-row--state input {
 }
