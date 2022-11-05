@@ -147,12 +147,11 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /*column-gap: 30px;*/
+  column-gap: 30px;
   row-gap: 24px;
-  margin-right: -6.25px;
-  margin-left: -6.25px;
-  /*margin-right: -15px;
-  margin-left: -15px;*/
+
+  margin-right: -5px;
+  margin-left: -5px;
   /*
   padding-right: 10px;
   */
@@ -164,9 +163,6 @@ body {
 }
 .forms-block__input-row {
   flex: 1 1 340px;
-  /*flex: 1 1 48.295455%;  340/704 */
-  /*flex: 0 1 50%;*/
-  padding: 0px 12.5px;
 }
 .forms-block__input-row > *:not(:last-child) {
   margin: 0px 0px 8px 0px;
@@ -184,13 +180,7 @@ body {
 .forms-block__input-row input::placeholder {
   color: #9a9ca5;
 }
-.forms-block__input-row input:valid {
-  background: url(../img/icons/checked-correct.svg) right 17px center no-repeat;
-}
-.forms-block__input-row input:invalid {
-  border: 1px solid #ff4242;
-  background: url(../img/icons/checked-wrong.svg) right 17px center no-repeat;
-}
+
 .forms-block__input-row--first-name {
 }
 .forms-block__input-row--last-name {
