@@ -1,0 +1,24 @@
+/* Mobile first */
+@media (min-width: 420px) {
+  .page__row {
+  }
+  .page__column {
+  }
+}
+
+/* #1 */
+/* PC */
+@media (max-width: 1199.98px) {
+}
+/* #2 */
+/* Tablet */
+@media (max-width: 990.98px) {
+}
+/* #3 */
+/* Mobile */
+@media (max-width: 767.98px) {
+}
+/* #4 */
+/* Mobile Small Додатковий */
+@media (max-width: 480px) {
+}

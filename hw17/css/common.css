@@ -95,6 +95,11 @@
   opacity: 1;
 }
 
+@media (max-width: 1091px) {
+  .button {
+    padding: 12px 30px;
+  }
+}
 /* *block title */
 
 .title-header-block {
@@ -116,13 +121,17 @@
   color: #1e212c;
 }
 
+@media (max-width: 781px) {
+  .title-header-block__title {
+    font-size: 37px;
+  }
+}
 /* !cards of course */
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  row-gap: 30px;
 }
 .cards__body {
   display: flex;
@@ -164,6 +173,7 @@
   padding-top: 32px;
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
 }
 .card-info__body > *:not(:last-child) {
   margin-bottom: 20px;
@@ -199,6 +209,26 @@
 .card-info__author-block p {
   font-size: 18px;
   color: #787a80;
+}
+/* Mobile first */
+@media (min-width: 420px) {
+}
+
+/* #1 */
+/* PC */
+@media (max-width: 1199.98px) {
+}
+/* #2 */
+/* Tablet */
+@media (max-width: 990.98px) {
+}
+/* #3 */
+/* Mobile */
+@media (max-width: 767.98px) {
+}
+/* #4 */
+/* Mobile Small Додатковий */
+@media (max-width: 480px) {
 }
 
 /* ? badge  */
