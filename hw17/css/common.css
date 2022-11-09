@@ -153,12 +153,22 @@
 }
 
 .cards__img {
-  flex: 0 0 214px;
+  /*margin-bottom: 15px;
+  position: relative;
+  background: red;
+  padding-bottom: 100%; */
+
+  flex: 0 0 35.666667%; /* 214/600 */
 }
 .cards__img img {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;*/
   width: 100%;
 
-  /* fill all  */
   object-fit: cover;
   height: 100%;
 }
