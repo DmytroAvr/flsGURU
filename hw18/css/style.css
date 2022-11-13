@@ -1,5 +1,6 @@
 @import url(reset.css);
-
+/* pointer-events: none;
+https://youtu.be/zs1r8yafTE8?t=1094 */
 [class*="__container"] {
   max-width: 1260px;
   padding-left: 15px;
@@ -11,6 +12,11 @@ body {
   font-family: lato, sans-serif;
   font-style: normal;
   font-weight: 400;
+  color: #424551;
+  background-color: #333;
+}
+body.--lock {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -32,7 +38,107 @@ start blocks
 .title {
 }
 .button {
+  font-weight: 700;
+  line-height: 1.25px;
+
+  letter-spacing: 0.5px;
+  padding: 25.4px 40px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
+.button--orange-gradient {
+  color: #ffffff;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  position: relative;
+}
+
+/*.button--transparent {
+  color: #ff3f3a;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}*/
+
+.button--transparent {
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%) 0 0 / 100% 1px
+      no-repeat,
+    linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%) 0 bottom / 100% 1px
+      no-repeat;
+}
+.button.button--transparent {
+  padding: 0px;
+}
+.button--transparent span {
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 25.5px 40px;
+}
+.button--transparent span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%) 0 0 no-repeat;
+}
+
+.button--transparent:hover span::before {
+  opacity: 1;
+}
+
+.button--transparent::before,
+.button--transparent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.button--transparent::before {
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ff3f3a;
+  border-right: none;
+}
+.button--transparent::after {
+  right: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 0px 4px 4px 0;
+  border: 1px solid #f75e05;
+  border-left: none;
+}
+/*.button--orange-gradient span {
+  position: relative;
+  z-index: 1;
+}
+.button--orange-gradient::after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    55.95deg,
+    rgb(215, 54, 48) 0%,
+    rgb(212, 79, 3) 100%
+  );
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+}
+.button--orange-gradient:hover::after {
+  opacity: 1;
+}*/
 
 /*
 ================================================================================================ 
@@ -40,3 +146,357 @@ end blocks
 ================================================================================================
 */
 
+/*
+================================================================================================ 
+start  header  
+================================================================================================
+*/
+.header {
+  padding: 20px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.header__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 1fr 0.5fr 0fr;
+  /*grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));*/
+
+  gap: 20px 60px;
+  white-space: nowrap;
+}
+.header__logo {
+  min-width: 130px;
+  max-width: 130px;
+  z-index: 45;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__menu {
+}
+.header__actions {
+}
+
+.menu {
+}
+.menu__link {
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.actions {
+}
+.actions__button {
+}
+.actions__button:not(:last-child) {
+  margin-right: 36px;
+}
+
+@media (min-width: 627.98px) {
+}
+@media (min-width: 1027.98px) {
+  /* menu */
+  .menu__items {
+    display: grid;
+    /*grid-template-columns: repeat(5, auto);*/
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    white-space: nowrap;
+    gap: 10px 40px;
+  }
+  .menu__item {
+    position: relative;
+  }
+  .menu__item::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background: #ff3f3a;
+    transition: width 0.3s ease 0s;
+  }
+  .menu__item:hover {
+    color: #ff3f3a;
+  }
+  .menu__item:hover::before {
+    width: 100%;
+  }
+  /* login menu */
+  .actions__account {
+    font-weight: 700;
+    line-height: 1.6;
+    color: #424551;
+    position: relative;
+    padding: 5px 5px 5px 28px;
+    transition: color 0.3s ease 0s;
+  }
+  .actions__account:hover {
+    color: #ff3f3a;
+  }
+  .actions__account:hover::before {
+    background: url("../img/icons/user-fill.svg") 0 0 no-repeat;
+  }
+  .actions__account::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/user.svg") 0 0 no-repeat;
+    transition: background 0.3s ease 0s;
+  }
+}
+
+/* create burger */
+/* create burger */
+/* create burger */
+
+.header__icon-menu {
+  display: none;
+}
+/* create burger body (lines) */
+@media (max-width: 466px) {
+  .actions {
+    display: none;
+  }
+}
+@media (max-width: 1027.5px) {
+  .header__icon-menu {
+    z-index: 45;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+
+    justify-self: end;
+  }
+  .header__icon-menu span,
+  .header__icon-menu::before,
+  .header__icon-menu::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background: #ff3f3a;
+    transition: all 0.3s ease 0s;
+  }
+  .header__icon-menu::before,
+  .header__icon-menu::after {
+    content: "";
+  }
+  .header__icon-menu::before {
+    top: 0;
+  }
+  .header__icon-menu::after {
+    bottom: 0;
+  }
+  .header__icon-menu span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  /* end create lines */
+  /* start animate lines */
+  .header__icon-menu.--active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .header__icon-menu.--active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .header__icon-menu.--active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+  /* end animate lines */
+
+  /* hide menu and add menu to burger */
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 100px 30px 30px;
+    transition: all 0.3s ease 0s;
+    z-index: 44;
+    /* add */
+    overflow: auto;
+  }
+  .header__menu.--active {
+    left: 0;
+  }
+  .header__menu.--active::before {
+    width: 100%;
+  }
+  .header__menu::before {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease 0s;
+  }
+  .menu__items > li {
+    font-size: 1.5rem;
+  }
+  .menu__items > li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  /* actions and burger 
+ 	display none when burger active 
+  */
+  .header__container {
+    grid-template-columns: 0.1fr 1fr 0fr;
+  }
+  .header__actions {
+    justify-self: end;
+  }
+}
+@media (max-width: 1100px) {
+  .actions__account {
+    font-size: 0;
+  }
+  .actions__account::before {
+    width: 40px;
+    height: 45px;
+    top: -20px;
+    background: url("../img/icons/user.svg") 0 0 / 40px no-repeat;
+  }
+}
+
+/*
+================================================================================================ 
+end header  
+================================================================================================
+*/
+
+/*
+================================================================================================ 
+start hero  
+================================================================================================
+*/
+.hero {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 189px;
+}
+.hero__row-info {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(496px, 1fr));
+  gap: 25px 50px;
+  align-items: center;
+}
+.info-row-hero {
+}
+.info-row-hero__info {
+}
+.info-row-hero__play {
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+.info-row-hero__title {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+.info-row-hero__row-actions {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  column-gap: 24px;
+}
+.actions-row-hero {
+}
+.actions-row-hero__transparent-button {
+}
+.actions-row-hero__orange-button {
+}
+.info-row-hero__img {
+}
+.info-row-hero__img img {
+  max-width: 107.8%;
+  transform: translate(7.8%, 0px);
+}
+.hero__row-achievement {
+  display: grid;
+  align-items: center;
+
+  justify-items: center;
+  grid-template-columns: repeat(7, 1fr);
+}
+.achievement-row {
+}
+.achievement-row__info {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  color: #1e212c;
+  column-gap: 12px;
+}
+.achievement-row__count {
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+.achievement-row__about {
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.achievement-row__dot {
+  width: 8px;
+  height: 8px;
+  background: #ff3f3a;
+  border-radius: 50%;
+}
+/*
+================================================================================================ 
+end blocks  
+================================================================================================
+*/
+/*
+================================================================================================ 
+start blocks  
+================================================================================================
+*/
+
+/*
+================================================================================================ 
+end blocks  
+================================================================================================
+*/
+/*
+================================================================================================ 
+start blocks  
+================================================================================================
+*/
+
+/*
+================================================================================================ 
+end blocks  
+================================================================================================
+*/
