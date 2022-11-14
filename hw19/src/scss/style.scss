@@ -76,6 +76,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	@supports (overflow: clip) {
+		overflow: clip;
+	}
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
