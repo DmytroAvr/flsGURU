@@ -14,7 +14,8 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #424551;
-  background-color: #333;
+  /*color: #fff;
+  background-color: #333;*/
 }
 body.--lock {
   overflow: hidden;
@@ -36,8 +37,6 @@ start blocks
 ================================================================================================
 */
 
-.title {
-}
 .button {
   font-weight: 700;
   font-size: 1rem;
@@ -142,6 +141,44 @@ start blocks
   opacity: 1;
 }*/
 
+.title-block {
+}
+.title-block__sup-title {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+}
+.title-block__title {
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 1.3;
+  color: #1e212c;
+}
+
+/* list main */
+.lits-items {
+}
+.lits-items li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.lits-items li {
+  line-height: 1.6;
+  padding-left: 32px;
+  position: relative;
+}
+
+.lits-items li::before {
+  content: "";
+
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 5px;
+  background: url("../img/icons/list-checked.svg") center no-repeat;
+}
 /*
 ================================================================================================ 
 end blocks  
@@ -392,6 +429,11 @@ start hero
 .hero {
   padding-top: 200px;
   padding-bottom: 80px;
+  background: linear-gradient(
+    55.95deg,
+    rgba(255, 64, 58, 0.2) 0%,
+    rgba(247, 94, 5, 0.2) 100%
+  );
 }
 .hero__container {
   display: grid;
@@ -586,12 +628,97 @@ start hero
 end blocks  
 ================================================================================================
 */
+
 /*
 ================================================================================================ 
-start blocks  
+start block we-are
 ================================================================================================
 */
+.who-we-are {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.who-we-are__container {
+}
+.who-we-are__image {
+  max-width: 100%;
+  /*position: relative;
+	background-color: red;
+	padding-bottom: 125.892857%; */
+}
+.who-we-are__image img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.who-we-are__block-text {
+  padding: 10px;
+  display: grid;
+}
+.text-block {
+}
+.text-block__block-title {
+}
+.text-block__block-title:not(:last-child) {
+  margin-bottom: 40px;
+}
+.text-block__list {
+}
+.text-block__list:not(:last-child) {
+  margin-bottom: 48px;
+}
+.text-block__button {
+  justify-self: baseline;
+}
+.button {
+}
+.button--orange-gradient {
+}
 
+@media (min-width: 768.98px) {
+  .who-we-are__container {
+    display: grid;
+    /*grid-template-columns: 705px 390px;*/
+    grid-template-columns: 57.317073% 31.707317%;
+    /*grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
+    column-gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .who-we-are__image {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .who-we-are__container {
+    /*grid-template-columns:  31.707317% 57.317073%;*/
+    grid-template-columns: 41.707317% 47.317073%;
+  }
+  .who-we-are {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: 900px) {
+    .who-we-are__container {
+      grid-template-columns: 31.707317% 67.317073%;
+    }
+  }
+}
+
+@media (max-width: 768.98px) {
+  .who-we-are__block-text {
+    padding-left: 40px;
+  }
+  .title-block__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425.98px) {
+  .who-we-are__block-text {
+    padding-left: 20px;
+  }
+}
 /*
 ================================================================================================ 
 end blocks  
