@@ -2,13 +2,27 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
+	display: inline-block;
+	padding: rem(15) rem(40);
+	border-radius: rem(4);
+	border: 1px solid transparent;
+	overflow: hidden;
+
+	font-weight: 700;
+	line-height: math.div(20, 16);
+	letter-spacing: 0.5px;
+
 	@media (any-hover: hover) {
 		&:hover {
 		}
 	}
 	&._fw {
 		width: 100%;
+	}
+	&--btn-gradient {
+		color: #ffffff;
+		background: $btn-gradient;
+	}
+	&--btn-transparent {
 	}
 }
