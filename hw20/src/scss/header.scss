@@ -3,7 +3,6 @@
 //====================================================================================================
 
 //Burger
-/*
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -53,4 +52,71 @@
 		}
 	}
 }
-*/
+
+// style of header header header
+// style of header header header
+
+.header {
+	padding: 20px 0px;
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("column-gap", 60, 20);
+		row-gap: 20px;
+	}
+	// .header__logo
+	&__logo {
+		//flex: 0 0 math.div(130, 1230) * 100%;
+		flex: 0 0 130px;
+
+		img {
+			width: 100%;
+		}
+	}
+	// .header__menu
+	&__menu {
+	}
+	// .header__actions
+	&__actions {
+	}
+}
+.logo {
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		row-gap: 20px;
+		@include adaptiveValue("column-gap", 40, 10);
+
+		font-weight: 700;
+		line-height: 1.6;
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+	}
+}
+.icon-menu {
+}
+.actions {
+	display: flex;
+	column-gap: 36px;
+	// .actions__button
+	&__button {
+	}
+	// .actions__user
+	&__user {
+	}
+}
