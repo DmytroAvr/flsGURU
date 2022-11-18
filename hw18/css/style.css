@@ -197,6 +197,7 @@ start  header
   left: 0;
   width: 100%;
   z-index: 50;
+  background: rgba(255, 255, 255, 0.4);
 }
 .header__container {
   display: grid;
@@ -382,7 +383,7 @@ start  header
     top: 0;
     left: 0;
     width: 0%;
-    height: 60px;
+    height: 92px;
     background-color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease 0s;
   }
@@ -412,6 +413,9 @@ start  header
     height: 45px;
     top: -20px;
     background: url("../img/icons/user.svg") 0 0 / 40px no-repeat;
+  }
+  .actions__account:hover::before {
+    background: url("../img/icons/user-fill.svg") 0 0 / 40px no-repeat;
   }
 }
 
@@ -453,7 +457,7 @@ start hero
 .info-row-hero__info {
 }
 .info-row-hero__play {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 50px 88px;
   column-gap: 16px;
   align-items: center;

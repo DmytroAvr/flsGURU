@@ -140,7 +140,7 @@
 		flex-wrap: wrap;
 		flex-grow: 1;
 		row-gap: rem(10);
-		@include adaptiveValue("column-gap", 40, 10);
+		@include adaptiveValue("column-gap", 40, 0,0, 1400, 768);
 
 		font-weight: 700;
 		line-height: 1.6;
@@ -152,9 +152,20 @@
 			@include adaptiveValue("font-size", 40, 30);
 			row-gap: rem(30);
 		}
+		li {
+			a {
+				padding: rem(5);
+				&:hover {
+					color: $primaryColor;
+				}
+			}
+		}
 	}
 	// .menu__item
 	&__item {
+		&.--active {
+			color: $primaryColor;
+		}
 	}
 	// .menu__link
 	&__link {
