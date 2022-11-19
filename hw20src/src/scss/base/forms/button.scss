@@ -55,3 +55,6 @@
 		@include adaptiveValue("padding-top", 14, 10, 0, 1280, 776);
 	}
 }
+.place-holder-button {
+	margin-bottom: rem(20);
+}

@@ -123,7 +123,7 @@
 				top: 0;
 				left: -100%;
 				width: 100%;
-				@include adaptiveValue("height", 60, 41, 3, 768, 320);
+				@include adaptiveValue("height", 55, 45, 3, 768, 420);
 				background-color: #f94; //заглушка хедера
 				transition: left 0.3s ease 0s;
 			}
@@ -137,6 +137,7 @@
 	}
 	// .menu__list
 	&__list {
+		max-width: rem(570);
 		display: flex;
 		flex-wrap: wrap;
 		flex-grow: 1;
