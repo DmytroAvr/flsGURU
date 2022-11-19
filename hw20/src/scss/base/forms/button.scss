@@ -4,49 +4,54 @@
 .button {
 	position: relative;
 	display: inline-block;
-	padding: rem(15) rem(40);
+	@include adaptiveValue("padding-bottom", 15, 10, 0, 1280, 776);
+	@include adaptiveValue("padding-top", 15, 10, 0, 1280, 776);
+	@include adaptiveValue("padding-left", 40, 25, 0, 1280, 776);
+	@include adaptiveValue("padding-right", 40, 25, 0, 1280, 776);
+	//padding: rem(15) rem(40);
 	border-radius: rem(4);
 	overflow: hidden;
 
 	font-weight: 700;
 	line-height: math.div(22, 16);
 	letter-spacing: 0.5px;
-	span {
-		position: relative;
-		z-index: 1;
-	}
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: $btn-gradient-darken;
-		opacity: 0;
-		visibility: hidden;
-		z-index: 0;
-		transition: opacity 0.3s ease 0s;
-	}
-	@media (any-hover: hover) {
-		&:hover {
-		}
-		&:hover::after {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-	@media (max-width: $tablet) {
-		padding: rem(10) rem(20);
 
-	}
 	&._fw {
 		width: 100%;
 	}
 	&--btn-gradient {
 		color: #ffffff;
 		background: $btn-gradient;
+
+		span {
+			position: relative;
+			z-index: 1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $btn-gradient-darken;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 0;
+			transition: opacity 0.3s ease 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+			}
+			&:hover::after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
 	}
 	&--btn-transparent {
+		border: 1px solid orange;
+		@include adaptiveValue("padding-bottom", 14, 10, 0, 1280, 776);
+		@include adaptiveValue("padding-top", 14, 10, 0, 1280, 776);
 	}
 }

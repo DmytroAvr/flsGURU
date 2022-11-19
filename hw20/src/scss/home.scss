@@ -1,5 +1,99 @@
 //====================================================================================================
 .page {
-	background-color: #333;
 }
+//====================================================================================================
+
+.hero {
+	@include adaptiveValue("padding-bottom", 80, 20, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 80, 20, 0, 1230, 320);
+	background: $bg-blocks;
+	// .hero__container
+	&__container {
+	}
+	// .hero__info
+	&__info-main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: rem(10);
+		@include adaptiveValue("margin-bottom", 189, 40);
+	}
+	// .hero__block-info
+	&__block-info {
+		flex: 0 1 40.325203%; /* 496/1230 */
+	}
+	// .hero__block-img
+	&__block-img {
+		max-width: 100%;
+		& img {
+			width: 100%;
+		}
+	}
+	// .hero__row-achievement
+	&__row-achievement {
+	}
+}
+
+.info-block-hero {
+	color: $titleColor;
+	// .info-block-hero__play
+	&__play {
+		display: inline-block;
+		@include adaptiveValue("margin-bottom", 55, 20);
+	}
+	// .info-block-hero__title
+	&__title {
+		font-weight: 900;
+		@include adaptiveValue("font-size", 64, 30);
+		line-height: 1.3;
+		letter-spacing: 1px;
+		@include adaptiveValue("margin-bottom", 60, 20);
+	}
+	// .info-block-hero__row-button
+	&__row-button {
+
+	}
+	// .info-block-hero__button-about
+	&__button-about {
+		margin-right: rem(24);
+		
+	}
+	// .info-block-hero__button-explore
+	&__button-explore {
+	}
+}
+
+.achievement-row {
+	color: $titleColor;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: rem(5);
+	// .achievement-row__items
+	&__items {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		@include adaptiveValue("column-gap", 12, 5, 0, 1230, 320);
+	}
+	// .achievement-row__achieve
+	&__achieve {
+		font-weight: 900;
+		@include adaptiveValue("font-size", 46, 25);
+		line-height: 1.3;
+	}
+	// .achievement-row__description
+	&__description {
+		line-height: 1.6;
+	}
+	&__dot {
+		width: 8px;
+		height: 8px;
+		background: $primaryColor;
+		border-radius: 50%;
+	}
+}
+
+//====================================================================================================
 //====================================================================================================

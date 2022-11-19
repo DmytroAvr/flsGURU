@@ -122,8 +122,8 @@
 				top: 0;
 				left: -100%;
 				width: 100%;
-				@include adaptiveValue("height", 49, 41, 3, 768, 320);
-				background-color: #f94; //заглушка хелдера
+				@include adaptiveValue("height", 60, 41, 3, 768, 320);
+				background-color: #f94; //заглушка хедера
 				transition: left 0.3s ease 0s;
 			}
 			.menu-open & {
@@ -140,7 +140,7 @@
 		flex-wrap: wrap;
 		flex-grow: 1;
 		row-gap: rem(10);
-		@include adaptiveValue("column-gap", 40, 0,0, 1400, 768);
+		@include adaptiveValue("column-gap", 40, 0, 0, 1400, 768);
 
 		font-weight: 700;
 		line-height: 1.6;
@@ -155,8 +155,11 @@
 		li {
 			a {
 				padding: rem(5);
-				&:hover {
-					color: $primaryColor;
+				transition: color 0.3s ease 0s;
+				@media (any-hover: hover) {
+					&:hover {
+						color: $primaryColor;
+					}
 				}
 			}
 		}
@@ -181,5 +184,29 @@
 	}
 	// .actions__user
 	&__user {
+		transition: color 0.3s ease 0s;
+		& span {
+			padding-left: rem(10);
+		}
+		&::before {
+			position: relative;
+			font-size: rem(16);
+			bottom: rem(-2);
+		}
+		@media (max-width: em(1000)) {
+			& span {
+				display: none;
+			}
+			&::before {
+				font-size: rem(25);
+				bottom: rem(-2);
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $primaryColor;
+			}
+			
+		}
 	}
 }
