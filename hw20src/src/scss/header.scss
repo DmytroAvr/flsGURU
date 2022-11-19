@@ -57,6 +57,7 @@
 // style of header header header
 
 .header {
+	background: $bg-blocks;
 	@include adaptiveValue("padding-top", 20, 10);
 	@include adaptiveValue("padding-bottom", 20, 10);
 	// .header__container
@@ -179,6 +180,7 @@
 .actions {
 	position: relative;
 	z-index: 5;
+
 	// .actions__button
 	&__button {
 	}
@@ -193,7 +195,11 @@
 			font-size: rem(16);
 			bottom: rem(-2);
 		}
-		@media (max-width: em(1000)) {
+		@media (min-width:em(1000)){
+			display: inline-flex;
+			align-items: center;
+		}
+		@media (max-width: em(999.98)) {
 			& span {
 				display: none;
 			}

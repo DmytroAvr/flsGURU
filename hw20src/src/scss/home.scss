@@ -26,7 +26,8 @@
 	&__block-img {
 		max-width: 100%;
 		& img {
-			width: 100%;
+			width: 107.8%;
+			transform: translate(7.8%, 0px);
 		}
 	}
 	// .hero__row-achievement
@@ -38,9 +39,36 @@
 	color: $titleColor;
 	// .info-block-hero__play
 	&__play {
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		@include adaptiveValue("column-gap", 16, 10);
 		@include adaptiveValue("margin-bottom", 55, 20);
+		position: relative;
+		&::before {
+			@include adaptiveValue("height", 52, 30);
+			@include adaptiveValue("width", 52, 30);
+			background: $primaryColor;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			@include adaptiveValue("height", 84, 50);
+			@include adaptiveValue("width", 84, 50);
+			background: $primaryColor;
+			opacity: 0.12;
+			top: center;
+			left: -10%;
+			z-index: -1;
+			border-radius: 50%;
+			animation: pulse 2s infinite;
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+		}
 	}
+	
 	// .info-block-hero__title
 	&__title {
 		font-weight: 900;
@@ -51,17 +79,16 @@
 	}
 	// .info-block-hero__row-button
 	&__row-button {
-
 	}
 	// .info-block-hero__button-about
 	&__button-about {
 		margin-right: rem(24);
-		
 	}
 	// .info-block-hero__button-explore
 	&__button-explore {
 	}
 }
+
 
 .achievement-row {
 	color: $titleColor;
