@@ -57,7 +57,23 @@
 // style of header header header
 
 .header {
-	background: $bg-blocks;
+	z-index: 55;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		z-index: -1;
+	}
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	//background: $bg-blocks;
 	@include adaptiveValue("padding-top", 20, 10);
 	@include adaptiveValue("padding-bottom", 20, 10);
 	// .header__container
@@ -196,7 +212,7 @@
 			font-size: rem(16);
 			bottom: rem(-2);
 		}
-		@media (min-width:em(1000)){
+		@media (min-width: em(1000)) {
 			display: inline-flex;
 			align-items: center;
 		}
@@ -213,7 +229,6 @@
 			&:hover {
 				color: $primaryColor;
 			}
-			
 		}
 	}
 }

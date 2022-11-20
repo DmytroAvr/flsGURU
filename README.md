@@ -25,6 +25,12 @@
 <a href="hw10">hw10</a>
 -->
 
+Fold Level [n]: CTRL+K, CTRL+[n]\*
+Fold All: CTRL+K, CTRL+0 (zero)
+Unfold All: CTRL+K, CTRL+J
+Fold Region: CTRL+K, CTRL+[
+Unfold Region: CTRL+K, CTRL+]
+
 placeholder
 
 <http://via.placeholder.com/640x360/333/aaa>
