@@ -61,8 +61,8 @@
 */
 .courses-cards {
 	// .courses-cards__card
-	&__card {
-		display: grid;
+	&__card { 
+		display: grid;//delete
 		grid-template-columns: 35.6% 64.4%; /* 214/600 */
 		@media (min-width: em(680)) and (max-width: em(999.98)) {
 			grid-template-columns: 1fr; /* 214/600 */
