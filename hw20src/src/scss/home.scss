@@ -109,7 +109,7 @@
 		//	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 		//}
 		font-weight: 700;
-		font-size: 14px;
+		font-size: rem(14);
 		line-height: 1.5;
 		display: inline-flex;
 		align-items: center;
@@ -328,7 +328,9 @@
 .who-we-are {
 	@include adaptiveValue("padding-top", 90, 20, 0, 1230, 320);
 	@include adaptiveValue("padding-bottom", 90, 20, 0, 1230, 320);
-
+	@media (min-width: em(1100)) {
+		position: relative;
+	}
 	// .who-we-are__container
 	&__container {
 	}
@@ -426,11 +428,6 @@
 	&__dots {
 	}
 	@media (min-width: em(1100)) {
-		// who we are
-		.who-we-are & {
-			position: relative;
-		}
-
 		//img
 		&__img {
 			position: absolute;
@@ -446,7 +443,6 @@
 			top: 47.027027%; /* 348/740 */
 			right: -8.59375%; /* 165/1920 */
 		}
-
 		// .decorations-who-we-are__dots
 		&__dots {
 			background: url("@img/who-we-are/decoration/dots.svg") 0 0 no-repeat;
