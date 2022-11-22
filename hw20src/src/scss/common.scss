@@ -129,10 +129,23 @@
 	}
 	// .courses-cards__badge                margin-bottom: rem(20);
 	&__badge {
+		color: #ffffff;
 		padding: rem(1) rem(8);
 		border-radius: 4px;
 		&--marketing {
 			background: #03cea4;
+		}
+		&--management {
+			background: #5a87fc;
+		}
+		&--management {
+			background: #5a87fc;
+		}
+		&--hRRecruting {
+			background: #f89828;
+		}
+		&--design {
+			background: #f52f6e;
 		}
 	}
 	// .courses-cards__title

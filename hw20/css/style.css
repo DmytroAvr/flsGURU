@@ -646,12 +646,29 @@ body::after {
 }
 
 .courses-cards__badge {
+  color: #ffffff;
   padding: 0.0625rem 0.5rem;
   border-radius: 4px;
 }
 
 .courses-cards__badge--marketing {
   background: #03cea4;
+}
+
+.courses-cards__badge--management {
+  background: #5a87fc;
+}
+
+.courses-cards__badge--management {
+  background: #5a87fc;
+}
+
+.courses-cards__badge--hRRecruting {
+  background: #f89828;
+}
+
+.courses-cards__badge--design {
+  background: #f52f6e;
 }
 
 .courses-cards__title {
