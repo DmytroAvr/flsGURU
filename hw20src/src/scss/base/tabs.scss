@@ -5,19 +5,70 @@
 	}
 	// .tabs__title
 	&__title {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
+		flex: 1 1 auto;
+		font-weight: 700;
+		line-height: 1.6;
+		color: $colorTabsNA;
+
+		border: 1px solid transparent;
+		padding: rem(10) rem(70);
+		border-radius: rem(4);
+		transition: color 0.3s ease 0s, border 0.3s ease 0s;
 		&._tab-active {
-			border: 1px solid #000;
+			border: 1px solid $primaryColor;
+			color: $primaryColor;
+		}
+		&::before {
+			margin-right: rem(8);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $primaryColor;
+			}
 		}
 	}
 	// .tabs__content
 	&__content {
-		border: 1px solid #eee;
 		padding: rem(10) rem(15);
 	}
 	// .tabs__body
 	&__body {
+	}
+}
+
+.benefits-tab {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	max-height: rem(500);
+	height: 100%;
+	overflow: hidden;
+	// .benefits-tab__text
+	&__text {
+		padding: rem(10);
+		flex: 0 1 rem(455);
+	}
+	// .benefits-tab__img
+	&__img {
+		max-width: 100%;
+		flex-basis: 48.780488%; /* 600/1230 */
+		img {
+			width: 100%;
+		}
+	}
+}
+.tab-text {
+	// .tab-text__title
+	&__title {
+		font-weight: 900;
+		@include adaptiveValue("font-size", 32, 25);
+		@include adaptiveValue("margin-bottom", 24, 18);
+		line-height: 1.3;
+		color: $titleColor;
+	}
+	// .tab-text__text
+	&__text {
+		line-height: 1.6;
 	}
 }

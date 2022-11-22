@@ -7,7 +7,7 @@
 </div>
 */
 .block-heading {
-	color: $titleColor;
+color: $titleColor;
 	> *:not(:last-child) {
 		margin-bottom: rem(8);
 	}

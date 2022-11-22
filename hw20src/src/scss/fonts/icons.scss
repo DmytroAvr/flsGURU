@@ -11,10 +11,9 @@
 [class*="--icon-"] {
 	&:before {
 		@extend %ic;
-		display: block;
+		display: inline-block;
 	}
 }
-
 
 @font-face {
 	font-family: "icomoon";
@@ -24,7 +23,6 @@
 	font-style: normal;
 	font-display: block;
 }
-
 
 [class^="--icon-"]::before,
 [class*=" --icon-"]::before {
