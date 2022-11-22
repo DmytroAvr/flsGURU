@@ -21,7 +21,7 @@
 	// .block-heading__title
 	&__title {
 		font-weight: 900;
-		@include adaptiveValue("font-size", 46, 25);
+		@include adaptiveValue("font-size", 46, 32);
 		line-height: 1.3;
 	}
 }
@@ -62,23 +62,74 @@
 .courses-cards {
 	// .courses-cards__card
 	&__card {
+		display: grid;
+		grid-template-columns: 35.6% 64.4%; /* 214/600 */
+		@media (min-width: em(680)) and (max-width: em(999.98)) {
+			grid-template-columns: 1fr; /* 214/600 */
+		}
+		@media (max-width: em(499.98)) {
+			grid-template-columns: 1fr; /* 214/600 */
+		}
+
+		border: 1px solid #e5e8ed;
+		/* shadow/small */
+
+		box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+			0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+		border-radius: rem(4);
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid #e5e8ed;
+				/* shadow/regular */
+
+				box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+					0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+			}
+		}
+	}
+	// .courses-cards__background-img
+	&__background-img {
+		background: $cardSpeakerBG;
+		width: 100%;
+		justify-content: center;
+		align-self: center;
 		display: flex;
-		align-items: center;
 	}
 	// .courses-cards__img
 	&__img {
-	}
-	// .courses-cards__row-about
-	&__row-about {
-		padding: rem(10);
+		display: block;
+		position: relative;
+		max-width: 100%;
+		border-radius: rem(4) 0px 0px rem(4);
+		img {
+			width: 100%;
+		}
+		@media (min-width: em(680)) and (max-width: em(999.98)) {
+			max-width: 60%;
+		}
+		@media (max-width: em(499.98)) {
+			max-width: 60%;
+		}
 	}
 	// .courses-cards__info-more
 	&__info-more {
+		@include adaptiveValue("padding", 32, 10, 0, 1230, 900);
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		@media (min-width: em(680)) and (max-width: em(999.98)) {
+			@include adaptiveValue("row-gap", 20, 10);
+		}
+		@media (max-width: em(679.98)) {
+			@include adaptiveValue("padding", 32, 20);
+			@include adaptiveValue("row-gap", 20, 10);
+		}
 	}
-	// .courses-cards__badge
+	// .courses-cards__badge                margin-bottom: rem(20);
 	&__badge {
 		padding: rem(1) rem(8);
-		margin-bottom: rem(20);
 		border-radius: 4px;
 		&--marketing {
 			background: #03cea4;
@@ -90,6 +141,9 @@
 		font-size: rem(20);
 		line-height: 1.5;
 		color: $titleColor;
+	}
+	// .courses-cards__link-title
+	&_link-title {
 	}
 
 	// .courses-cards__row-info-courses

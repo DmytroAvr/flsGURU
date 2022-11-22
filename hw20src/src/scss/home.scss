@@ -116,24 +116,28 @@
 		@include adaptiveValue("column-gap", 16, 10);
 		@include adaptiveValue("margin-bottom", 55, 20);
 		position: relative;
-
+		&::after,
+		&::before {
+			@include adaptiveValue("height", 52, 35);
+			@include adaptiveValue("width", 52, 35);
+		}
 		&::before {
 			content: "";
 			border-radius: 50%;
 			background: #ff3f3a url("@img/icons/basic icons/play.svg") center no-repeat;
-			height: 52px;
-			width: 52px;
+
 			display: flex;
 			align-items: center;
-			flex: 0 0 52px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			@include adaptiveValue("flex-basis", 52, 35);
 		}
 		&::after {
 			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
-			height: 52px;
-			width: 52px;
+
 			border-radius: 50%;
 			background-color: #ff3f3a;
 			opacity: 0.12;
@@ -492,6 +496,12 @@
 	}
 	// .featured-courses__block-cards
 	&__block-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		@include adaptiveValue("gap", 30, 15);
+		@media (max-width: em(679.98)) {
+			grid-template-columns: 1fr;
+		}
 	}
 }
 
