@@ -155,12 +155,25 @@
 		font-size: rem(18);
 		line-height: 1.5;
 		color: #ff4242;
+		margin-right: rem(8);
 	}
 	// .courses-cards__courses-speaker
 	&__courses-speaker {
 		font-size: rem(18);
 		line-height: 1.5;
 		color: $colorSpeaker;
+		padding-left: rem(8);
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			width: 1px;
+			height: rem(16);
+			background: $colorSpeaker;
+			transform: translate(0px, -50%);
+		}
 	}
 }
 

@@ -666,12 +666,28 @@ body::after {
   font-size: 1.125rem;
   line-height: 1.5;
   color: #ff4242;
+  margin-right: 0.5rem;
 }
 
 .courses-cards__courses-speaker {
   font-size: 1.125rem;
   line-height: 1.5;
   color: #787a80;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+.courses-cards__courses-speaker::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 1rem;
+  background: #787a80;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
 }
 
 @-webkit-keyframes pulse {
