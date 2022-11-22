@@ -1,6 +1,11 @@
 //<BUTTONS (a.btn+tab)>
 // Снипет (HTML): btn
 
+/*
+		<a class="XXXXXXX__button-about button button--btn-transparent" href="#"><span>About us</span></a>
+		<a class="XXXXXXX__button-explore button button--btn-gradient" href="#"><span>Explore courses</span></a>
+
+*/
 .button {
 	position: relative;
 	display: inline-block;
@@ -55,6 +60,7 @@
 		@include adaptiveValue("padding-top", 14, 10, 0, 1280, 776);
 	}
 }
+
 .place-holder-button {
 	margin-bottom: rem(20);
 }

@@ -3,14 +3,14 @@
 @@include('html/_head.htm',{
 "title":"HomePage"
 })
- 
+
 <body>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
 			<section class="hero">
 				<div class="hero__container">
-					<div class="hero__info-main">
+					<article class="hero__info-main">
 						<div class="hero__block-info info-block-hero">
 							<a class="info-block-hero__play --icon-youTube" href="#">Play showreel</a>
 							<h1 class="info-block-hero__title">Enjoy studying
@@ -23,8 +23,8 @@
 						<div class="hero__block-img">
 							<img src="@img/hero-block/illustration.svg" alt="illustration">
 						</div>
-					</div>
-					<div class="hero__row-achievement achievement-row">
+					</article>
+					<article class="hero__row-achievement achievement-row">
 						<div class="achievement-row__items">
 							<p class="achievement-row__achieve">1200</p>
 							<p class="achievement-row__description">Students graduated</p>
@@ -44,7 +44,7 @@
 							<p class="achievement-row__achieve">5</p>
 							<p class="achievement-row__description">Years of experience</p>
 						</div>
-					</div>
+					</article>
 				</div>
 				<div class="hero__block-decore decore-hero">
 					<div class="decore-hero__img decore-hero__circles"></div>
@@ -59,7 +59,7 @@
 				<div class="who-we-are__container">
 					<div class="who-we-are__img"><img src="@img/who-we-are/who-we-are.jfif" alt="picture of girl"></div>
 
-					<div class="who-we-are__block-text">
+					<article class="who-we-are__block-text">
 						<div class="who-we-are__block-title block-heading">
 							<p class="block-heading__sup-title">Who we are</p>
 							<h2 class="block-heading__title">Why Createx?</h2>
@@ -73,14 +73,42 @@
 							<li class="block-list__item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
 						</ul>
 						<a class="who-we-are__more button button--btn-gradient" href="#"><span>More about us</span></a>
-					</div>
+					</article>
 				</div>
 				<div class="who-we-are__decors decorations-who-we-are">
 					<div class="decorations-who-we-are__img decorations-who-we-are__circles"></div>
 					<div class="decorations-who-we-are__img decorations-who-we-are__dots"></div>
 				</div>
 			</section>
+			<section class="featured-courses">
+				<div class="featured-courses__container">
+					<div class="featured-courses__top-row">
+						<div class="featured-courses__block-title block-heading">
+							<p class="block-heading__sup-title">Ready to learn?</p>
+							<h2 class="block-heading__title">Featured Courses</h2>
+						</div>
+						<a class="featured-courses__more-button button button--btn-transparent" href="#"><span>View all courses</span></a>
+					</div>
+					<div class="featured-courses__block-cards courses-cards">
+						<article class="courses-cards__card">
+							<div class="courses-cards__img">
+								<img src="@img/featured-courses/speakers/Jerome-Bell.jfif" alt="speaker Jerome-Bell">
+							</div>
+							<div class="courses-cards__row-about">
+								<div class="courses-cards__info-more">
+									<a class="courses-cards__badge courses-cards__badge--marketing" href="#">Marketing</a>
+									<h3 class="courses-cards__title">The Ultimate Google Ads Training Course</h3>
+									<div class="courses-cards__row-info-courses ">
+										<span class="courses-cards__courses-price">$100</span>
+										<a class="courses-cards__courses-speaker" href="#">by Jerome Bell</a>
+									</div>
+								</div>
+							</div>
+						</article>
 
+					</div>
+				</div>
+			</section>
 
 		</main>
 		@@include('html/_footer.htm',{})

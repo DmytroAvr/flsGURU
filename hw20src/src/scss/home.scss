@@ -457,4 +457,45 @@
 
 //====================================================================================================
 //====================================================================================================
+
+.featured-courses {
+	@include adaptiveValue("padding-top", 90, 20, 0, 1230, 320);
+	@include adaptiveValue("padding-bottom", 90, 20, 0, 1230, 320);
+
+	// .featured-courses__container
+	&__container {
+	}
+	// .featured-courses__top-row
+	&__top-row {
+		@include adaptiveValue("margin-bottom", 60, 15);
+		@media (min-width: em(499.98)) {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+		}
+		@media (max-width: em(499.98)) {
+			text-align: end;
+		}
+	}
+	// .featured-courses__block-title
+	&__block-title {
+		@media (max-width: em(499.98)) {
+			margin-bottom: rem(10);
+			text-align: center;
+		}
+	}
+
+	// .featured-courses__more-button
+	&__more-button {
+		@media (max-width: em(499.98)) {
+		}
+	}
+	// .featured-courses__block-cards
+	&__block-cards {
+	}
+}
+
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
 //====================================================================================================

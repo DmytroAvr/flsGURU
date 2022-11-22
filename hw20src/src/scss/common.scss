@@ -1,5 +1,11 @@
 // Заголовки, общие БЄМ блоки и проче...
 
+/*
+<div class="XXXXXX__block-title block-heading">
+	<p class="block-heading__sup-title">Who we are</p>
+	<h2 class="block-heading__title">Why Createx?</h2>
+</div>
+*/
 .block-heading {
 	color: $titleColor;
 	> *:not(:last-child) {
@@ -20,6 +26,14 @@
 	}
 }
 
+//block list items
+/*
+<ul class="XXXXXX__list block-list">
+	<li class="block-list__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+	<li class="block-list__item">Vulputate placerat amet pulvinar lorem nisl.</li>
+</ul>
+*/
+
 .block-list {
 	line-height: 1.6;
 	& > li {
@@ -39,6 +53,60 @@
 			left: 0;
 			color: $primaryColor;
 		}
+	}
+}
+
+/*
+
+*/
+.courses-cards {
+	// .courses-cards__card
+	&__card {
+		display: flex;
+		align-items: center;
+	}
+	// .courses-cards__img
+	&__img {
+	}
+	// .courses-cards__row-about
+	&__row-about {
+		padding: rem(10);
+	}
+	// .courses-cards__info-more
+	&__info-more {
+	}
+	// .courses-cards__badge
+	&__badge {
+		padding: rem(1) rem(8);
+		margin-bottom: rem(20);
+		border-radius: 4px;
+		&--marketing {
+			background: #03cea4;
+		}
+	}
+	// .courses-cards__title
+	&__title {
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: 1.5;
+		color: $titleColor;
+	}
+
+	// .courses-cards__row-info-courses
+	&__row-info-courses {
+	}
+	// .courses-cards__courses-price
+	&__courses-price {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: 1.5;
+		color: #ff4242;
+	}
+	// .courses-cards__courses-speaker
+	&__courses-speaker {
+		font-size: rem(18);
+		line-height: 1.5;
+		color: $colorSpeaker;
 	}
 }
 
