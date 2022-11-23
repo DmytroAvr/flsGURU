@@ -7,7 +7,7 @@
 </div>
 */
 .block-heading {
-color: $titleColor;
+	color: $titleColor;
 	> *:not(:last-child) {
 		margin-bottom: rem(8);
 	}
@@ -61,8 +61,8 @@ color: $titleColor;
 */
 .courses-cards {
 	// .courses-cards__card
-	&__card { 
-		display: grid;//delete
+	&__card {
+		display: grid; //delete
 		grid-template-columns: 35.6% 64.4%; /* 214/600 */
 		@media (min-width: em(680)) and (max-width: em(999.98)) {
 			grid-template-columns: 1fr; /* 214/600 */
@@ -98,10 +98,11 @@ color: $titleColor;
 		max-height: rem(214);
 	}
 	// .courses-cards__img
+
 	&__img {
-		display: block;
-		position: relative;
-		max-width: 100%;
+		//display: block;
+		//position: relative;
+		//max-width: 100%;
 		border-radius: rem(4) 0px 0px rem(4);
 		img {
 			width: 100%;
@@ -113,6 +114,19 @@ color: $titleColor;
 			max-width: 60%;
 		}
 	}
+	//+add -ibg styles
+	//&__img-ibg {
+	//	width: 100%;
+	//	img {
+	//	}
+	//	@media (min-width: em(680)) and (max-width: em(999.98)) {
+	//		max-width: 60%;
+	//	}
+	//	@media (max-width: em(499.98)) {
+	//		max-width: 60%;
+	//	}
+	//}
+
 	// .courses-cards__info-more
 	&__info-more {
 		@include adaptiveValue("padding", 32, 10, 0, 1230, 900);
