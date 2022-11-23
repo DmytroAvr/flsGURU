@@ -62,15 +62,13 @@
 .courses-cards {
 	// .courses-cards__card
 	&__card {
-		display: grid; //delete
-		grid-template-columns: 35.6% 64.4%; /* 214/600 */
-		@media (min-width: em(680)) and (max-width: em(999.98)) {
-			grid-template-columns: 1fr; /* 214/600 */
-			grid-template-rows: 1fr auto;
+		display: flex; //delete
+		flex-direction: row;
+		@media (min-width: em(680)) and (max-width: em(1049.98)) {
+			flex-direction: column;
 		}
 		@media (max-width: em(499.98)) {
-			grid-template-columns: 1fr; /* 214/600 */
-			grid-template-rows: 1fr auto;
+			flex-direction: column;
 		}
 
 		border: 1px solid #e5e8ed;
@@ -95,6 +93,7 @@
 		width: 100%;
 		justify-content: center;
 		display: flex;
+		flex: 0 0 214px;
 		max-height: rem(214);
 	}
 	// .courses-cards__img
@@ -107,11 +106,11 @@
 		img {
 			width: 100%;
 		}
-		@media (min-width: em(680)) and (max-width: em(999.98)) {
+		@media (min-width: em(680)) and (max-width: em(1049.98)) {
 			max-width: 60%;
 		}
 		@media (max-width: em(499.98)) {
-			max-width: 60%;
+			//max-width: 60%;
 		}
 	}
 	//+add -ibg styles
@@ -135,7 +134,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: space-between;
-		@media (min-width: em(680)) and (max-width: em(999.98)) {
+		@media (min-width: em(680)) and (max-width: em(1049.98)) {
 			@include adaptiveValue("row-gap", 20, 10);
 		}
 		@media (max-width: em(679.98)) {
@@ -172,7 +171,11 @@
 		color: $titleColor;
 	}
 	// .courses-cards__link-title
-	&_link-title {
+	&__link-title {
+		flex: 1 1 auto;
+		display: flex;
+
+		align-items: center;
 	}
 
 	// .courses-cards__row-info-courses
