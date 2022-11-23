@@ -1,17 +1,28 @@
 .tabs {
+	@media (max-width: em(498.99)) {
+		display: flex;
+	}
 	// .tabs__navigation
 	&__navigation {
-		display: flex;
+		@media (min-width: em(499.98)) {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 	// .tabs__title
 	&__title {
-		flex: 1 1 auto;
+		@media (max-width: em(899.98)) {
+			flex: 1 1 50%;
+		}
+		width: 100%;
+		flex: 1 1 25%;
 		font-weight: 700;
 		line-height: 1.6;
 		color: $colorTabsNA;
 
 		border: 1px solid transparent;
-		padding: rem(10) rem(70);
+
+		padding: rem(10) rem(20);
 		border-radius: rem(4);
 		transition: color 0.3s ease 0s, border 0.3s ease 0s;
 		&._tab-active {
@@ -31,20 +42,40 @@
 	&__content {
 		padding: rem(10) rem(15);
 	}
+	@media (max-width: em(400)) {
+		&__title {
+			&::before {
+				margin-right: 0;
+			}
+			span {
+				display: none;
+			}
+		}
+		&__content {
+			padding: rem(0) rem(10);
+		}
+	}
 	// .tabs__body
 	&__body {
 	}
 }
 
 .benefits-tab {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	max-height: rem(500);
-	height: 100%;
+	@media (min-width: em(499.98)) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-height: rem(500);
+	}
 	overflow: hidden;
+
+	height: 100%;
 	// .benefits-tab__text
+	@media (max-width: em(679.98)) {
+		&__text {
+			text-align: center;
+		}
+	}
 	&__text {
 		padding: rem(10);
 		flex: 0 1 rem(455);
@@ -53,8 +84,17 @@
 	&__img {
 		max-width: 100%;
 		flex-basis: 48.780488%; /* 600/1230 */
+		border-radius: rem(4);
+		overflow: hidden;
 		img {
 			width: 100%;
+		}
+		@media (max-width: em(499.98)) {
+			width: 60%;
+			margin: 0 auto;
+		}
+		@media (max-width: em(400)) {
+			display: none;
 		}
 	}
 }

@@ -26,6 +26,9 @@
 	}
 }
 
+//=============================================================
+//=============================================================
+
 //block list items
 /*
 <ul class="XXXXXX__list block-list">
@@ -55,6 +58,9 @@
 		}
 	}
 }
+
+//=============================================================
+//=============================================================
 
 /*
 
@@ -208,6 +214,133 @@
 		}
 	}
 }
+
+//=============================================================
+// date row
+//=============================================================
+//=============================================================
+/*
+					<table class="events-row">
+						<tr class="events-row__event">
+							<td class="events-row__info-date date-event-info"><time datetime="2023-08-05 11:00"></time>
+								<div class="date-event-info__day">25</div>
+								<div class="date-event-info__column">
+									<div class="date-event-info__month">August</div>
+									<div class="date-event-info__time"><time>11:00</time> – <time>14:00</time></div>
+								</div>
+							</td>
+							<td class="events-row__info-title title-event-info">
+								<h3 class="title-event-info__title">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+								<p class="title-event-info__title">Onine master-class</p>
+							</td>
+							<td class="events-row__info-more more-event-info">
+								<a class="more-event-info__link button button--btn-transparent" href="#">View more</a>
+							</td>
+						</tr>
+					</table>
+
+*/
+
+.events-row {
+	//border-collapse: separate;
+	//border-spacing: 0 rem(24);
+	//max-width: 100%;
+	width: 100%;
+
+	// .events-row__event
+	&__event {
+		//width: 100%;
+		//@include adaptiveValue("margin-bottom", 24, 15);
+
+		display: flex;
+		align-items: flex-start;
+		@include adaptiveValue("column-gap", 40, 15);
+		background: #ffffff;
+		border-radius: 4px;
+		@include adaptiveValue("margin-bottom", 24, 12);
+		padding: rem(32) rem(40);
+		@media (any-hover: hover) {
+			&:hover {
+				box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1),
+					0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+				z-index: 1;
+				position: relative;
+			}
+		}
+	}
+	// .events-row__info-date
+	&__info-date {
+	}
+	// .events-row__info-title
+	&__info-title {
+	}
+	// .events-row__info-more
+	&__info-more {
+	}
+}
+.date-event-info {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	@include adaptiveValue("column-gap", 20, 10);
+	// .date-event-info__day
+	&__day {
+		font-weight: 900;
+		@include adaptiveValue("font-size", 48, 30);
+		line-height: 130%;
+		letter-spacing: 1px;
+		color: $primaryColor;
+	}
+	// .date-event-info__column
+	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: rem(4);
+	}
+	// .date-event-info__month
+	&__month {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 20, 16);
+		line-height: 150%;
+		color: $titleColor;
+	}
+	// .date-event-info__time
+	&__time {
+		line-height: 160%;
+		color: $colorSpeaker;
+	}
+}
+.title-event-info {
+	//flex: 1 1 auto;
+	flex: 1 1 61.544715%; /* 757/1230 */
+
+	// .title-event-info__title
+	&__title {
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: 150%;
+		color: $titleColor;
+	}
+	// .title-event-info__sub-title
+	&__sub-title {
+		line-height: 160%;
+		color: $colorSpeaker;
+	}
+}
+.more-event-info {
+	flex: 0 0 auto;
+	// .more-event-info__link
+	&__link {
+		padding: rem(10) rem(32);
+	}
+}
+//=============================================================
+//=============================================================
+//=============================================================
+//=============================================================
 
 //animations
 @keyframes pulse {
