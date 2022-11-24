@@ -36,13 +36,13 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 30,
 			autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+		loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
@@ -76,7 +76,7 @@ function initSliders() {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
 			},
-			/*
+			
 			// Брейкпоинты
 			breakpoints: {
 				640: {
@@ -97,7 +97,7 @@ function initSliders() {
 					spaceBetween: 30,
 				},
 			},
-			*/
+			
 			// События
 			on: {
 

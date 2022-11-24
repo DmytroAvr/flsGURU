@@ -27,11 +27,12 @@ $titleColor: #1e212c; // rgb(30, 33, 44)
 $primaryColor: #ff3f3a; // maincolor
 
 $colorPrice: #ff4242; // price color
-$colorSpeaker: #787a80; // speaker color   & events time/sub-title
-$colorTabsNA: #9A9CA5; //deactivated tab
-$cardSpeakerBG: #fbd041; //speakers speaker
+$colorSpeaker: #787a80; // speaker color   & events time/sub-title   .our-team__position
+$colorTabsNA: #9a9ca5; //deactivated tab
+$cardSpeakerBG: #fbd041; //speakers speaker   .our-team__img-ibg
 
 $bg-blocks: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+$bg-team-blocks: #f4f5f7; //.team-slider   .main-reviev .main-our-blog
 
 $btn-gradient: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
 $btn-gradient-darken: linear-gradient(55.95deg, rgb(242, 53, 46) 0%, rgb(227, 86, 5) 100%);
