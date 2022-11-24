@@ -686,9 +686,11 @@
 
 .our-certificate {
 	@include adaptiveValue("padding-top", 120, 30);
+	@include adaptiveValue("padding-bottom", 120, 30);
 	padding-bottom: 10px; //
 	// .our-certificate__container
 	&__container {
+		position: relative;
 	}
 	// .our-certificate__block-info
 	&__block-info {
@@ -709,25 +711,7 @@
 	&__block-accredited {
 	}
 	// .our-certificate__block-certificate
-
-	/*
 	&__block-certificate {
-		max-width: 70.921986%; // 500/705 
-		margin: 0 auto;
-		img {
-			width: 100%;
-		}
-	}
-	*/
-	// work wrong with adaptive
-
-	// .our-certificate__block-certificate
-	&__block-certificate {
-		max-width: rem(705);
-		max-height: rem(500);
-		img {
-			width: 100%;
-		}
 	}
 
 	//end mobile first
@@ -740,7 +724,7 @@
 		}
 		// .our-certificate__block-info
 		&__block-info {
-			flex: 1 1 32.276423%; /* 397/1230 */
+			flex: 0 0 32.276423%; /* 397/1230 */
 		}
 		// .our-certificate__block-title
 		&__block-title {
@@ -761,8 +745,21 @@
 
 		// .our-certificate__block-certificate
 		&__block-certificate {
+			position: absolute;
+			top: 0;
+			right: 0;
+			max-width: rem(705);
+			@include adaptiveValue("max-width", 705, 352, 0, 1230, 768);
+			@include adaptiveValue("max-height", 500, 250, 0, 1230, 768);
+			max-height: rem(500);
 			img {
+				width: 100%;
 			}
+		}
+	}
+	@media (min-width: em(768.98)) and (max-width: em(1024.98)) {
+		&__block-info {
+			flex: 0 0 42%; /* 397/1230 */
 		}
 	}
 }
@@ -790,8 +787,8 @@
 		font-size: 0;
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 10, 5);
+			@include adaptiveValue("margin-right", 40, 10, 0, 1230, 400);
 		}
-		@include adaptiveValue("margin-right", 40, 10, 0, 1230, 400);
 	}
 
 	// end mobile first
@@ -813,7 +810,7 @@
 //====================================================================================================
 .team-slider {
 	background: $bg-team-blocks;
-	@include adaptiveValue("margin-top", -170, 0);
+	//@include adaptiveValue("margin-top", -170, 0);
 	@include adaptiveValue("padding-top", 166, 50);
 	@include adaptiveValue("padding-bottom", 90, 20);
 	// .team-slider__container
