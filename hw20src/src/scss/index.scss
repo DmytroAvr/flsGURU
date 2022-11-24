@@ -709,9 +709,22 @@
 	&__block-accredited {
 	}
 	// .our-certificate__block-certificate
+
+	/*
 	&__block-certificate {
-		max-width: 70.921986%; /* 500/705 */
+		max-width: 70.921986%; // 500/705 
 		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+	*/
+	// work wrong with adaptive
+
+	// .our-certificate__block-certificate
+	&__block-certificate {
+		max-width: rem(705);
+		max-height: rem(500);
 		img {
 			width: 100%;
 		}
@@ -735,10 +748,19 @@
 		// .our-certificate__block-accredited
 		&__block-accredited {
 		}
+
+		// .our-certificate__block-certificate
+		/*
+		&__block-certificate {
+			flex: 0 1 57.317073%; //  705/1230 
+			max-width: 100%;
+			img {
+			}
+		}
+		*/
+
 		// .our-certificate__block-certificate
 		&__block-certificate {
-			flex: 0 1 57.317073%; /* 705/1230 */
-			max-width: 100%;
 			img {
 			}
 		}
