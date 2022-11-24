@@ -770,7 +770,6 @@
 			@include adaptiveValue("margin-bottom", 10, 5);
 		}
 		@include adaptiveValue("margin-right", 40, 10, 0, 1230, 400);
-		// с ним у последнего елемента верно центрует второй ряд
 	}
 
 	// end mobile first
