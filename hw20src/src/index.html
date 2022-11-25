@@ -549,7 +549,48 @@
 					</div>
 				</div>
 			</section>
+			<section class="main-review">
+				<div class="main-review__container">
+					<div class="main-review__block-title block-heading">
+						<p class="block-heading__sup-title">TESTIMONIALS</p>
+						<h2 class="block-heading__title">What our students say</h2>
+					</div>
+					<!-- Оболочка слайдера -->
+					<div class="main-review__slider swiper">
 
+
+						<!-- Двигающееся часть слайдера -->
+						<button type="button" class="main-review__prev swiper-button-prev --icon-logout"></button>
+						<div class="main-review__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="main-review__slide swiper-slide">
+								<div class="main-review__body-slide slide-item">
+									<blockquote class="slide-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</blockquote>
+									<div class="slide-item__row-info">
+										<div class="slide-item__avatar-author">
+											<img src="@img/" alt="">
+										</div>
+										<div class="slide-item__info-author">
+											<p class="slide-item__name-author">Eleanor Pena</p>
+											<p class="slide-item__position-author">Position, Course</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="main-review__next swiper-button-next --icon-login"></button>
+
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+						<!-- Если нужен скролбар -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+			</section>
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>

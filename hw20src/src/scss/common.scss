@@ -339,6 +339,40 @@
 }
 //=============================================================
 //=============================================================
+.swiper-button-prev,
+.swiper-button-next {
+	padding: rem(12);
+	font-size: rem(16);
+	border-radius: 50%;
+	transition: all 0.3s ease 0s;
+	max-width: rem(48);
+	max-height: rem(48);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff;
+			position: relative;
+			background: $primaryColor;
+
+			//&::after {
+			//	position: absolute;
+			//	display: block;
+			//	content: "";
+			//	width: rem(48);
+			//	height: rem(48);
+			//	border-radius: 50%;
+			//	background-color: $primaryColor;
+			//	top: 0;
+			//	left: 0;
+			//	z-index: -1;
+			//}
+		}
+	}
+}
+
 //=============================================================
 //=============================================================
 

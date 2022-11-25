@@ -712,6 +712,12 @@
 	}
 	// .our-certificate__block-certificate
 	&__block-certificate {
+		@media (max-width: em(768)) {
+			@include adaptiveValue("margin-bottom", -120, -50, 0, 768, 320);
+		}
+		img {
+			width: 100%;
+		}
 	}
 
 	//end mobile first
@@ -752,9 +758,7 @@
 			@include adaptiveValue("max-width", 705, 352, 0, 1230, 768);
 			@include adaptiveValue("max-height", 500, 250, 0, 1230, 768);
 			max-height: rem(500);
-			img {
-				width: 100%;
-			}
+			width: 100%;
 		}
 	}
 	@media (min-width: em(768.98)) and (max-width: em(1024.98)) {
@@ -850,39 +854,10 @@
 }
 
 .slider-buttons-arrRound {
-	&__prev,
+	&__prev {
+		margin-right: rem(12);
+	}
 	&__next {
-		padding: rem(12);
-		border-radius: 50%;
-		transition: all 0.3s ease 0s;
-		max-width: rem(48);
-		max-height: rem(48);
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		&:not(:last-child) {
-			margin-right: rem(12);
-		}
-		@media (any-hover: hover) {
-			&:hover {
-				color: #fff;
-				position: relative;
-				background: $primaryColor;
-
-				//&::after {
-				//	position: absolute;
-				//	display: block;
-				//	content: "";
-				//	width: rem(48);
-				//	height: rem(48);
-				//	border-radius: 50%;
-				//	background-color: $primaryColor;
-				//	top: 0;
-				//	left: 0;
-				//	z-index: -1;
-				//}
-			}
-		}
 	}
 }
 
