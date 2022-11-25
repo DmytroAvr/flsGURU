@@ -376,6 +376,161 @@
 //=============================================================
 //=============================================================
 
+//team cards
+/*
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<img src="@img/our-team/Dianne-Russell.png" alt="Dianne Russell">
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-facebook" href="#"></a>
+											<a class="social-links__link --icon-instagram" href="#"></a>
+											<a class="social-links__link --icon-linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Dianne Russell</div>
+										<div class="our-team__position">Founder and CEO</div>
+									</div>
+								</div>
+							</div>
+
+*/
+/*
+
+							<div class=" our-team">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<img src="@img/our-team/Dianne-Russell.png" alt="Dianne Russell">
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-facebook" href="#"></a>
+											<a class="social-links__link --icon-instagram" href="#"></a>
+											<a class="social-links__link --icon-linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Dianne Russell</div>
+										<div class="our-team__position">Founder and CEO</div>
+									</div>
+								</div>
+							</div>
+
+*/
+
+.our-team {
+	//padding: 0 rem(8);
+
+	// .our-team__body-wrap
+	&__body-wrap {
+		@media (any-hover: hover) {
+			&:hover {
+				// .our-team__social
+				.our-team__social {
+					display: inline-block;
+					opacity: 1;
+				}
+				// .our-team__row-link
+				.our-team__row-link {
+					&::after {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	// .our-team__row-link
+	&__row-link {
+		min-height: rem(340);
+		background: $cardSpeakerBG;
+
+		overflow: hidden;
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: rem(16);
+		}
+		&::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			visibility: hidden;
+			opacity: 0;
+			background: linear-gradient(
+				180deg,
+				rgba(30, 33, 44, 0) 43.9%,
+				rgba(30, 33, 44, 0.03) 55.21%,
+				rgba(30, 33, 44, 0.33) 68.73%,
+				rgba(30, 33, 44, 0.56) 76.17%,
+				rgba(30, 33, 44, 0.768225) 83.75%,
+				rgba(30, 33, 44, 0.92) 91.49%,
+				#1e212c 100%
+			);
+			transition: opacity 0.3s ease 0s;
+		}
+	}
+	// .our-team__img-ibg
+	&__img-ibg {
+		//padding-bottom: 83.823529%; /* 285/340 */
+		padding-bottom: rem(320);
+		img {
+			margin-top: rem(20);
+			object-fit: contain;
+		}
+	}
+
+	// .our-team__social
+	&__social {
+		position: absolute;
+		bottom: rem(21);
+		right: rem(21);
+		z-index: 1;
+		color: #fff;
+		opacity: 0;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			> *:hover {
+				color: $primaryColor;
+			}
+		}
+	}
+	// .our-team__info
+	&__info {
+		text-align: center;
+	}
+	// .our-team__name
+	&__name {
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: 150%;
+		&:not(:last-child) {
+			margin-bottom: rem(4);
+		}
+	}
+	// .our-team__position
+	&__position {
+		position: relative;
+		line-height: 160%;
+		color: $colorSpeaker;
+		&:not(:last-child) {
+			margin-bottom: rem(4);
+		}
+	}
+}
+
+//=============================================================
+//=============================================================
+//=============================================================
+//=============================================================
+
 //animations
 @keyframes pulse {
 	0% {
