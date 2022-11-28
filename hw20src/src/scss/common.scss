@@ -219,27 +219,6 @@
 // date row
 //=============================================================
 //=============================================================
-/*
-					<table class="events-row">
-						<tr class="events-row__event">
-							<td class="events-row__info-date date-event-info"><time datetime="2023-08-05 11:00"></time>
-								<div class="date-event-info__day">25</div>
-								<div class="date-event-info__column">
-									<div class="date-event-info__month">August</div>
-									<div class="date-event-info__time"><time>11:00</time> – <time>14:00</time></div>
-								</div>
-							</td>
-							<td class="events-row__info-title title-event-info">
-								<h3 class="title-event-info__title">Formation of the organizational structure of the company in the face of uncertainty.</h3>
-								<p class="title-event-info__title">Onine master-class</p>
-							</td>
-							<td class="events-row__info-more more-event-info">
-								<a class="more-event-info__link button button--btn-transparent" href="#">View more</a>
-							</td>
-						</tr>
-					</table>
-
-*/
 
 .events-row {
 	//border-collapse: separate;
@@ -278,13 +257,18 @@
 	&__info-more {
 	}
 }
+
 .date-event-info {
-	flex-shrink: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-self: center;
-	@include adaptiveValue("column-gap", 20, 10);
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("column-gap", 20, 10);
+		@media (min-width:em(500)) and (max-width: em(768.98)){
+			  flex-direction: column;
+			  align-items: flex-start;
+		}
+	}
+
 	// .date-event-info__day
 	&__day {
 		font-weight: 900;
@@ -311,12 +295,25 @@
 	&__time {
 		line-height: 160%;
 		color: $colorSpeaker;
+		white-space: nowrap;
+	}
+	@media (max-width: em(768.98)) {
+		line-height: 150%;
 	}
 }
 .title-event-info {
 	//flex: 1 1 auto;
 	flex: 1 1 61.544715%; /* 757/1230 */
 
+	//title-event-info__place
+	&__place{
+		@media (min-width:em(501)){
+			  display: none;
+			  visibility: hidden;
+			  opacity: 0;
+			  font-size: rem(0);
+		}
+	}
 	// .title-event-info__title
 	&__title {
 		font-weight: 700;
@@ -328,6 +325,25 @@
 	&__sub-title {
 		line-height: 160%;
 		color: $colorSpeaker;
+	}
+	@media (max-width: em(768.98)) {
+		display: flex;
+		flex-direction: column;
+		&:not(:first-child) {
+			row-gap: rem(5);
+		}
+		//> *:not(:last-child) {
+		//	margin-bottom: rem(8);
+		//}
+		> a {
+			align-self: flex-end;
+		}
+	}
+	@media (max-width: em(500.98)) {
+		&__place {
+			//display: block;
+			//visibility: visible;
+		}
 	}
 }
 .more-event-info {
