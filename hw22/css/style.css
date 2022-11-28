@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Marck+Script:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Beastly:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Maze:regular&display=swap");
+
 [class*="__container"] {
   max-width: 1260px;
   padding-left: 15px;
@@ -6,10 +10,10 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Marck Script", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  color: #fff;
+  color: rgb(186, 185, 185);
   background: #333;
 }
 
@@ -22,3 +26,113 @@ body {
 .wrapper > main {
   flex-grow: 1;
 }
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+article {
+  padding: 30px 0;
+}
+
+.suptitle {
+  font-family: "Rubik Maze";
+  text-align: center;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: "Rubik Beastly";
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+[class*="__text "] {
+  margin-bottom: 15px;
+}
+[class*="__answer "] {
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+[class*="__answer "]::before {
+  
+}
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.header {
+}
+.header__container {
+}
+.navigations {
+}
+.navigations__list {
+  text-align: center;
+}
+.navigations__item {
+}
+.navigations__link {
+}
+.main {
+}
+.video2 {
+}
+.video2__container {
+}
+.video2__suptitle {
+}
+.video2__title {
+}
+
+.video2__answers {
+}
+.video2__answer {
+}
+.video2__answer--wrong {
+}
+.video2__answer--badly {
+}
+.video3 {
+}
+.video3__container {
+}
+.video3__suptitle {
+}
+.video3__title {
+}
+.video3__answers {
+}
+.video3__answer {
+}
+.video3__answer--wrong {
+}
+.video3__answer--badly {
+}
+.video4 {
+}
+.video4__container {
+}
+.video4__suptitle {
+}
+.video4__title {
+}
+.video4__answers {
+}
+.video4__answer {
+}
+.video4__answer--wrong {
+}
+.video4__answer--badly {
+}
+.footer {
+}
+.footer__container {
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
