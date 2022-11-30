@@ -55,9 +55,69 @@
 		}
 	}
 	&--btn-transparent {
-		border: 1px solid orange;
+		//border: 1px solid orange;
 		@include adaptiveValue("padding-bottom", 14, 10, 0, 1280, 776);
 		@include adaptiveValue("padding-top", 14, 10, 0, 1280, 776);
+
+		//add grad button
+		position: relative;
+		cursor: pointer;
+		border-radius: 4px;
+		overflow: hidden;
+		background: $btn-gradient 0 0 / 100% 1px no-repeat, $btn-gradient 0 bottom / 100% 1px no-repeat;
+		span {
+			display: block;
+			z-index: 2;
+			transition: all 0.3s ease 0s;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				opacity: 0;
+				transition: all 0.3s ease 0s;
+				background: $btn-gradient 0 0 no-repeat;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+		}
+		&::before {
+			left: 0;
+			width: 4px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			//border: 1px solid #ff3f3a;
+			border: 1px solid #ff3f3a;
+			border-right: none;
+		}
+		&::after {
+			right: 0;
+			width: 4px;
+			height: 100%;
+			border-radius: 0px 4px 4px 0;
+			//border: 1px solid #f75e05;
+			border: 1px solid #f75e05;
+			border-left: none;
+		}
+		//add end
+		@media (any-hover: hover) {
+			&:hover {
+				span {
+					color: #fff;
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
 	}
 }
 
