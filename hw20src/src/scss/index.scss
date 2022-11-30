@@ -89,29 +89,6 @@
 	color: $titleColor;
 	// .info-block-hero__play
 	&__play {
-		//&::before {
-		//	@include adaptiveValue("height", 52, 30);
-		//	@include adaptiveValue("width", 52, 30);
-		//	background: $primaryColor;
-		//	display: flex;
-		//	align-items: center;
-		//	justify-content: center;
-		//	border-radius: 50%;
-		//}
-		//&::after {
-		//	content: "";
-		//	position: absolute;
-		//	@include adaptiveValue("height", 84, 50);
-		//	@include adaptiveValue("width", 84, 50);
-		//	background: $primaryColor;
-		//	opacity: 0.12;
-		//	top: center;
-		//	left: -10%;
-		//	z-index: -1;
-		//	border-radius: 50%;
-		//	animation: pulse 2s infinite;
-		//	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-		//}
 		font-weight: 700;
 		font-size: rem(14);
 		line-height: 1.5;
@@ -980,7 +957,6 @@
 		@include adaptiveValue("margin-bottom", 24, 12);
 		@include adaptiveValue("padding-left", 58, 30);
 		&::before {
-			content: "\e915";
 			position: absolute;
 			top: 0;
 			left: 0;
