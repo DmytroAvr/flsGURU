@@ -4,16 +4,14 @@
 
 [class*="__container"] {
   max-width: 1260px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
+  padding: 30px 15px 50px;
 }
 
 body {
   font-family: "Marck Script", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  color: rgb(186, 185, 185);
   background: #333;
 }
 
@@ -46,16 +44,39 @@ article {
   font-size: 30px;
   margin-bottom: 40px;
 }
-[class*="__text "] {
+[class*="__text "]:not(:last-child) {
   margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
+
 [class*="__answer "] {
+  position: relative;
   padding-left: 30px;
+  font-size: 1.5rem;
+}
+[class*="__answer "]:not(:last-child) {
   margin-bottom: 8px;
 }
 [class*="__answer "]::before {
-  
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
+[class*="--wrong"]::before {
+  background: url(../img/error.svg) 0 0 / 20px no-repeat;
+}
+[class*="--badly"]::before {
+  background: url(../img/problem.svg) 0 0 / 20px no-repeat;
+}
+/*
+--wrong 
+ 
+*/
+
 /* =================================================================================== */
 /* =================================================================================== */
 /* =================================================================================== */
@@ -64,7 +85,15 @@ article {
 }
 .header__container {
 }
+.header__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
 .navigations {
+  color: #fff;
 }
 .navigations__list {
   text-align: center;
@@ -73,11 +102,20 @@ article {
 }
 .navigations__link {
 }
+
+/* ========== */
 .main {
+}
+
+.video2 {
 }
 .video2 {
 }
 .video2__container {
+  background: rgb(65, 220, 65);
+  border-radius: 125px 55px 50px 70px;
+  -moz-border-radius: 125px 55px 50px 70px;
+  -webkit-border-radius: 125px 55px 50px 70px;
 }
 .video2__suptitle {
 }
@@ -95,6 +133,10 @@ article {
 .video3 {
 }
 .video3__container {
+  background: rgb(64, 64, 214);
+  border-radius: 53px 60px 74px 50px;
+  -moz-border-radius: 53px 89px 74px 50px;
+  -webkit-border-radius: 53px 89px 74px 50px;
 }
 .video3__suptitle {
 }
@@ -111,6 +153,10 @@ article {
 .video4 {
 }
 .video4__container {
+  background: rgb(214, 214, 54);
+  border-radius: 30px 110px 150px 63px;
+  -moz-border-radius: 30px 110px 150px 63px;
+  -webkit-border-radius: 30px 110px 150px 63px;
 }
 .video4__suptitle {
 }
