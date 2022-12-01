@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Marck+Script:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Beastly:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Maze:regular&display=swap");
+
+[class*="__container"] {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 30px 15px 50px;
+}
+
+body {
+  font-family: "Marck Script", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  background: #333;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+article {
+  padding: 30px 0;
+}
+
+.suptitle {
+  font-family: "Rubik Maze";
+  text-align: center;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: "Rubik Beastly";
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+[class*="__text "]:not(:last-child) {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  pointer-events: none;
+}
+
+[class*="__answer "] {
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+[class*="__answer "]:not(:last-child) {
+  margin-bottom: 8px;
+}
+[class*="__answer "]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+[class*="--wrong"]::before {
+  background: url(../img/error.svg) 0 0 / 20px no-repeat;
+}
+[class*="--badly"]::before {
+  background: url(../img/problem.svg) 0 0 / 20px no-repeat;
+}
+/*
+--wrong 
+ 
+*/
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.header {
+}
+.header__container {
+}
+.header__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.navigations {
+  color: #fff;
+}
+.navigations__list {
+  text-align: center;
+}
+.navigations__item {
+}
+.navigations__link {
+  position: relative;
+}
+.navigations__link::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: red;
+  bottom: -3px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  border-radius: 10px;
+}
+.navigations__link:hover::before {
+  width: 100%;
+}
+/* ========== */
+.main {
+}
+
+.video2 {
+}
+.video2 {
+}
+.video2__container {
+  background: rgb(65, 220, 65);
+  border-radius: 125px 55px 50px 70px;
+  -moz-border-radius: 125px 55px 50px 70px;
+  -webkit-border-radius: 125px 55px 50px 70px;
+}
+.video2__suptitle {
+}
+.video2__title {
+}
+
+.video2__answers {
+}
+.video2__answer {
+}
+.video2__answer--wrong {
+}
+.video2__answer--badly {
+}
+.video3 {
+}
+.video3__container {
+  background: rgb(64, 64, 214);
+  border-radius: 53px 60px 74px 50px;
+  -moz-border-radius: 53px 89px 74px 50px;
+  -webkit-border-radius: 53px 89px 74px 50px;
+}
+.video3__suptitle {
+}
+.video3__title {
+}
+.video3__answers {
+}
+.video3__answer {
+}
+.video3__answer--wrong {
+}
+.video3__answer--badly {
+}
+.video4 {
+}
+.video4__container {
+  background: rgb(214, 214, 54);
+  border-radius: 30px 110px 150px 63px;
+  -moz-border-radius: 30px 110px 150px 63px;
+  -webkit-border-radius: 30px 110px 150px 63px;
+}
+.video4__suptitle {
+}
+.video4__title {
+}
+.video4__answers {
+}
+.video4__answer {
+}
+.video4__answer--wrong {
+}
+.video4__answer--badly {
+}
+.footer {
+}
+.footer__container {
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */

@@ -357,12 +357,16 @@
 //=============================================================
 .swiper-button-prev,
 .swiper-button-next {
-	padding: rem(12);
+	//padding: rem(12);
+	// fixed with help avp
+	@include adaptiveValue("padding", 15, 10);
 	font-size: rem(16);
 	border-radius: 50%;
 	transition: all 0.3s ease 0s;
-	max-width: rem(48);
-	max-height: rem(48);
+	@include adaptiveValue("max-width", 48, 30);
+	@include adaptiveValue("max-height", 48, 30);
+	//max-width: rem(48);
+	//max-height: rem(48);
 	width: 100%;
 	height: 100%;
 	text-align: center;
