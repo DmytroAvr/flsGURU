@@ -371,6 +371,11 @@
 	height: 100%;
 	text-align: center;
 
+	&:active {
+		color: #fff;
+		position: relative;
+		background: $primaryColor;
+	}
 	@media (any-hover: hover) {
 		&:hover {
 			color: #fff;
