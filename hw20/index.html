@@ -1,179 +1,934 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>Coursera main page</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221204234633">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «hw20src»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «hw20src»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Courses</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Events</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+						</ul>
+						<span class="place-holder-button"></span>
+					</nav>
+				</div>
+				<div class="header__actions actions">
+					<button class="actions__button button button--btn-gradient" data-da=".place-holder-button, 767.98">
+						<span>Get consultation</span>
+					</button>
+					<button class="actions__user login-popup --icon-Profile"><span>Log in / Register</span></button>
+					<button type="button" class="icon-menu"><span></span></button>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<article class="hero__info-main">
+						<div class="hero__block-info info-block-hero">
+							<a class="info-block-hero__play --icon-youTube" href="#">Play showreel</a>
+							<h1 class="info-block-hero__title">Enjoy studying
+								with Createx Online Courses</h1>
+							<div class="info-block-hero__row-button">
+								<a class="info-block-hero__button-about button button--btn-transparent" href="#"><span>About us</span></a>
+								<a class="info-block-hero__button-explore button button--btn-gradient" href="#"><span>Explore courses</span></a>
+							</div>
+						</div>
+						<div class="hero__block-img">
+							<img src="img/hero-block/illustration.svg" alt="illustration">
+						</div>
+					</article>
+					<article class="hero__row-achievement achievement-row">
+						<div class="achievement-row__items">
+							<p class="achievement-row__achieve">1200</p>
+							<p class="achievement-row__description">Students graduated</p>
+						</div>
+						<div class="achievement-row__dot"></div>
+						<div class="achievement-row__items">
+							<p class="achievement-row__achieve">84</p>
+							<p class="achievement-row__description">Completed courses</p>
+						</div>
+						<div class="achievement-row__dot achievement-row__dot--hidden1000"></div>
+						<div class="achievement-row__items">
+							<p class="achievement-row__achieve">16</p>
+							<p class="achievement-row__description">Qualified tutors</p>
+						</div>
+						<div class="achievement-row__dot "></div>
+						<div class="achievement-row__items">
+							<p class="achievement-row__achieve">5</p>
+							<p class="achievement-row__description">Years of experience</p>
+						</div>
+					</article>
+				</div>
+				<div class="hero__block-decore decore-hero">
+					<div class="decore-hero__img decore-hero__circles"></div>
+					<div class="decore-hero__img decore-hero__dots"></div>
+					<div class="decore-hero__img decore-hero__group-of-arrows-deg"></div>
+					<div class="decore-hero__img decore-hero__group-of-arrows"></div>
+					<div class="decore-hero__img decore-hero__group-of-half-of-circle"></div>
+					<div class="decore-hero__img decore-hero__half-of-circle"></div>
+				</div>
+			</section>
+			<section class="who-we-are">
+				<div class="who-we-are__container">
+					<div class="who-we-are__img"><picture><source srcset="img/who-we-are/who-we-are.jfif" type="image/webp"><img src="img/who-we-are/who-we-are.jfif" alt="picture of girl"></picture></div>
+
+					<article class="who-we-are__block-text">
+						<div class="who-we-are__block-title block-heading">
+							<p class="block-heading__sup-title">Who we are</p>
+							<h2 class="block-heading__title">Why Createx?</h2>
+						</div>
+						<ul class="who-we-are__list block-list">
+							<li class="block-list__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+							<li class="block-list__item">Vulputate placerat amet pulvinar lorem nisl.</li>
+							<li class="block-list__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+							<li class="block-list__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+							<li class="block-list__item">Tincidunt sagittis neque sem ac eget.</li>
+							<li class="block-list__item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+						</ul>
+						<a class="who-we-are__more button button--btn-gradient" href="#"><span>More about us</span></a>
+					</article>
+				</div>
+				<div class="who-we-are__decors decorations-who-we-are">
+					<div class="decorations-who-we-are__img decorations-who-we-are__circles"></div>
+					<div class="decorations-who-we-are__img decorations-who-we-are__dots"></div>
+				</div>
+			</section>
+			<section class="featured-courses">
+				<div class="featured-courses__container">
+					<div class="featured-courses__top-row">
+						<div class="featured-courses__block-title block-heading">
+							<p class="block-heading__sup-title">Ready to learn?</p>
+							<h2 class="block-heading__title">Featured Courses</h2>
+						</div>
+						<a class="featured-courses__more-button button button--btn-transparent" href="#"><span>View all courses</span></a>
+					</div>
+					<div class="featured-courses__block-cards courses-cards">
+						<article class="courses-cards__card">
+							<a class="courses-cards__background-img" href="#">
+								<div class="courses-cards__img">
+									<picture><source srcset="img/featured-courses/speakers/Jerome-Bell.jfif" type="image/webp"><img src="img/featured-courses/speakers/Jerome-Bell.jfif" alt="speaker Jerome-Bell"></picture>
+								</div>
+							</a>
+							<div class="courses-cards__info-more">
+								<a class="courses-cards__badge courses-cards__badge--marketing" href="#">Marketing</a>
+								<a class="courses-cards__link-title" href="#">
+									<h3 class="courses-cards__title">The Ultimate Google Ads Training Course</h3>
+								</a>
+								<div class="courses-cards__row-info-courses ">
+									<span class="courses-cards__courses-price">$100</span>
+									<a class="courses-cards__courses-speaker" href="#">by Jerome Bell</a>
+								</div>
+							</div>
+						</article>
+						<article class="courses-cards__card">
+							<a class="courses-cards__background-img" href="#">
+								<div class="courses-cards__img">
+									<picture><source srcset="img/featured-courses/speakers/Marvin-McKinney.jfif" type="image/webp"><img src="img/featured-courses/speakers/Marvin-McKinney.jfif" alt="speaker Jerome-Bell"></picture>
+								</div>
+							</a>
+							<div class="courses-cards__info-more">
+								<a class="courses-cards__badge courses-cards__badge--management" href="#">Management</a>
+								<a class="courses-cards__link-title" href="#">
+									<h3 class="courses-cards__title">Prduct Management Fundamentals</h3>
+								</a>
+								<div class="courses-cards__row-info-courses ">
+									<span class="courses-cards__courses-price">$480</span>
+									<a class="courses-cards__courses-speaker" href="#">by Marvin McKinney</a>
+								</div>
+							</div>
+						</article>
+						<article class="courses-cards__card">
+							<a class="courses-cards__background-img" href="#">
+								<div class="courses-cards__img">
+									<picture><source srcset="img/featured-courses/speakers/Leslie-Alexander-Li.jfif" type="image/webp"><img src="img/featured-courses/speakers/Leslie-Alexander-Li.jfif" alt="speaker Jerome-Bell"></picture>
+								</div>
+							</a>
+							<div class="courses-cards__info-more">
+								<a class="courses-cards__badge courses-cards__badge--hRRecruting" href="#">HR & Recruting</a>
+								<a class="courses-cards__link-title" href="#">
+									<h3 class="courses-cards__title">HR Management and Analytics</h3>
+								</a>
+								<div class="courses-cards__row-info-courses ">
+									<span class="courses-cards__courses-price">$200</span>
+									<a class="courses-cards__courses-speaker" href="#">by Leslie Alexander Li</a>
+								</div>
+							</div>
+						</article>
+						<article class="courses-cards__card">
+							<a class="courses-cards__background-img" href="#">
+								<div class="courses-cards__img">
+									<picture><source srcset="img/featured-courses/speakers/Kristin-Watson.jfif" type="image/webp"><img src="img/featured-courses/speakers/Kristin-Watson.jfif" alt="speaker Jerome-Bell"></picture>
+								</div>
+							</a>
+							<div class="courses-cards__info-more">
+								<a class="courses-cards__badge courses-cards__badge--marketing" href="#">Marketing</a>
+								<a class="courses-cards__link-title" href="#">
+									<h3 class="courses-cards__title">Brand Management & PR Communications</h3>
+								</a>
+								<div class="courses-cards__row-info-courses ">
+									<span class="courses-cards__courses-price">$530</span>
+									<a class="courses-cards__courses-speaker" href="#">by Kristin Watson</a>
+								</div>
+							</div>
+						</article>
+						<article class="courses-cards__card">
+							<a class="courses-cards__background-img" href="#">
+								<div class="courses-cards__img">
+									<picture><source srcset="img/featured-courses/speakers/Dianne-Russell.jfif" type="image/webp"><img src="img/featured-courses/speakers/Dianne-Russell.jfif" alt="speaker Jerome-Bell"></picture>
+								</div>
+							</a>
+							<div class="courses-cards__info-more">
+								<a class="courses-cards__badge courses-cards__badge--marketing" href="#">Management</a>
+								<a class="courses-cards__link-title" href="#">
+									<h3 class="courses-cards__title">Business Development Management</h3>
+								</a>
+								<div class="courses-cards__row-info-courses ">
+									<span class="courses-cards__courses-price">$400</span>
+									<a class="courses-cards__courses-speaker" href="#">by Dianne Russell</a>
+								</div>
+							</div>
+						</article>
+						<article class="courses-cards__card">
+							<a class="courses-cards__background-img" href="#">
+								<div class="courses-cards__img">
+									<picture><source srcset="img/featured-courses/speakers/Guy-Hawkins.jfif" type="image/webp"><img src="img/featured-courses/speakers/Guy-Hawkins.jfif" alt="speaker Jerome-Bell"></picture>
+								</div>
+							</a>
+							<div class="courses-cards__info-more">
+								<a class="courses-cards__badge courses-cards__badge--design" href="#">Design</a>
+								<a class="courses-cards__link-title" href="#">
+									<h3 class="courses-cards__title">Graphic Design Basic</h3>
+								</a>
+								<div class="courses-cards__row-info-courses ">
+									<span class="courses-cards__courses-price">$500</span>
+									<a class="courses-cards__courses-speaker" href="#">by Guy Hawkins</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="our-benefits">
+				<div class="our-benefits__container">
+					<div class="our-benefits__block-title block-heading">
+						<p class="block-heading__sup-title">Our benefits</p>
+						<h2 class="block-heading__title">That’s how we do it</h2>
+					</div>
+					<div data-tabs class="our-benefits__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title --icon-Star _tab-active"><span>Experienced Tutors</span></button>
+							<button type="button" class="tabs__title --icon-like"><span>Feedback & Support</span></button>
+							<button type="button" class="tabs__title --icon-Layouts"><span>24/7 Online Library</span></button>
+							<button type="button" class="tabs__title --icon-Chat"><span>Community</span></button>
+						</nav>
+
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__row benefits-tab">
+									<div class="benefits-tab__text tab-text">
+										<h3 class="tab-text__title">Only practicing tutors</h3>
+										<p class="tab-text__text">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
+									</div>
+									<div class="benefits-tab__img">
+										<img src="img/our-benefits/illustration.svg" alt="illustration">
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__row benefits-tab">
+									<div class="benefits-tab__img">
+										<picture><source srcset="https://via.placeholder.com/1550" type="image/webp"><img src="https://via.placeholder.com/1550" alt="illustration"></picture>
+									</div>
+									<div class="benefits-tab__text tab-text">
+										<h3 class="tab-text__title">Lorem ipsum dolor sit amet.</h3>
+										<p class="tab-text__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit, dignissimos odit eligendi vitae inventore cum? Natus fugit aliquid quos, quas, tempora, odit consectetur assumenda aliquam perferendis reprehenderit saepe ipsa!
+											Hic temporibus voluptatem eius officia iste veritatis delectus laudantium, dolorum nesciunt sunt beatae quae reiciendis, ipsam saepe ipsum unde inventore laboriosam magni nostrum ea omnis! Voluptatum esse neque expedita et?
+											Sit assumenda quasi optio dignissimos quam aliquam dolor vero dolorem temporibus laudantium consequuntur obcaecati quia, nulla nihil nostrum ut odit excepturi deleniti accusantium natus iusto reiciendis quibusdam magni? Fuga, delectus?</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__row benefits-tab">
+									<div class="benefits-tab__text tab-text">
+										<h3 class="tab-text__title">Lorem, ipsum.</h3>
+										<p class="tab-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odio dolore ipsa ab nostrum impedit voluptatibus, tempore veniam totam pariatur repellat ut odit, eius quidem exercitationem aliquid facilis? Ad, saepe?</p>
+									</div>
+									<div class="benefits-tab__img">
+										<picture><source srcset="https://via.placeholder.com/550" type="image/webp"><img src="https://via.placeholder.com/550" alt="illustration"></picture>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__row benefits-tab">
+									<div class="benefits-tab__img">
+										<picture><source srcset="https://via.placeholder.com/300x200" type="image/webp"><img src="https://via.placeholder.com/300x200" alt="illustration"></picture>
+									</div>
+									<div class="benefits-tab__text tab-text">
+										<h3 class="tab-text__title">Lorem ipsum dolor sit amet consectetur.</h3>
+										<p class="tab-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem quasi suscipit iusto odit facere! Libero ratione fugit recusandae alias perferendis? Deserunt nobis facilis assumenda animi quod dolorem architecto illum.
+											Esse porro et saepe ratione similique vel tempore impedit iure quis quae rem, quas harum veritatis in. Tempore unde dolore cumque natus rerum, incidunt repudiandae assumenda eveniet quod. Voluptate, quisquam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-events">
+				<!-- 								<div class="date-event-info__wrapper" data-da=".title-event-info--date-aug25, 10">
+
+error 
+check  				-->
+				<div class="our-events__container">
+					<div class="our-events__block-title block-heading">
+						<p class="block-heading__sup-title">Our Events</p>
+						<h2 class="block-heading__title">Lectures & workshops</h2>
+					</div>
+					<table class="our-events__row-events events-row">
+						<tr class="events-row__event">
+							<td class="events-row__info-date date-event-info">
+								<div class="date-event-info__wrapper">
+									<!--<div class="date-event-info__wrapper" data-da=".title-event-info__place--dateaug25, 499.98">-->
+									<div class="date-event-info__day"><time datetime="2023-08-05 11:00">25</time></div>
+									<div class="date-event-info__column">
+										<div class="date-event-info__month">August</div>
+										<div class="date-event-info__time"><time>11:00</time> – <time>14:00</time></div>
+									</div>
+								</div>
+							</td>
+							<td class="events-row__info-title title-event-info title-event-info--august25">
+								<div class="title-event-info__place title-event-info__place--dateaug25"></div>
+								<h3 class="title-event-info__title">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+								<p class="title-event-info__sub-title">Onine master-class</p>
+							</td>
+							<td class="events-row__info-more more-event-info">
+								<a class="more-event-info__link button button--btn-transparent" href="#">View more</a>
+							</td>
+						</tr>
+
+
+						<tr class="events-row__event">
+							<td class="events-row__info-date date-event-info">
+								<div class="date-event-info__wrapper" data-da=".title-event-info--date-aug25, 10">
+									<div class="date-event-info__day"><time datetime="2023-08-05 11:00">24</time></div>
+									<div class="date-event-info__column">
+										<div class="date-event-info__month">July</div>
+										<div class="date-event-info__time"><time>11:00</time> – <time>12:30</time></div>
+									</div>
+								</div>
+							</td>
+							<td class="events-row__info-title title-event-info">
+								<h3 class="title-event-info__title">Building a customer service department. Best Practices.</h3>
+								<p class="title-event-info__sub-title">Onine lecture</p>
+							</td>
+							<td class="events-row__info-more more-event-info">
+								<a class="more-event-info__link button button--btn-transparent" href="#">View more</a>
+							</td>
+						</tr>
+
+						<tr class="events-row__event">
+							<td class="events-row__info-date date-event-info">
+
+								<div class="date-event-info__wrapper" data-da=".title-event-info--date-aug25, 10">
+									<div class="date-event-info__day"><time datetime="2023-08-05 11:00">16</time></div>
+									<div class="date-event-info__column">
+										<div class="date-event-info__month">July</div>
+										<div class="date-event-info__time"><time>10:00</time> – <time>13:00</time></div>
+									</div>
+								</div>
+							</td>
+							<td class="events-row__info-title title-event-info">
+								<h3 class="title-event-info__title">How to apply methods of speculative design in practice. Worldbuilding prototyping.</h3>
+								<p class="title-event-info__sub-title">Onine workshop</p>
+							</td>
+							<td class="events-row__info-more more-event-info">
+								<a class="more-event-info__link button button--btn-transparent" href="#">View more</a>
+							</td>
+						</tr>
+
+					</table>
+					<div class="our-events__more">
+						<p class="our-events__title-more">Do you want more?</p>
+						<a class="our-events__button-more button button--btn-gradient" href="#"><span>Explore all events</span></a>
+					</div>
+				</div>
+				<div class="our-events__block-decore decore-our-events">
+					<div class="decore-our-events__img decore-our-events__circles"></div>
+					<div class="decore-our-events__img decore-our-events__dots"></div>
+				</div>
+
+			</section>
+			<section class="our-certificate">
+				<div class="our-certificate__container">
+					<div class="our-certificate__block-info">
+						<div class="our-certificate__block-title block-heading">
+							<p class="block-heading__sup-title">Createx Certificate</p>
+							<h2 class="block-heading__title">Your expertise will be confirmed</h2>
+						</div>
+						<div class="our-certificate__block-accredited accredited-block">
+							<div class="accredited-block__text">We are accredited by international professional and institutes:</div>
+							<div class="accredited-block__accred-organizations">
+								<a class="accredited-block__organization" href="#">
+									<picture><source srcset="img/our-certificate/accredited/Del-Mar-Strategy-Logo.webp" type="image/webp"><img src="img/our-certificate/accredited/Del-Mar-Strategy-Logo.png" alt="organization Del Mar Strategy"></picture>
+								</a>
+								<a class="accredited-block__organization" href="#">
+									<picture><source srcset="img/our-certificate/accredited/Sentinal-Consulting-Logo.webp" type="image/webp"><img src="img/our-certificate/accredited/Sentinal-Consulting-Logo.png" alt="organization Sentinal Consulting"></picture>
+								</a>
+								<a class="accredited-block__organization" href="#">
+									<picture><source srcset="img/our-certificate/accredited/National-Health-Logo.webp" type="image/webp"><img src="img/our-certificate/accredited/National-Health-Logo.png" alt="organization Sentinal Consulting"></picture>
+								</a>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="our-certificate__block-certificate">
+						<picture><source srcset="img/our-certificate/certificate.jfif" type="image/webp"><img src="img/our-certificate/certificate.jfif" alt="sertificat example"></picture>
+					</div>
+
+				</div>
+			</section>
+			<section class="team-slider">
+				<div class="team-slider__container">
+					<div class="team-slider__top-row">
+						<div class="team-slider__block-title block-heading">
+							<p class="block-heading__sup-title">Best tutors are all here</p>
+							<h2 class="block-heading__title">Meet our team</h2>
+						</div>
+						<div class="team-slider__slider-buttons slider-buttons-arrRound">
+							<!-- Если нужна навигация (влево/вправо) -->
+							<button type="button" class="slider-buttons-arrRound__prev swiper-button-prev --icon-Left"></button>
+							<button type="button" class="slider-buttons-arrRound__next swiper-button-next  --icon-Right"></button>
+						</div>
+					</div>
+					<!-- Оболочка слайдера -->
+					<div class="team-slider__slider slider-team swiper ">
+						<!-- Двигающееся часть слайдера -->
+						<div class="slider-team__wrapper  swiper-wrapper">
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Dianne-Russell.webp" type="image/webp"><img src="img/our-team/Dianne-Russell.png" alt="Dianne Russell"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Dianne Russell</div>
+										<div class="our-team__position">Founder and CEO</div>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Jerome-Bell.webp" type="image/webp"><img src="img/our-team/Jerome-Bell.png" alt="Jerome-Bell"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Jerome-Bell</div>
+										<div class="our-team__position">Founder and Program Director</div>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Kristin-Watson.webp" type="image/webp"><img src="img/our-team/Kristin-Watson.png" alt="Kristin Watson"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Kristin Watson</div>
+										<div class="our-team__position">Marketer, Curator of Marketing Course</div>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Marvin-McKinney.webp" type="image/webp"><img src="img/our-team/Marvin-McKinney.png" alt="Marvin McKinney"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Marvin McKinney</div>
+										<div class="our-team__position">PM, Curator of Management Course</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Leslie-Alexander-Li.webp" type="image/webp"><img src="img/our-team/Leslie-Alexander-Li.png" alt="Leslie Alexander Li"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Leslie Alexander Li</div>
+										<div class="our-team__position">Curator of HR & Recruting Course</div>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Kathryn-Murphy.webp" type="image/webp"><img src="img/our-team/Kathryn-Murphy.png" alt="Kathryn Murphy"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Kathryn Murphy</div>
+										<div class="our-team__position">Analyst and Marketing specialist</div>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Brooklyn-Simmons.webp" type="image/webp"><img src="img/our-team/Brooklyn-Simmons.png" alt="Brooklyn Simmons"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Brooklyn Simmons</div>
+										<div class="our-team__position"> Curator of Development Course</div>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="slider-team__slide  our-team swiper-slide ">
+								<div class="our-team__body-wrap">
+									<div class="our-team__row-link">
+										<div class="our-team__img-ibg">
+											<picture><source srcset="img/our-team/Cody-Fisher.webp" type="image/webp"><img src="img/our-team/Cody-Fisher.png" alt="Cody Fisher"></picture>
+										</div>
+										<div class="our-team__social social-links">
+											<a class="social-links__link --icon-Facebook" href="#"></a>
+											<a class="social-links__link --icon-Instagram" href="#"></a>
+											<a class="social-links__link --icon-Linked-In" href="#"></a>
+										</div>
+									</div>
+									<div class="our-team__info">
+										<div class="our-team__name">Cody Fisher</div>
+										<div class="our-team__position">UX Designer, Curator of Design Course</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-slider__decore main-team-decore">
+					<div class="main-team-decore__half-of-circle "></div>
+					<div class="main-team-decore__dots"></div>
+					<div class="main-team-decore__group-of-arrows"></div>
+
+				</div>
+			</section>
+			<section class="main-review">
+				<div class="main-review__container">
+					<div class="main-review__block-title block-heading">
+						<p class="block-heading__sup-title">TESTIMONIALS</p>
+						<h2 class="block-heading__title">What our students say</h2>
+					</div>
+
+
+					<div class="main-review__body-review">
+						<!-- Оболочка слайдера -->
+
+						<!-- prev -->
+						<button type="button" class="main-review__prev swiper-button-prev --icon-Left"></button>
+
+						<div class="main-review__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="main-review__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="main-review__slide swiper-slide">
+									<div class="main-review__body-slide slide-item">
+										<div class="slide-item__wrapper">
+											<blockquote class="slide-item__text --icon-braces">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</blockquote>
+											<div class="slide-item__row-info">
+												<div class="slide-item__avatar-author">
+													<picture><source srcset="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" type="image/webp"><img src="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" alt="avatar Eleanor Pena"></picture>
+												</div>
+												<div class="slide-item__info-author">
+													<p class="slide-item__name-author">Eleanor Pena</p>
+													<p class="slide-item__position-author">Position, Course</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="main-review__slide swiper-slide">
+									<div class="main-review__body-slide slide-item">
+										<div class="slide-item__wrapper">
+											<blockquote class="slide-item__text --icon-braces">Lorem vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</blockquote>
+											<div class="slide-item__row-info">
+												<div class="slide-item__avatar-author">
+													<picture><source srcset="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" type="image/webp"><img src="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" alt="avatar Eleanor Pena"></picture>
+												</div>
+												<div class="slide-item__info-author">
+													<p class="slide-item__name-author">Pena Jerome</p>
+													<p class="slide-item__position-author">Position, Course</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="main-review__slide swiper-slide">
+									<div class="main-review__body-slide slide-item">
+										<div class="slide-item__wrapper">
+											<blockquote class="slide-item__text --icon-braces">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</blockquote>
+											<div class="slide-item__row-info">
+												<div class="slide-item__avatar-author">
+													<picture><source srcset="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" type="image/webp"><img src="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" alt="avatar Eleanor Pena"></picture>
+												</div>
+												<div class="slide-item__info-author">
+													<p class="slide-item__name-author">Eleanor Pena</p>
+													<p class="slide-item__position-author">Position, Course</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="main-review__slide swiper-slide">
+									<div class="main-review__body-slide slide-item">
+										<div class="slide-item__wrapper">
+											<blockquote class="slide-item__text --icon-braces">Lorem vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</blockquote>
+											<div class="slide-item__row-info">
+												<div class="slide-item__avatar-author">
+													<picture><source srcset="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" type="image/webp"><img src="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" alt="avatar Eleanor Pena"></picture>
+												</div>
+												<div class="slide-item__info-author">
+													<p class="slide-item__name-author">Pena Jerome</p>
+													<p class="slide-item__position-author">Position, Course</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="main-review__slide swiper-slide">
+									<div class="main-review__body-slide slide-item">
+										<div class="slide-item__wrapper">
+											<blockquote class="slide-item__text --icon-braces">Lorem vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</blockquote>
+											<div class="slide-item__row-info">
+												<div class="slide-item__avatar-author">
+													<picture><source srcset="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" type="image/webp"><img src="img/main-review/38f2839d5f3bd92da1bcfedea3f794bd.jfif" alt="avatar Eleanor Pena"></picture>
+												</div>
+												<div class="slide-item__info-author">
+													<p class="slide-item__name-author">Pena Jerome</p>
+													<p class="slide-item__position-author">Position, Course</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="main-review__next swiper-button-next --icon-Right"></button>
+
+						<!-- Если нужна пагинация -->
+					</div>
+					<!--<div class="main-review__pagination swiper-pagination  swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">-->
+					<div class="main-review__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+						<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+					</div>
+
+				</div>
+				<div class="main-review__decore review-decore">
+					<div class="review-decore__dots"></div>
+					<div class="review-decore__group-of-half-of-circle"></div>
+					<div class="review-decore__circles-white"></div>
+					<div class="review-decore__circles-big-white"></div>
+				</div>
+			</section>
+			<section class="latest-posts">
+				<div class="latest-posts__container">
+					<div class="latest-posts__top-row">
+						<div class="latest-posts__block-title block-heading">
+							<p class="block-heading__sup-title">Our blog</p>
+							<h2 class="block-heading__title">Latest posts</h2>
+						</div>
+						<a class="latest-posts__more-button button button--btn-gradient" href="#"><span>Go to blog</span></a>
+					</div>
+					<div class="latest-posts__posts-block about-latest-post">
+						<div class="about-latest-post__body-post">
+							<a class="about-latest-post__link" href="#">
+								<div class="about-latest-post__picture">
+									<div class="about-latest-post__img-ibg">
+										<picture><source srcset="img/blog/traffic-arbitrage.jfif" type="image/webp"><img src="img/blog/traffic-arbitrage.jfif" alt="art traffic arbitrage "></picture>
+									</div>
+									<span class="about-latest-post__type-of --icon-mic">
+										Podcast
+									</span>
+								</div>
+								<div class="about-latest-post__block-info">
+									<div class="about-latest-post__info-row">
+										<span class="about-latest-post__theme-info">Marketing</span>
+										<span class="about-latest-post__create-date --icon-Calendar">
+											<span class="about-latest-post__month about-latest-post__month--long">September</span>
+											<span class="about-latest-post__month about-latest-post__month--short">9,</span> 4, 2020</span>
+										<span class="about-latest-post__read-time --icon-Clock">36 min</span>
+									</div>
+									<div class="about-latest-post__about">
+										<h3 class="about-latest-post__title-about">What is traffic arbitrage and does it really make money?</h3>
+										<p class="about-latest-post__text-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quo obcaecati, provident repellendus et quod accusamus temporibus eius vel illum officiis deleniti odio perferendis sit dolorum minima quidem culpa blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis assumenda aliquid similique nobis ad accusamus, fuga sequi doloribus consectetur quae nesciunt. Ipsum alias, eligendi similique iure laboriosam placeat harum dolorum!</p>
+									</div>
+								</div>
+							</a>
+							<a class="about-latest-post__second-link --icon-Right" href="#"><span>Listen</span></a>
+						</div>
+
+						<div class="about-latest-post__body-post">
+							<a class="about-latest-post__link" href="#">
+								<div class="about-latest-post__picture">
+									<div class="about-latest-post__img-ibg">
+										<picture><source srcset="img/blog/feedback-on-the-product.jfif" type="image/webp"><img src="img/blog/feedback-on-the-product.jfif" alt="art feedback on the product"></picture>
+									</div>
+									<span class="about-latest-post__type-of --icon-Play">
+										Video
+									</span>
+								</div>
+								<div class="about-latest-post__block-info">
+									<div class="about-latest-post__info-row">
+										<span class="about-latest-post__theme-info">Marketing</span>
+										<span class="about-latest-post__create-date --icon-Calendar">
+											<span class="about-latest-post__month about-latest-post__month--long">August</span>
+											<span class="about-latest-post__month about-latest-post__month--short">8,</span> 25, 2020</span>
+										<span class="about-latest-post__read-time --icon-Clock">45 min</span>
+									</div>
+									<div class="about-latest-post__about">
+										<h3 class="about-latest-post__title-about">What to do and who to talk to if you want to get feedback on the product</h3>
+										<p class="about-latest-post__text-about">Neque ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat quibusdam maiores recusandae sapiente dolore quae quas doloremque modi, officia rem ea dolor in maxime, facere dignissimos repellat esse sed?
+											Exercitationem quasi laudantium perspiciatis cumque saepe, nihil vero. Nisi magni dolores provident fugit exercitationem iste quae numquam vero, vel modi ut! Aperiam nemo natus cum! Quasi adipisci consectetur similique! Facilis.</p>
+									</div>
+								</div>
+							</a>
+							<a class="about-latest-post__second-link --icon-Right" href="#"><span>Watch</span></a>
+						</div>
+
+						<div class="about-latest-post__body-post">
+							<a class="about-latest-post__link" href="#">
+								<div class="about-latest-post__picture">
+									<div class="about-latest-post__img-ibg">
+										<picture><source srcset="img/blog/creative-profession.jfif" type="image/webp"><img src="img/blog/creative-profession.jfif" alt="art creative profession"></picture>
+									</div>
+									<span class="about-latest-post__type-of --icon-Files">
+										Article
+									</span>
+								</div>
+								<div class="about-latest-post__block-info">
+									<div class="about-latest-post__info-row">
+										<span class="about-latest-post__theme-info">Design</span>
+										<span class="about-latest-post__create-date --icon-Calendar">
+											<span class="about-latest-post__month about-latest-post__month--long">August</span>
+											<span class="about-latest-post__month about-latest-post__month--short">8,</span> 8, 2020</span>
+									</div>
+									<div class="about-latest-post__about">
+										<h3 class="about-latest-post__title-about">Should you choose a creative profession if you are attracted to creativity?</h3>
+										<p class="about-latest-post__text-about">Curabitur ipsum dolor, sit amet consectetur adipisicing elit. Eius quis dolorem sint dolore voluptatum similique exercitationem inventore, officia repudiandae labore velit distinctio sapiente earum assumenda. Voluptate est asperiores fuga consectetur.
+											Odio assumenda alias aliquam necessitatibus similique tempora quod ab. Architecto, illo repellat ea quidem temporibus fugit dolor dolorem id labore quasi tempore omnis voluptas itaque perspiciatis nobis quibusdam illum sit.
+											Accusamus, consectetur earum dolores id obcaecati vitae, eaque deserunt illo tempora hic illum nesciunt deleniti amet, expedita tenetur architecto maiores assumenda aliquam explicabo a. Aspernatur itaque quidem beatae expedita cumque?
+											Neque nostrum vero labore quae tempore itaque repellat quam natus, non maiores earum ipsum! Cumque pariatur reprehenderit minima, ex, asperiores quisquam nostrum tenetur culpa doloremque provident earum illum illo magni.
+											Architecto quia repellendus dignissimos quas, unde eius dolore qui nam magnam, ipsum, doloribus autem. Officiis, iusto ab quisquam ex, officia dolorem maxime suscipit soluta vero, atque tempora explicabo vel. Magnam!</p>
+									</div>
+								</div>
+							</a>
+							<a class="about-latest-post__second-link --icon-Right" href="#"><span>Read</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__block-title block-heading">
+						<p class="block-heading__sup-title">Don’t miss anything</p>
+						<h2 class="block-heading__title">Subscribe to the Createx School announcements</h2>
+					</div>
+					<form class="subscribe__form form-subscribe form" action="#">
+						<label for="mailSubscribe" hidden>Enter your working email for subscribe</label>
+						<input type="text" data-error="error" data-required="email" placeholder="Your working email" class="form__item form__input" data-placeholder="Your working email" id="mailSubscribe">
+						<button class="button button--btn-gradient" type="submit">Subscribe</button>
+					</form>
+				</div>
+				<div class="subscribe__decore">
+					<div class="subscribe__illustration subscribe__illustration--left"></div>
+					<div class="subscribe__illustration subscribe__illustration--right"></div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column-main main-column-footer">
+					<div class="main-column-footer__logo">
+						<img src="img/logo-white.svg" alt="Logo">
+					</div>
+					<p class="main-column-footer__text">
+						Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.
+					</p>
+					<div class="main-column-footer__row-social social-row-footer">
+						<a class="social-row-footer__link --icon-Facebook" href="#"></a>
+						<a class="social-row-footer__link --icon-Twitter" href="#"></a>
+						<a class="social-row-footer__link " href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" />
+							</svg>
+						</a>
+						<a class="social-row-footer__link --icon-telegram" href="#"></a>
+						<a class="social-row-footer__link --icon-Instagram" href="#"></a>
+						<a class="social-row-footer__link --icon-Linked-In" href="#"></a>
+					</div>
+				</div>
+				<div data-spollers class="footer__column-site-map footer-site-map spollers ">
+					<div class="spollers__item">
+						<button disabled type="button" data-spoller class="spollers__title footer-site-map__title footer-title _spoller-active">SITE MAP</button>
+						<div class="spollers__body">
+							<nav class="footer-site-map__navigation">
+								<ul class="footer-site-map__items">
+									<li class="footer-site-map__item"><a class="footer-site-map__link" href="#">About Us</a></li>
+									<li class="footer-site-map__item"><a class="footer-site-map__link" href="#">Courses</a></li>
+									<li class="footer-site-map__item"><a class="footer-site-map__link" href="#">Events</a></li>
+									<li class="footer-site-map__item"><a class="footer-site-map__link" href="#">Blog</a></li>
+									<li class="footer-site-map__item"><a class="footer-site-map__link" href="#">Contacts</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div data-spollers class="footer__column-courses footer-courses spollers ">
+					<div class="spollers__item">
+						<button disabled type="button" data-spoller class="spollers__title footer-courses__title footer-title _spoller-active">COURSES</button>
+						<div class="spollers__body">
+							<ul class="footer-courses__items">
+								<li class="footer-courses__item"><a class="footer-courses__link" href="#">Marketing</a></li>
+								<li class="footer-courses__item"><a class="footer-courses__link" href="#">Management</a></li>
+								<li class="footer-courses__item"><a class="footer-courses__link" href="#">HR & Recruting</a></li>
+								<li class="footer-courses__item"><a class="footer-courses__link" href="#">Design</a></li>
+								<li class="footer-courses__item"><a class="footer-courses__link" href="#">Development</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__us-contact contact-us-footer">
+					<div class="contact-us-footer__wrapper">
+						<h2 class="contact-us-footer__title footer-title">CONTACT US
+						</h2>
+						<a class="contact-us-footer__tell --icon-iPhone" href="tel:4055550128">(405) 555-0128</a>
+						<a class="contact-us-footer__mail --icon-Mail" href="mailto:hello@createx.com">hello@createx.com</a>
+					</div>
+				</div>
+				<div class="footer__subscribe subscribe-footer">
+
+					<h3 class="subscribe-footer__title footer-title">SIGN UP TO OUR NEWSLETTER</h3>
+					<form class="subscribe-footer__form form-subscribe form" action="#">
+						<label for="footerMailSubscribe" hidden>Enter your email for subscribe</label>
+						<input type="text" data-error="error" data-required="email" placeholder="Email address" class="form__item form__input" data-placeholder="Email address" id="footerMailSubscribe">
+						<button class="form__send form__send--arrow --icon-Right" type="submit"></button>
+					</form>
+					<p class="subscribe-footer__discription">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
 		</div>
 	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221204234633"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
