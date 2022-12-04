@@ -1,6 +1,7 @@
 //<FORM>
 // Снипет (HTML):
 .form {
+	position: relative;
 	&__row {
 	}
 	&__column {
@@ -8,10 +9,28 @@
 	&__line {
 	}
 	&__input {
+		background: #ffffff;
+		border: 1px solid #d7dadd;
+		border-radius: 4px;
+
+		@include adaptiveValue("padding-bottom", 16, 10.5, 0, 1280, 776);
+		@include adaptiveValue("padding-top", 16, 10.5, 0, 1280, 776);
+		@include adaptiveValue("padding-left", 16, 12, 0, 1280, 776);
+		&::placeholder {
+			line-height: 160%;
+			//padding: rem(13) rem(16);
+			@include adaptiveValue("padding-bottom", 16, 10.5, 0, 1280, 776);
+			@include adaptiveValue("padding-top", 16, 10.5, 0, 1280, 776);
+			//@include adaptiveValue("padding-left", 16, 12, 0, 1280, 776);
+			color: $colorTabsNA;
+		}
 	}
 	&__button {
 	}
 	&__error {
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 }
 //</FORM>

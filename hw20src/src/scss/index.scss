@@ -5,8 +5,8 @@
 
 .hero {
 	position: relative;
-	@include adaptiveValue("padding-bottom", 90, 20, 0, 1230, 320);
-	@include adaptiveValue("padding-top", 200, 50, 0, 1230, 320);
+	@include adaptiveValue("padding-bottom", 90, 20, 0, 1260, 320);
+	@include adaptiveValue("padding-top", 200, 50, 0, 1260, 320);
 	background: $bg-blocks;
 	//z-index: -1;
 	// .hero__container
@@ -17,7 +17,7 @@
 	// .hero__info
 	&__info-main {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 189, 20, 0, 1230, 400);
+			@include adaptiveValue("margin-bottom", 189, 20, 0, 1260, 400);
 		}
 	}
 	// .hero__block-info
@@ -51,7 +51,7 @@
 		}
 		// .hero__block-info
 		&__block-info {
-			flex: 0 1 40.325203%; /* 496/1230 */
+			flex: 0 1 40.325203%; /* 496/1260 */
 		}
 		// .hero__block-img
 		&__block-img img {
@@ -66,7 +66,7 @@
 	}
 	@media (max-width: em(1000)) {
 		&__block-info {
-			flex: 0 1 70.325203%; /* 496/1230 */
+			flex: 0 1 70.325203%; /* 496/1260 */
 		}
 	}
 
@@ -230,7 +230,7 @@
 		&__items {
 			display: flex;
 			align-items: center;
-			@include adaptiveValue("column-gap", 12, 5, 0, 1230, 320);
+			@include adaptiveValue("column-gap", 12, 5, 0, 1260, 320);
 		}
 		&__dot {
 			&--hidden1000 {
@@ -360,8 +360,8 @@
 //====================================================================================================
 //====================================================================================================
 .who-we-are {
-	@include adaptiveValue("padding-top", 90, 20, 0, 1230, 320);
-	@include adaptiveValue("padding-bottom", 90, 20, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 90, 20, 0, 1260, 320);
+	@include adaptiveValue("padding-bottom", 90, 20, 0, 1260, 320);
 	@media (min-width: em(1100)) {
 		position: relative;
 	}
@@ -504,8 +504,8 @@
 //====================================================================================================
 
 .featured-courses {
-	@include adaptiveValue("padding-top", 90, 20, 0, 1230, 320);
-	@include adaptiveValue("padding-bottom", 90, 20, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 90, 20, 0, 1260, 320);
+	@include adaptiveValue("padding-bottom", 90, 20, 0, 1260, 320);
 
 	// .featured-courses__container
 	&__container {
@@ -554,8 +554,8 @@
 //====================================================================================================
 
 .our-benefits {
-	@include adaptiveValue("padding-top", 90, 20, 0, 1230, 320);
-	@include adaptiveValue("padding-bottom", 120, 30, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 90, 20, 0, 1260, 320);
+	@include adaptiveValue("padding-bottom", 120, 30, 0, 1260, 320);
 
 	// .our-benefits__container
 	&__container {
@@ -576,8 +576,8 @@
 //====================================================================================================
 
 .our-events {
-	@include adaptiveValue("padding-top", 80, 20, 0, 1230, 320);
-	@include adaptiveValue("padding-bottom", 80, 20, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 80, 20, 0, 1260, 320);
+	@include adaptiveValue("padding-bottom", 80, 20, 0, 1260, 320);
 	position: relative;
 	background: $bg-blocks;
 	// .our-events__container
@@ -708,7 +708,7 @@
 		}
 		// .our-certificate__block-info
 		&__block-info {
-			flex: 0 0 32.276423%; /* 397/1230 */
+			flex: 0 0 32.276423%; /* 397/1260 */
 		}
 		// .our-certificate__block-title
 		&__block-title {
@@ -720,7 +720,7 @@
 		// .our-certificate__block-certificate
 		/*
 		&__block-certificate {
-			flex: 0 1 57.317073%; //  705/1230 
+			flex: 0 1 57.317073%; //  705/1260 
 			max-width: 100%;
 			img {
 			}
@@ -733,15 +733,15 @@
 			top: 0;
 			right: 0;
 			max-width: rem(705);
-			@include adaptiveValue("max-width", 705, 352, 0, 1230, 768);
-			@include adaptiveValue("max-height", 500, 250, 0, 1230, 768);
+			@include adaptiveValue("max-width", 705, 352, 0, 1260, 768);
+			@include adaptiveValue("max-height", 500, 250, 0, 1260, 768);
 			max-height: rem(500);
 			width: 100%;
 		}
 	}
 	@media (min-width: em(768.98)) and (max-width: em(1024.98)) {
 		&__block-info {
-			flex: 0 0 42%; /* 397/1230 */
+			flex: 0 0 42%; /* 397/1260 */
 		}
 	}
 }
@@ -769,7 +769,7 @@
 		font-size: 0;
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 10, 5);
-			@include adaptiveValue("margin-right", 40, 10, 0, 1230, 400);
+			@include adaptiveValue("margin-right", 40, 10, 0, 1260, 400);
 		}
 	}
 
@@ -943,7 +943,7 @@
 	}
 	// .main-review__slider
 	&__slider {
-		max-width: 82.926829%; /* 1020/1230 */
+		max-width: 82.926829%; /* 1020/1260 */
 		//display: flex;
 		//align-items: center;
 	}
@@ -1158,8 +1158,8 @@
 //====================================================================================================
 
 .latest-posts {
-	@include adaptiveValue("padding-top", 120, 30, 0, 1230, 320);
-	@include adaptiveValue("padding-bottom", 180, 40, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 120, 30, 0, 1260, 320);
+	@include adaptiveValue("padding-bottom", 180, 40, 0, 1260, 320);
 
 	// .latest-posts__container
 	&__container {
@@ -1364,8 +1364,8 @@
 //====================================================================================================
 
 .subscribe {
-	@include adaptiveValue("padding-top", 120, 30, 0, 1230, 320);
-	@include adaptiveValue("padding-bottom", 180, 40, 0, 1230, 320);
+	@include adaptiveValue("padding-top", 120, 30, 0, 1260, 400);
+	@include adaptiveValue("padding-bottom", 180, 40, 0, 1260, 400);
 
 	position: relative;
 	background: $bg-blocks;
@@ -1379,23 +1379,34 @@
 		text-align: center;
 		max-width: rem(810);
 		margin-bottom: rem(80);
+		@include adaptiveValue("margin-bottom", 80, 20, 0, 1260, 400);
 	}
 	// .subscribe__form
 	&__form {
 		text-align: center;
-		& input {
-			background: #ffffff;
-			border: 1px solid #d7dadd;
-			border-radius: 4px;
-			max-width: rem(422);
-			width: 100%;
-			max-height: rem(52);
-			height: 100%;
-			margin-right: rem(24);
-			&::placeholder {
-				line-height: 160%;
-				padding: rem(13) rem(16);
-				color: $colorTabsNA;
+		@media (max-width: em(420.98)){
+			display: flex;
+			flex-direction: column;
+			row-gap: rem(10);
+			align-items: center;
+			input {
+				align-self: stretch;
+			}
+			  
+		}
+@media (min-width:em(421)){
+	input {
+		@include adaptiveValue("margin-right", 24, 15, 0, 1260, 550);
+	}
+}
+		@media (min-width: em(550)) {
+			input {
+				@include adaptiveValue("max-width", 422, 150, 0, 1260, 400);
+				//max-width: rem(422);
+				width: 100%;
+				max-height: rem(52);
+				height: 100%;
+				margin-right: rem(24);
 			}
 		}
 	}
@@ -1404,11 +1415,25 @@
 	}
 	// .subscribe__illustration
 	&__illustration {
-		// .subscribe__illustration--left
-		&--left {
-		}
-		// .subscribe__illustration--right
-		&--right {
+		@media (min-width: em(900)) {
+			position: absolute;
+			background: url("@img/subscribe/subscribe-decoresvg.svg") 0 0 / 100% no-repeat;
+			//width: rem(354);
+			//height: rem(246);
+			width: 18.4375%; /* 354/1920 */
+			max-width: rem(354);
+			padding-top: 12.8125%; /* 246/1920 */
+
+			bottom: 0; /* 100/1080 */
+
+			// .subscribe__illustration--left
+			&--left {
+				left: 0; /* 112/1920 */
+			}
+			// .subscribe__illustration--right
+			&--right {
+				right: 0; /* 112/1920 */
+			}
 		}
 	}
 }
@@ -1426,11 +1451,6 @@
 	}
 }
 .form-subscribe {
-}
-.form {
-	// .form__item
-	&__item {
-	}
 }
 
 //====================================================================================================
