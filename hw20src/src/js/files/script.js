@@ -26,6 +26,8 @@ for (let i = 0; i < blogText.length; i++) {
 //}
 const disableButtonSiteMap = document.querySelector(".footer-site-map__title");
 const disableButtonCourses = document.querySelector(".footer-courses__title");
+
+
 if (window.innerWidth < 610) {
 	disableButtonSiteMap.classList.toggle('_spoller-active');
 	disableButtonSiteMap.disabled=false;
