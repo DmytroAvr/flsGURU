@@ -65,18 +65,24 @@
 						<p class="les7__text text">Рішення:</p>
 						<ul class="les7__answers answers">
 							<li class="answers__item ">
-								<div class="code"><img src="img/6ex1.png" alt="done"></div>
+								<button class="accordion">Ex. 1</button>
+								<div class="panel"><img src="img/7ex1.png" alt="done"></div>
 							</li>
 							<li class="answers__item ">
-								<div class="code"><img src="img/6ex2.png" alt="stop at 1"></div>
-							</li>
-							<li class="answers__item ">
-								<div class="code"><img src="img/6ex3.png" alt="done"></div>
-							</li>
-							<li class="answers__item ">
-								<div class="code"><img src="img/6ex4.png" alt="done"></div>
-							</li>
 
+								<button class="accordion">Ex. 2</button>
+								<div class="panel"><img src="img/7ex2.png" alt="stop at 1"></div>
+							</li>
+							<li class="answers__item ">
+
+								<button class="accordion">Ex. 3</button>
+								<div class="panel"><img src="img/7ex3.png" alt="done"></div>
+							</li>
+							<li class="answers__item ">
+
+								<button class="accordion">Ex. 4</button>
+								<div class="panel"><img src="img/7ex4.png" alt="done"></div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -88,10 +94,28 @@
 						<img src="img/8.numbers.png" alt="numbers">
 					</div>
 					<div class="les8__block-answer">
-						<p class="les8__text text">Відповіді:</p>
+						<p class="les8__text text">Рішення:</p>
 						<ul class="les8__answers answers">
-							<li class="answers__item answers__item--error"></li>
-							<li class="answers__item answers__item--badly"></li>
+							<li class="answers__item ">
+								<button class="accordion">Ex. 1</button>
+								<div class="panel"><img src="img/7ex1.png" alt="done"></div>
+							</li>
+							<li class="answers__item ">
+								<button class="accordion">Ex. 2</button>
+								<div class="panel"><img src="img/8ex2.png" alt="done"></div>
+							</li>
+							<li class="answers__item ">
+								<button class="accordion">Ex. 3</button>
+								<div class="panel"><img src="img/8ex3.png" alt="done"></div>
+							</li>
+							<li class="answers__item ">
+								<button class="accordion">Ex. 4</button>
+								<div class="panel"><img src="img/8ex4.png" alt="done"></div>
+							</li>
+							<li class="answers__item ">
+								<button class="accordion">Ex. 5</button>
+								<div class="panel"><img src="img/8ex5.png" alt="done"></div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -100,13 +124,26 @@
 				<div class="les9__container">
 					<h2 class="les9__title title">Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.</h2>
 					<div class="les9__img img">
-						<img src="img/9" alt="if-else">
+						<img src="img/9string.png" alt="string">
 					</div>
 					<div class="les9__block-answer">
 						<p class="les9__text text">Відповіді:</p>
 						<ul class="les9__answers answers">
-							<li class="answers__item answers__item--error"></li>
-							<li class="answers__item answers__item--badly"></li>
+							<li class="answers__item answers__item--error">Помилково. Не той тип кавичок. ```</li>
+							<li class="answers__item done">
+								<button class="accordion">Ex. 2</button>
+								<div class="panel"><img src="img/9ex2.png" alt="done"></div>
+							</li>
+							<li class="answers__item answers__item--error">No. ==> string 123456</li>
+							<li class="answers__item done">
+								<button class="accordion">Ex. 4</button>
+								<div class="panel"><img src="img/9ex4.png" alt="done"></div>
+							</li>
+							<li class="answers__item done">
+								<button class="accordion">Ex. 5</button>
+								<div class="panel"><img src="img/9ex5.png" alt="done"></div>
+							</li>
+							<li class="answers__item done">false</li>
 						</ul>
 					</div>
 				</div>
@@ -124,6 +161,23 @@
 	</div>
 
 	<script src="js/script.js"></script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
 </body>
 
 </html>

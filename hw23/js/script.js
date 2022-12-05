@@ -22,7 +22,12 @@ console.log(a);
 
 //6 LES
 
-//Циклы FOR и WHILE в JavaScript. Директивы break и continue
+
+//lesson 7
+console.log('		lesson 7');
+console.log('	Циклы FOR и WHILE в JavaScript. Директивы break и continue');
+//lesson 7
+//
 
 //1.1
 		//for (let i = 1; i < 5; i++) {
@@ -60,3 +65,58 @@ MarkFor: for (let num = 0; num < 2; num++) {
 			}
 	}
 }
+//=====================================================================
+
+//lesson 8
+// https://www.youtube.com/watch?v=tiHvPGOX5yc
+console.log('		lesson 8');
+console.log('	Числа в JAVASCRIPT. Тип данных number. Работа с числами. проблема неточных вычислений.');
+//lesson 8
+
+//1    100.499999999 + Number.EPSILON = 100.5000000000000001
+			// *додавати завжби коли хочемо укруглення часток в більшу сторону !.?
+let numOne = Math.round((1.005 + Number.EPSILON)* 100) / 100;
+console.log(numOne);
+
+//2 
+let value = '325.22px';
+console.log(parseFloat(value));
+
+//3 
+let valueNan = 58 + "string";
+if (isNaN(valueNan)) {
+	console.log('it\'s NaN');
+}
+
+				//4 
+console.log(Math.max(10, 58, 39, -150, 0));
+
+				//5 
+console.log(Math.floor(58.285));
+
+
+//=====================================================================
+
+//lesson 9
+// https://www.youtube.com/watch?v=jc5Upe8xIN0
+console.log('		lesson 9');
+console.log('	Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.');
+//lesson 9
+
+//2
+let text = 'фрилансер';
+console.log(text[text.indexOf('н')]);
+
+//4
+console.log(text.toUpperCase());
+
+//5
+console.log(text.includes("лан"));
+
+let arrChar = [];
+for (let char of text) {
+	if (char === 'л') { arrChar.push(char); }
+	else if (char === 'а') {arrChar.push(char);}
+	else if (char === 'н') {arrChar.push(char);}
+}
+console.log(arrChar.join(''));
