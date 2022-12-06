@@ -198,6 +198,9 @@
 		@media (max-width: em(609.98)) {
 			font-size: rem(25);
 		}
+		@media (min-width: em(610)) {
+			pointer-events: none;
+		}
 		transition: margin-bottom 0.3s ease 0s;
 		&._spoller-active:not(:last-child) {
 			margin-bottom: rem(12);
@@ -240,7 +243,7 @@
 			font-size: rem(25);
 		}
 		@media (min-width: em(610)) {
-			 
+			pointer-events: none;
 		}
 		&._spoller-active:not(:last-child) {
 			margin-bottom: rem(12);
@@ -249,11 +252,11 @@
 	// .footer-courses__items
 	&__items {
 		line-height: 160%;
-		font-size: rem(20);
 		&:not(:last-child) {
 			margin-bottom: rem(8);
 		}
 		@media (max-width: em(609.98)) {
+			font-size: rem(20);
 			& a {
 				padding: rem(8);
 			}
@@ -288,6 +291,7 @@
 		@media (max-width: em(609.98)) {
 			font-size: rem(25);
 		}
+
 		&:not(:last-child) {
 			margin-bottom: rem(12);
 		}

@@ -220,157 +220,19 @@
 //=============================================================
 //=============================================================
 
-.events-row {
-	//border-collapse: separate;
-	//border-spacing: 0 rem(24);
-	//max-width: 100%;
-	width: 100%;
-
-	// .events-row__event
-	&__event {
-		//width: 100%;
-		//@include adaptiveValue("margin-bottom", 24, 15);
-
-		display: flex;
-		align-items: flex-start;
-		@include adaptiveValue("column-gap", 40, 15);
-		background: #ffffff;
-		border-radius: 4px;
-		@include adaptiveValue("margin-bottom", 24, 12);
-		padding: rem(32) rem(40);
-		@media (any-hover: hover) {
-			&:hover {
-				box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1),
-					0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
-				z-index: 1;
-				position: relative;
-			}
-		}
-	}
-	// .events-row__info-date
-	&__info-date {
-	}
-	// .events-row__info-title
-	&__info-title {
-	}
-	// .events-row__info-more
-	&__info-more {
-	}
-}
-
-.date-event-info {
-	&__wrapper {
-		display: flex;
-		align-items: center;
-		@include adaptiveValue("column-gap", 20, 10);
-		@media (min-width: em(500)) and (max-width: em(768.98)) {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-	}
-
-	// .date-event-info__day
-	&__day {
-		font-weight: 900;
-		@include adaptiveValue("font-size", 48, 30);
-		line-height: 130%;
-		letter-spacing: 1px;
-		color: $primaryColor;
-	}
-	// .date-event-info__column
-	&__column {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		row-gap: rem(4);
-	}
-	// .date-event-info__month
-	&__month {
-		font-weight: 700;
-		@include adaptiveValue("font-size", 20, 16);
-		line-height: 150%;
-		color: $titleColor;
-	}
-	// .date-event-info__time
-	&__time {
-		line-height: 160%;
-		color: $colorSpeaker;
-		white-space: nowrap;
-	}
-	@media (max-width: em(768.98)) {
-		line-height: 150%;
-	}
-}
-.title-event-info {
-	//flex: 1 1 auto;
-	flex: 1 1 61.544715%; /* 757/1230 */
-
-	//title-event-info__place
-	&__place {
-		@media (min-width: em(501)) {
-			display: none;
-			visibility: hidden;
-			opacity: 0;
-			font-size: rem(0);
-		}
-	}
-	// .title-event-info__title
-	&__title {
-		font-weight: 700;
-		font-size: rem(20);
-		line-height: 150%;
-		color: $titleColor;
-	}
-	// .title-event-info__sub-title
-	&__sub-title {
-		line-height: 160%;
-		color: $colorSpeaker;
-	}
-	@media (max-width: em(768.98)) {
-		display: flex;
-		flex-direction: column;
-		&:not(:first-child) {
-			row-gap: rem(5);
-		}
-		//> *:not(:last-child) {
-		//	margin-bottom: rem(8);
-		//}
-		> a {
-			align-self: flex-end;
-		}
-	}
-	@media (max-width: em(500.98)) {
-		&__place {
-			//display: block;
-			//visibility: visible;
-		}
-	}
-}
-.more-event-info {
-	flex: 0 0 auto;
-	// .more-event-info__link
-	&__link {
-		padding: rem(10) rem(32);
-	}
-}
 //=============================================================
 //=============================================================
 .swiper-button-prev,
 .swiper-button-next {
-	//padding: rem(12);
-	// fixed with help avp
 	@include adaptiveValue("padding", 15, 10);
 	font-size: rem(16);
 	border-radius: 50%;
 	transition: all 0.3s ease 0s;
 	@include adaptiveValue("max-width", 48, 30);
 	@include adaptiveValue("max-height", 48, 30);
-	//max-width: rem(48);
-	//max-height: rem(48);
+
 	width: 100%;
 	height: 100%;
-	text-align: center;
-
 	&:active {
 		color: #fff;
 		position: relative;
@@ -381,19 +243,6 @@
 			color: #fff;
 			position: relative;
 			background: $primaryColor;
-
-			//&::after {
-			//	position: absolute;
-			//	display: block;
-			//	content: "";
-			//	width: rem(48);
-			//	height: rem(48);
-			//	border-radius: 50%;
-			//	background-color: $primaryColor;
-			//	top: 0;
-			//	left: 0;
-			//	z-index: -1;
-			//}
 		}
 	}
 }
