@@ -638,20 +638,33 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	@include adaptiveValue("padding-top", 32, 16);
-	@include adaptiveValue("padding-bottom", 32, 16);
-	@include adaptiveValue("padding-left", 40, 20);
-	@include adaptiveValue("padding-right", 40, 20	);
+	@include adaptiveValue("padding-top", 32, 16, 0, 1260, 1200);
+	@include adaptiveValue("padding-bottom", 32, 16, 0, 1260, 1200);
+	@include adaptiveValue("padding-left", 40, 20, 0, 1260, 1200);
+	@include adaptiveValue("padding-right", 40, 20, 0, 1260, 1200);
+	@include adaptiveValue("gap", 40, 10, 0, 1260, 320);
 	// .event__block-date
 	&__block-date {
 		display: flex;
+		flex-basis: rem(177);
 		@include adaptiveValue("gap", 20, 10, 0, 1260, 320);
 	}
 	// .event__block-title
 	&__block-title {
+		flex-basis: rem(757);
+		flex-shrink: 1;
 	}
 	// .event__block-more
 	&__block-more {
+		flex-basis: rem(136);
+		a {
+			padding: rem(10) rem(32);
+			span {
+				font-size: 14px;
+				line-height: 1.5;
+				letter-spacing: 0.5px;
+			}
+		}
 	}
 }
 .event-date-block {
