@@ -1,27 +1,53 @@
 /*.header {}*/
 .header {
+  text-align: center;
+  padding: 20px;
 }
 .header__container {
 }
 
 .header__suptitle {
+  margin-bottom: 2rem;
 }
 
 .header__title {
+  font-size: 2rem;
 }
 
 /* common files */
 .title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .img {
+  text-align: center;
+  max-width: 30%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.img img {
+  width: 100%;
 }
 .text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* ordered-list */
+/* ordered-list */
+/* ordered-list */
+.ordered-list {
 }
 
 /* answers */
 .answers {
+  padding-left: 20px;
 }
 .answers__item {
+}
+.answers__item:not(:last-child) {
+  margin-bottom: 1rem;
 }
 .answers__item--badly {
 }
