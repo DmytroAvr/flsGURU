@@ -69,3 +69,70 @@ console.log(getAllLikes);
 //!24-3ex4
 const list = document.querySelector('ul');
 list.insertAdjacentHTML('beforeend', '<li>text</li>');
+
+
+//==============================================================
+//==============================================================
+//==============================================================
+console.log('=================================================');
+
+
+//!24-4
+//!24-4
+//!24-4
+
+//!24-4ex1
+	const mainElement = document.documentElement;
+	const bodyWidth = mainElement.clientWidth; 
+	
+	console.log(`Your browser window width is ${bodyWidth}px`);
+
+
+
+	console.log('=================================================');
+	
+
+
+	//!24-4ex2
+function scrollTopAfter(scrollTopSize) {
+	window.scrollBy(0, scrollTopSize);
+	console.log(`Scrolled on ${scrollTopSize}px lower `);
+	//setTimeout(scrollTopAfter, 1000, scrollTopSize);
+}
+setTimeout(scrollTopAfter, 1000, 10);
+
+
+
+console.log('=================================================');
+//!24-4ex3
+function getOffsetParent(element) {
+	const elementOffsetParent = document.querySelector(element);
+	const elementParent = elementOffsetParent.offsetParent;
+	return elementParent;
+}
+function getPositionLeft(element) {
+	const elementposition = document.querySelector(element);
+	const elementOffsetLeft = elementposition.offsetLeft;
+	return elementOffsetLeft;
+}
+function getPositionTop(element) {
+	const elementposition = document.querySelector(element);
+	const elementOffsetTop = elementposition.offsetTop;
+	return elementOffsetTop;
+}
+
+function addMessage(element) {
+	let left = getPositionLeft(element);
+	let top = getPositionTop(element);
+	let relative = getOffsetParent(element);
+	console.log(`You looking for element "${element}". \n\
+	You can found It by coordinates:\n\
+	left= ${left}, top= ${top} relative to the ${relative}`);
+}
+
+let elementsList = [".les24-3__title", ".les24-5__text", ".les24-2__answers > li:first-child"];
+for (let i = 0; i < elementsList.length; i++) {
+	const element = elementsList[i];
+	addMessage(element);
+	console.log(getOffsetParent(element));
+}
