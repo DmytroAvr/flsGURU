@@ -12,21 +12,10 @@ for (let i = 0; i < blogText.length; i++) {
 
 
 //work with spoilers 
-//HTML Button
-{/*<button id="jsDisableButton" type="button" style="margin: 12px;">
-  JS Toggle Disable
-</button>*/}
 
-//JS Click Event Listener
-//const jsDisableButton = document.getElementById("jsDisableButton");
-//if (jsDisableButton) {
-//  jsDisableButton.addEventListener("click", () =>
-//    handleJSBtnClick(jsDisableButton)
-//  );
-//}
 const disableButtonSiteMap = document.querySelector(".footer-site-map__title");
 const disableButtonCourses = document.querySelector(".footer-courses__title");
-
+//refactor to querySelectorAll
 
 if (window.innerWidth < 610) {
 	disableButtonSiteMap.classList.toggle('_spoller-active');
@@ -36,8 +25,27 @@ if (window.innerWidth < 610) {
 	disableButtonCourses.disabled=false;
 }
 
-//JS Click Handler
-//const handleJSBtnClick = (jsDisableButton) => {
-//  jsDisableButton.disabled = true;
-//  console.log("JS Disabled");
-//};
+
+
+//add code with checking screen size with timer
+// timer call function "button disable"
+
+
+
+/*
+// Ширина и высота документа
+// включая прокрученную часть
+
+let scrollWidth = Math.max(
+document.body.scrollWidth, document.documentElement.scrollWidth,
+document.body.offsetWidth, document.documentElement.offsetWidth,
+document.body.clientWidth, document.documentElement.clientWidth
+);
+let scrollHeight = Math.max(
+document.body.scrollHeight, document.documentElement.scrollHeight,
+document.body.offsetHeight, document.documentElement.offsetHeight,
+document.body.clientHeight, document.documentElement.clientHeight
+);
+console.log(scrollWidth);
+console.log(scrollHeight);
+*/
