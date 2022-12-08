@@ -797,9 +797,14 @@
 	&__organization {
 		display: inline-block;
 		font-size: 0;
+		max-width: rem(105);
+		width: 100%;
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 10, 5);
 			@include adaptiveValue("margin-right", 40, 10, 0, 1260, 400);
+		}
+		img {
+			width: 100%;
 		}
 	}
 

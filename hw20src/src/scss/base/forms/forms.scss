@@ -16,6 +16,7 @@
 		@include adaptiveValue("padding-bottom", 16, 10.5, 0, 1280, 776);
 		@include adaptiveValue("padding-top", 16, 10.5, 0, 1280, 776);
 		@include adaptiveValue("padding-left", 16, 12, 0, 1280, 776);
+		@include adaptiveValue("padding-right", 16, 12, 0, 1280, 776);
 		&::placeholder {
 			line-height: 160%;
 			//padding: rem(13) rem(16);
