@@ -448,8 +448,10 @@
 						</div>
 						<div class="team-slider__slider-buttons slider-buttons-arrRound">
 							<!-- Если нужна навигация (влево/вправо) -->
-							<button type="button" class="slider-buttons-arrRound__prev swiper-button-prev --icon-Left"></button>
-							<button type="button" class="slider-buttons-arrRound__next swiper-button-next  --icon-Right"></button>
+							<label for="team-slider-button-prev" hidden>Show previus slide</label>
+							<button type="button" id="team-slider-button-prev" class="slider-buttons-arrRound__prev swiper-button-prev --icon-Left"></button>
+							<label for="team-slider-button-next" hidden>Show next slide</label>
+							<button type="button" id="team-slider-button-next" class="slider-buttons-arrRound__next swiper-button-next  --icon-Right"></button>
 						</div>
 					</div>
 					<!-- Оболочка слайдера -->
@@ -647,7 +649,9 @@
 						<!-- Оболочка слайдера -->
 
 						<!-- prev -->
-						<button type="button" class="main-review__prev swiper-button-prev --icon-Left"></button>
+
+						<label for="review-slider-button-prev" hidden>Show previus slide</label>
+						<button type="button" id="review-slider-button-prev" class="main-review__prev swiper-button-prev --icon-Left"></button>
 
 						<div class="main-review__slider swiper">
 							<!-- Двигающееся часть слайдера -->
@@ -756,7 +760,8 @@
 						</div>
 
 						<!-- Если нужна навигация (влево/вправо) -->
-						<button type="button" class="main-review__next swiper-button-next --icon-Right"></button>
+						<label for="review-slider-button-next" hidden>Show next slide</label>
+						<button type="button" id="review-slider-button-next" class="main-review__next swiper-button-next --icon-Right"></button>
 
 						<!-- Если нужна пагинация -->
 					</div>
