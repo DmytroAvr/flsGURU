@@ -24,6 +24,14 @@
 		justify-content: space-between;
 		@include adaptiveValue("column-gap", 80, 10, 0, 1260, 1000);
 		row-gap: rem(20);
+		li {
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #ffffff;
+				}
+			}
+		}
 	}
 
 	// .footer__column-main
@@ -278,6 +286,14 @@
 	justify-content: center;
 	//.contact-us-footer__wrapper
 	&__wrapper {
+		a {
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
 		& > *:not(:first-child) {
 			display: block;
 			line-height: 160%;
