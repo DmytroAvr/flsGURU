@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:regular&display=swap");
-
+@import url(common.css);
 [class*="__container"] {
   max-width: 1260px;
   margin: 0 auto;
@@ -58,3 +58,9 @@ body {
 /* =================================================================================== */
 /* =================================================================================== */
 /* =================================================================================== */
+.les24-2 ul li:first-child {
+  padding-left: 20px;
+}
+.les24-3 ul li:last-child {
+  padding-left: 20px;
+}
