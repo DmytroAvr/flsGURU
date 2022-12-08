@@ -2082,6 +2082,12 @@ body::after {
 .accredited-block__organization {
   display: inline-block;
   font-size: 0;
+  max-width: 6.5625rem;
+  width: 100%;
+}
+
+.accredited-block__organization img {
+  width: 100%;
 }
 
 .team-slider {
@@ -3413,6 +3419,10 @@ body::after {
     padding-left: 1rem;
   }
 
+  .form__input {
+    padding-right: 1rem;
+  }
+
   .form__input::-webkit-input-placeholder {
     padding-bottom: 1rem;
   }
@@ -3917,6 +3927,10 @@ body::after {
 
   .form__input {
     padding-left: 0.75rem;
+  }
+
+  .form__input {
+    padding-right: 0.75rem;
   }
 
   .form__input::-webkit-input-placeholder {
@@ -4446,6 +4460,18 @@ body::after {
 @supports not (padding-left: clamp( 0.75rem , 0.3650793651rem  +  0.7936507937vw , 1rem )) {
     .form__input {
       padding-left: calc(0.75rem + 0.25 * (100vw - 48.5rem) / 31.5);
+    }
+}
+
+@supports (padding-right: clamp( 0.75rem , 0.3650793651rem  +  0.7936507937vw , 1rem )) {
+    .form__input {
+      padding-right: clamp( 0.75rem , 0.3650793651rem  +  0.7936507937vw , 1rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.75rem , 0.3650793651rem  +  0.7936507937vw , 1rem )) {
+    .form__input {
+      padding-right: calc(0.75rem + 0.25 * (100vw - 48.5rem) / 31.5);
     }
 }
 
