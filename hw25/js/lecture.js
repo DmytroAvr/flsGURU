@@ -41,7 +41,7 @@ function someFunc(event) {
 			//	console.log('its linkl');
 			//}
 			// !ненадійно!! не працює якщо вміст обгорнуто в другі теги
-	
+	 
 	// сама надійна конструкція
 	if (targetItem.closest("some-link") ) {
 		console.log('its linkl');
