@@ -19,16 +19,31 @@
 
 //create listener for many 
 
-const someLinks = document.querySelectorAll(".some-link");
-someLinks.forEach(link => {
-	link.addEventListener('click', func); 
-	//add function inside foreach
-	function func(event) {
-		console.log(event);
-		console.log('Слухач подій видалено');
-		event.preventDefault();
-		link.removeEventListener('click', func); 
+//const someLinks = document.querySelectorAll(".some-link");
+//someLinks.forEach(link => {
+//	link.addEventListener('click', func); 
+//	//add function inside foreach
+//	function func(event) {
+//		console.log(event);
+//		console.log('Слухач подій видалено');
+//		event.preventDefault();
+//		link.removeEventListener('click', func); 
+//	}
+//});
+
+document.addEventListener("click", someFunc);
+function someFunc(event) {
+	//отримуємо куди саме клікаємо
+	const targetItem = event.target;
+
+	//робимо перевірку
+			//!if (targetItem.classList.contains("some-link") ) {
+			//	console.log('its linkl');
+			//}
+			// !ненадійно!! не працює якщо вміст обгорнуто в другі теги
+	
+	// сама надійна конструкція
+	if (targetItem.closest("some-link") ) {
+		console.log('its linkl');
 	}
-});
-
-
+}
