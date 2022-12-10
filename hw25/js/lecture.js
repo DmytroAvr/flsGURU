@@ -36,14 +36,13 @@ function someFunc(event) {
 	//отримуємо куди саме клікаємо
 	const targetItem = event.target;
 
-	//робимо перевірку
-			//!if (targetItem.classList.contains("some-link") ) {
-			//	console.log('its linkl');
-			//}
-			// !ненадійно!! не працює якщо вміст обгорнуто в другі теги
-	 
 	// сама надійна конструкція
-	if (targetItem.closest("some-link") ) {
+	if (targetItem.closest(".some-link") ) {
 		console.log('its linkl');
+		event.preventDefault();
+	}
+	if (targetItem.closest("button") ) {
+		console.log('its button');
+		event.preventDefault();
 	}
 }
