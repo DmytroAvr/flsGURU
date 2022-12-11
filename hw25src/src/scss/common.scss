@@ -9,5 +9,21 @@
 	white-space: nowrap;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
-	overflow: hidden;	 
+	overflow: hidden;
+}
+
+@keyframes shakeIt {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+
+	//0% {
+	//	transform: rotate3d(0, 0, 0, -15deg);
+	//}
 }

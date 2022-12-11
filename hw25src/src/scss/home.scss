@@ -18,12 +18,40 @@
 		position: absolute;
 		z-index: 1;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translate(0, -50%);
+		opacity: 1;
+		transition: all 0.3s ease 0s;
+		&::before {
+			animation: shakeIt 1s ease 0s infinite normal;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			&::before {
+				color: #fff830;
+				opacity: 0.8;
+			}
+		}
 	}
 	// .newGoogle__body-form-search
 	&__body-form-search {
 		position: absolute;
 		width: 100%;
+		display: none;
+		opacity: 0;
+		transition: all 0.5s ease 0s;
+	}
+
+	.--activate-input {
+		opacity: 1;
+		.newGoogle__body-form-search {
+			display: block;
+			opacity: 1;
+		}
+
+		.push-to-see {
+			transform: translate(rem(265), -50%);
+			opacity: 0;
+		}
 	}
 }
 
