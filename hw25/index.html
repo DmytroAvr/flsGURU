@@ -1,59 +1,70 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
+	<title>hw25</title>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>hw24</title>
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<p class="header__suptitle">hw № 25</p>
-				<h1 class="header__title">Уроки JAVASCRIPT с нуля 2020</h1>
+				<div class="header__row-header">
+					<h2 class="header__title">NewGOOGLE</h2>
+					<button class="header__theme _icon-sun"><span class="visually-hidden">push the button for changing theme</span></button>
+				</div>
 			</div>
 		</header>
+		<main class="page">
 
-		<main class="main">
+			<article class="newGoogle">
+				<div class="newGoogle__container">
 
+					<div class="newGoogle__search-start">
+						<button class="newGoogle__start-to-search push-to-see _icon-eye"><span class="visually-hidden">Open search input</span>
+						</button>
+						<div class="newGoogle__body-form-search">
+							<form class="searching-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+								<div class="searching-form__row">
+									<label for="main-search visually-hidden" hidden>Enter your search term</label>
+									<!--Чи краще використати hidden ????????-->
+									<input type="text" name="searchTerm" id="main-search" placeholder="start search now" required>
+									<button type="submit" class="searching-form__search-button button-form _icon-search"><span class="visually-hidden">search</span></button>
+								</div>
+								<div class="searching-form__characters">
+									<span></span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</article>
 
-		
+			<!--
+				<form class="actions-block__block-forms forms-block"  action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<div class="forms-block__input-row forms-block__input-row--state forms-block__input-row--first-name">
+						<label for="question-first-name">First Name*</label>
+						<input type="text" name="firstName" id="question-first-name" placeholder="Your first name" required>
+					</div>
+	
+					<div class="forms-block__input-row forms-block__input-row--submit">
+						<button type="submit" class="button button--orange"><span>Send message</span></button>
+					</div>
+				</form>-->
+			<!--add option target="_blank"-->
 
 		</main>
-
-
+		
 		<footer class="footer">
 			<div class="footer__container">
-				<h2>footer</h2>
 			</div>
 		</footer>
-
 	</div>
-
 	<script src="js/script.js"></script>
-	<script src="js/lecture.js"></script>
-	<script>
-		var acc = document.getElementsByClassName("accordion");
-		var i;
-
-		for (i = 0; i < acc.length; i++) {
-			acc[i].addEventListener("click", function () {
-				this.classList.toggle("active");
-				var panel = this.nextElementSibling;
-				if (panel.style.display === "block") {
-					panel.style.display = "none";
-				} else {
-					panel.style.display = "block";
-				}
-			});
-		}
-	</script>
-
 </body>
 
 </html>
