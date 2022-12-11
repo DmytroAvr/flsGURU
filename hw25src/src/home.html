@@ -11,17 +11,19 @@
 
 			<article class="newGoogle">
 				<div class="newGoogle__container">
-					<h2 class="newGoogle__title">NewGOOGLE</h2>
+					<div class="newGoogle__heading">
+						<h2 class="newGoogle__title">NewGOOGLE</h2>
+					</div>
 					<div class="newGoogle__search-start">
-						<button class="newGoogle__start-to-search">
+						<button class="newGoogle__start-to-search _icon-eye"><span class="visually-hidden">Open search input</span>
 						</button>
 						<div class="newGoogle__body-form-search">
 							<form class="searching-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 								<div class="searching-form__row">
-									<label for="main-search visually-hidden">Enter your search term</label>
+									<label for="main-search visually-hidden" hidden>Enter your search term</label>
 									<!--Чи краще використати hidden ????????-->
 									<input type="text" name="searchTerm" id="main-search" placeholder="start to search now" required>
-									<button type="submit" class="button-form "><span class="visually-hidden">Send message</span></button>
+									<button type="submit" class="button-form "><span class="visually-hidden">search</span></button>
 								</div>
 								<div class="searching-form__characters">
 									<span></span>
@@ -31,8 +33,6 @@
 					</div>
 				</div>
 			</article>
-
-
 
 			<!--
 				<form class="actions-block__block-forms forms-block"  action="https://jsonplaceholder.typicode.com/posts" method="post">
