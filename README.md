@@ -12,7 +12,7 @@
 <a href="hw0startlevel/hw13">hw13 animation svg animation</a><br/>
 <a href="hw0startlevel/hw14">hw14 flex заміна gap</a><br/>
 <a href="hw15">hw15</a><br/>
-<a href="hw16">hw16 робота з формами</a><br/>
+<a href="hw16">hw16 робота з формами form</a><br/>
 <a href="hw17">hw17 4 єерана (кнопки та)</a><br/>
 <a href="hw18">hw18 2 єкрана сторінки</a><br/>
 <a href="hw19">hw19 dist пустой</a><br/>
