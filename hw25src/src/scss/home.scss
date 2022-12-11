@@ -37,20 +37,21 @@
 		position: absolute;
 		width: 100%;
 		display: none;
-		opacity: 0;
+		//opacity: 0;
+		opacity: 1;
 		transition: all 0.5s ease 0s;
 	}
 
 	.--activate-input {
-		opacity: 1;
+		//opacity: 1;
 		.newGoogle__body-form-search {
-			display: block;
-			opacity: 1;
+			//display: block;
+			//opacity: 1;
 		}
 
 		.push-to-see {
-			transform: translate(rem(265), -50%);
-			opacity: 0;
+			//transform: translate(rem(265), -50%);
+			//opacity: 0;
 		}
 	}
 }
