@@ -16,7 +16,13 @@
 }
  
 
-._icon-search:before {
+._icon-moon-o:before {
+	content: "\e902";
+ }
+ ._icon-sun:before {
+	content: "\e903";
+ }
+ ._icon-search:before {
 	content: "\e900";
  }
  ._icon-eye:before {

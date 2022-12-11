@@ -54,3 +54,35 @@
 	}
 }
 */
+.header {
+	padding-top: rem(30);
+	padding-bottom: rem(30);
+	position: relative;
+	// .header__container
+	&__container {
+	}
+	// .header__row-header
+	&__row-header {
+	}
+	// .header__title
+	&__title {
+		font-size: rem(60);
+		line-height: 1.5;
+		letter-spacing: 0.2em;
+		color: #ffffff;
+
+		text-align: center;
+		font-family: "Rubik Vinyl", sans-serif;
+		font-weight: 500;
+		background: linear-gradient(0deg, rgba(35, 34, 195, 1) 0%, rgba(253, 248, 45, 1) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	// .header__theme
+	&__theme {
+		position: absolute;
+		top: rem(20);
+		right: rem(20);
+		font-size: rem(40);
+	}
+}
