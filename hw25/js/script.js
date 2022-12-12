@@ -47,7 +47,6 @@ function escPress(e) {
 	}
 }
 
-
 //characters settings
 inputedValue.addEventListener("keydown", counter);
 function counter(event) {
