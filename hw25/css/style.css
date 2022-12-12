@@ -45,8 +45,12 @@
 body {
   opacity: 0;
   background: #333;
+  color: #fff;
 }
-
+.light-theme body {
+  background: #fff;
+  color: #000;
+}
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -138,18 +142,6 @@ body {
   text-align: center;
   font-family: "Rubik Vinyl", sans-serif;
   font-weight: 500;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgb(35, 34, 195)),
-    to(rgb(253, 248, 45))
-  );
-  background: -o-linear-gradient(
-    bottom,
-    rgb(35, 34, 195) 0%,
-    rgb(253, 248, 45) 100%
-  );
   background: linear-gradient(
     0deg,
     rgb(35, 34, 195) 0%,
@@ -208,6 +200,9 @@ body {
   color: #fff830;
   opacity: 0.8;
 }
+.light-theme .newGoogle__start-to-search:hover::before {
+  color: #3200fc;
+}
 
 .newGoogle__body-form-search {
   position: absolute;
@@ -253,12 +248,22 @@ body {
   padding-right: 4.375rem;
   max-height: 70px;
   height: 100%;
+  border: 1px solid #444;
   background: rgba(141, 140, 140, 0.244);
   color: rgb(161, 161, 161);
 }
 
+.light-theme .searching-form__row input {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #444;
+}
+
 .searching-form__row input:focus {
   outline: 1px solid #888;
+}
+.light-theme .searching-form__row input:focus {
+  outline: 1px solid #333;
 }
 
 .searching-form__search-button {

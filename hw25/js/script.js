@@ -14,6 +14,7 @@ const relativeActive = document.querySelector(".newGoogle");
 const inputedValue = document.querySelector(".searching-form__row > input");
 const charactersCounter = document.querySelector(".searching-form__characters");
 let counted;
+const themeChange = document.querySelector(".header__theme");
 
 document.addEventListener("click", action);
 function action(event) {
@@ -22,7 +23,7 @@ function action(event) {
 		if (!relativeActive.classList.contains("--activate-input")) {
 			relativeActive.classList.add("--activate-input");
 			console.log('add "--activate-input" to classList');
-
+			
 			//add listen to esc
 			
 		}
@@ -34,6 +35,18 @@ function action(event) {
 			inputedValue.value  = "";
 		}
 	}
+
+	if (targetItem.closest(".header__theme")) {
+		if (themeChange.classList.contains("_icon-sun")) {
+			themeChange.classList.toggle("_icon-sun");
+			themeChange.classList.add("_icon-moon-o");
+			document.documentElement.classList.add("light-theme");
+		} else if (themeChange.classList.contains("_icon-moon-o")) {
+			themeChange.classList.toggle("_icon-moon-o");
+			themeChange.classList.add("_icon-sun");
+			document.documentElement.classList.remove("light-theme");
+		}
+	 }
 }
 
 document.addEventListener("keydown", escPress);
