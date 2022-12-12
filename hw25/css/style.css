@@ -46,6 +46,7 @@ body {
   opacity: 0;
   background: #333;
   color: #fff;
+  transition: all 0.3s ease 0s;
 }
 .light-theme body {
   background: #fff;
@@ -199,6 +200,7 @@ body {
 .newGoogle__start-to-search:hover::before {
   color: #fff830;
   opacity: 0.8;
+  transition: all 0.3s ease 0s;
 }
 .light-theme .newGoogle__start-to-search:hover::before {
   color: #3200fc;
@@ -251,6 +253,7 @@ body {
   border: 1px solid #444;
   background: rgba(141, 140, 140, 0.244);
   color: rgb(161, 161, 161);
+  transition: all 0.3s ease 0s;
 }
 
 .light-theme .searching-form__row input {
@@ -261,6 +264,7 @@ body {
 
 .searching-form__row input:focus {
   outline: 1px solid #888;
+  transition: all 0.3s ease 0s;
 }
 .light-theme .searching-form__row input:focus {
   outline: 1px solid #333;

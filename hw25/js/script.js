@@ -36,6 +36,7 @@ function action(event) {
 		}
 	}
 
+	//theme changes 
 	if (targetItem.closest(".header__theme")) {
 		if (themeChange.classList.contains("_icon-sun")) {
 			themeChange.classList.toggle("_icon-sun");
