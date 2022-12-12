@@ -5,6 +5,7 @@
 	<title>hw25</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,21 +25,23 @@
 			<article class="newGoogle">
 				<div class="newGoogle__container">
 
-					<div class="newGoogle__search-start">
-						<button class="newGoogle__start-to-search push-to-see _icon-eye"><span class="visually-hidden">Open search input</span>
-						</button>
-						<div class="newGoogle__body-form-search">
-							<form class="searching-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-								<div class="searching-form__row">
-									<label for="main-search visually-hidden" hidden>Enter your search term</label>
-									<!--Чи краще використати hidden ????????-->
-									<input type="text" name="searchTerm" id="main-search" placeholder="start search now" required>
-									<button type="submit" class="searching-form__search-button button-form _icon-search"><span class="visually-hidden">search</span></button>
-								</div>
-								<div class="searching-form__characters">
-									<span></span>
-								</div>
-							</form>
+					<div class="newGoogle__wrapper">
+						<div class="newGoogle__search-start">
+							<button class="newGoogle__start-to-search push-to-see _icon-eye"><span class="visually-hidden">Open search input</span>
+							</button>
+							<div class="newGoogle__body-form-search">
+								<form class="searching-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+									<div class="searching-form__row">
+										<label for="main-search visually-hidden" hidden>Enter your search term</label>
+										<!--Чи краще використати hidden ????????-->
+										<input type="text" name="searchTerm" id="main-search" placeholder="start search now" required maxlength="20">
+										<button type="submit" class="searching-form__search-button button-form _icon-search"><span class="visually-hidden">search</span></button>
+									</div>
+									<div class="searching-form__characters">
+										<span></span>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -58,7 +61,7 @@
 			<!--add option target="_blank"-->
 
 		</main>
-		
+
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
