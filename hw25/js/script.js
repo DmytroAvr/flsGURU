@@ -23,9 +23,6 @@ function action(event) {
 		if (!relativeActive.classList.contains("--activate-input")) {
 			relativeActive.classList.add("--activate-input");
 			console.log('add "--activate-input" to classList');
-			
-			//add listen to esc
-			
 		}
 	}
 	if (!targetItem.closest(".newGoogle__wrapper")) {
