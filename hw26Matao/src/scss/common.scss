@@ -1,1 +1,26 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.title {
+	font-family: "Taviraj";
+	font-style: normal;
+	font-weight: 500;
+	font-size: rem(36);
+	line-height: 1.11; /* 40/36 */
+	letter-spacing: 0.02em;
+	color: $darkColor;
+	&::after {
+		content: "";
+		margin-top: em(8, 36); // !em function can give us encore to font size
+		height: rem(1);
+		width: em(128, 36); // !em function can give us encore to font size
+		background: #000;
+		display: block;
+	}
+	&--small {
+		&::after {
+			width: em(64, 36); // !em function can give us encore to font size
+		}
+	}
+	&--semibold {
+		font-weight: 600;
+	}
+}
