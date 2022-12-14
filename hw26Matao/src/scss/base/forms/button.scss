@@ -2,13 +2,69 @@
 // Сніппет (HTML): btn
 
 .button {
+	font-family: "Taviraj";
+	font-style: normal;
+	font-weight: 500;
+	font-size: rem(20);
+	line-height: 1.6; /* 32/20 */
+	letter-spacing: 0.03em;
+
+	color: #ffffff;
+	background: $orangeColor;
 	display: inline-flex;
-	padding: 0px 0px;
+	padding: rem(15) rem(35) rem(14);
 	@media (any-hover: hover) {
 		&:hover {
+			background: $orangeColorButtonHover;
 		}
 	}
 	&._fw {
 		width: 100%;
+	}
+	&--h68 {
+		padding: rem(18) rem(35);
+	}
+	&--small {
+		font-size: rem(16);
+		line-height: math.div(24, 16);
+		padding: rem(8) rem(35);
+	}
+	&--cart {
+		line-height: math.div(34, 20);
+		padding: rem(14) rem(35);
+		span {
+			display: flex;
+			font-weight: 400;
+			align-items: center;
+			column-gap: rem(18.5);
+			&::before {
+				width: rem(21.3); // додали бо before флексимо з текстом
+				flex: 0 0 rem(21.3);
+			}
+		}
+	}
+	&--big {
+		font-weight: 600;
+		font-size: rem(24);
+		line-height: 1;
+		padding: rem(22) rem(35);
+	}
+}
+
+.border-button {
+	//font-size: rem(16);
+	font-family: "Taviraj";
+	font-style: normal;
+	line-height: math.div(27, 16);
+	letter-spacing: 0.02em;
+	color: $orangeColor;
+	border: 2px solid $orangeColor;
+
+	padding: rem(13) rem(35) rem(14);
+	@media (any-hover: hover) {
+		&:hover {
+			color: $orangeColorButtonHover;
+			border: 2px solid $orangeColorButtonHover;
+		}
 	}
 }
