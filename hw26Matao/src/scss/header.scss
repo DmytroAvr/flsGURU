@@ -75,6 +75,11 @@
 		@media (max-width: $tablet) {
 			grid-template-columns: auto 1fr auto;
 		}
+		//@media (max-width: $mobile) {
+		//	position: relative;
+		//	z-index: 5;
+		//	background: #fff;
+		//}
 	}
 	// .header__logo
 	&__logo {
@@ -87,6 +92,14 @@
 			@media (max-width: $tablet) {
 				max-width: rem(140);
 				width: 100%;
+			}
+		}
+		@media (max-width: em(400)) {
+			width: rem(30);
+			overflow: hidden;
+			img {
+				max-width: none;
+				width: rem(200);
 			}
 		}
 	}
@@ -126,6 +139,17 @@
 			top: 0;
 			background-color: #fff;
 			overflow: auto;
+		}
+		&::before {
+			content: "";
+			position: fixed;
+			width: 100%;
+			background: #fff;
+			top: 0;
+			left: 0;
+			z-index: 4;
+			@include adaptiveValue("min-height", 106, 70);
+			//patch for header burger active
 		}
 	}
 	// .menu__list
@@ -206,6 +230,9 @@
 				//зробили розмір user icon як search
 				// інший текст убрали
 			}
+		}
+		@media (max-width: em(400)) {
+			justify-content: center;
 		}
 	}
 	// .actions-header__cart
