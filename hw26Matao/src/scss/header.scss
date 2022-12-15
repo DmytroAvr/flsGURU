@@ -3,7 +3,7 @@
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -24,7 +24,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: $logocolor;
 		}
 		&::before {
 			top: 0;
@@ -53,4 +53,121 @@
 		}
 	}
 }
-*/
+
+.header {
+	min-height: rem(106);
+	padding: rem(30) 0;
+
+	font-family: "Taviraj";
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: $darkColor;
+	// .header__container
+	&__container {
+		display: grid;
+		grid-template-columns: rem(280) 1fr rem(280);
+		align-items: center;
+	}
+	// .header__logo
+	&__logo {
+		max-width: rem(178);
+		width: 100%;
+	}
+	// .header__menu
+	&__menu {
+	}
+	// .header__actions
+	&__actions {
+	}
+}
+.menu {
+	//column-gap: rem(35);
+
+	font-size: rem(20);
+	line-height: math.div(34, 20);
+	transition: all 0.3s ease 0s;
+	li {
+		padding-right: rem(5);
+		@media (any-hover: hover) {
+			&:hover {
+				color: $logocolor;
+			}
+		}
+	}
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include adaptiveValue("column-gap", 35, 15, 0, 1140, 600);
+		row-gap: rem(10);
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+	}
+}
+.icon-menu {
+}
+.actions-header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	@include adaptiveValue("column-gap", 35, 15, 0, 1140, 600);
+
+	> * {
+		&:not(:last-child) {
+			padding-right: rem(5);
+		}
+		//display: inline-block;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $logocolor;
+			}
+		}
+	}
+	// .actions-header__search
+	&__search {
+		font-size: rem(25.5);
+		color: #000;
+	}
+	// .actions-header__login
+	&__login {
+		display: flex;
+		align-items: center;
+		//column-gap: rem(8);
+		column-gap: rem(3);
+
+		font-size: rem(18);
+		line-height: 1.72; /* 31/18 */
+
+		&::before {
+			padding: rem(5);
+			font-size: rem(21);
+			color: #000;
+			@media (any-hover: hover) {
+				&:hover {
+					color: $logocolor;
+				}
+			}
+		}
+	}
+	// .actions-header__cart
+	&__cart {
+		font-size: rem(24);
+		color: $darkColor;
+
+		padding: rem(11);
+		border-radius: 50%;
+		background: $orangeColorLite;
+	}
+}
