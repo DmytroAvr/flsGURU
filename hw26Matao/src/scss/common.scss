@@ -24,3 +24,26 @@
 		font-weight: 600;
 	}
 }
+
+.search-form {
+	// .search-form__title
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: em(20, 36);
+		}
+	}
+	// .search-form__body
+	&__body {
+		display: flex;
+		gap: rem(20);
+	}
+	// .search-form__input
+	&__input {
+		flex: 1 1 auto;
+
+		@include adaptiveValue("font-size", 28, 16);
+	}
+	// .search-form__button
+	&__button {
+	}
+}

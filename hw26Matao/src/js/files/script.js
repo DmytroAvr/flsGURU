@@ -2,3 +2,8 @@
 import { isMobile } from "./functions.js";
 // Підключення списку активних модулів
 import { flsModules } from "./modules.js";
+
+document.addEventListener("click", clicked);
+function clicked(e) {
+	
+}
