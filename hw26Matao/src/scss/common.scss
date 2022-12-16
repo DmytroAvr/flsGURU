@@ -34,9 +34,6 @@
 	}
 	// .search-form__body
 	&__body {
-	}
-	// .search-form__line
-	&__line {
 		position: relative;
 		display: flex;
 		gap: rem(20);
@@ -44,9 +41,16 @@
 			flex-direction: column;
 		}
 	}
+	// .search-form__line
+	&__line {
+		flex: 1 1 auto;
+		.form__error {
+			color: red;
+			margin-top: rem(5);
+		}
+	}
 	// .search-form__input
 	&__input {
-		flex: 1 1 auto;
 		height: rem(50);
 		color: #000;
 		@include adaptiveValue("font-size", 28, 16);
