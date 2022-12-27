@@ -178,8 +178,6 @@ svg path {
   max-width: 74.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .button {
