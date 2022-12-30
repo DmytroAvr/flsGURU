@@ -23,6 +23,24 @@
 	&--semibold {
 		font-weight: 600;
 	}
+	// .title--white
+	&--white {
+		font-weight: 600;
+		font-size: rem(24);
+		letter-spacing: 0.02em;
+		color: #ffffff;
+
+		&::after {
+			content: "";
+			margin-top: em(
+				10,
+				24
+			); // !em function can give us encore to font size    *height from figma and font size value
+			height: rem(1);
+			width: em(60, 24); // !em function can give us encore to font size   * width from f and font size
+			background: #ffffff;
+		}
+	}
 }
 
 .search-form {
@@ -63,5 +81,5 @@
 	}
 }
 
-.label-footer {
+.logo {
 }
