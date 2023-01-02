@@ -92,15 +92,16 @@
 	}
 	// .footer__title
 	&__title {
-		&:not(:last-child) {
-			margin-bottom: rem(16);
-		}
+		transition: margin-bottom 0.3s ease 0s;
 		@media (min-width: em(768.2)) {
 			cursor: default;
 		}
 		@media (min-width: $tablet) {
 			&::before {
 				display: none;
+			}
+			&:not(:last-child) {
+				margin-bottom: rem(16);
 			}
 		}
 		@media (max-width: $tablet) {
@@ -117,6 +118,9 @@
 			&._spoller-active {
 				&::before {
 					transform: rotate(180deg);
+				}
+				&:not(:last-child) {
+					margin-bottom: rem(16);
 				}
 			}
 		}
@@ -136,7 +140,6 @@
 	&__menu {
 	}
 }
-
 .label-footer {
 	font-weight: 500;
 	font-size: rem(20);

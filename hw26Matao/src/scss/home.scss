@@ -1,3 +1,124 @@
 //====================================================================================================
+//hero
+.hero {
+	// .hero__container
+	&__container {
+	}
+	// .hero__slider
+	&__slider {
+	}
+	// .hero__wrapper
+	&__wrapper {
+	}
+	// .hero__slide
+	&__slide {
+		background: $orangeColorLite;
+	}
+	// .hero__slider-arrows
+	&__slider-arrows {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: rem(31);
+		gap: rem(15);
+		transform: translate(0, -50%);
+	}
+	// .hero__slider-arrow
+	&__slider-arrow {
+		flex: 0 0 rem(60);
+		font-size: rem(23);
+		padding: rem(17) rem(22) rem(16);
+		border: 2px solid $orangeColor;
+		color: $orangeColor;
+		transition: color 0.3s ease 0s, background 0.3s ease 0s;
+		&:hover,
+		&:focus-visible {
+			color: #fff;
+			background: $orangeColor;
+			outline: none;
+		}
+	}
+}
 
+.slide-hero {
+	// .slide-hero__wrapper
+	&__wrapper {
+		@include adaptiveValue("padding-top", 50, 20);
+		display: flex;
+		padding-left: rem(15);
+	}
+	// .slide-hero__img
+	&__img-ibg {
+		flex: 0 0 30%; /* 333/1110 */
+		padding-bottom: 42.072072%; /* 467/1110 */
+		align-self: flex-end;
+		img {
+			//object-fit: contain;
+			//or you can add class **-ibg_contain
+		}
+	}
+	// .slide-hero__body
+	&__body {
+		flex: 1 1 auto;
+		@include adaptiveValue("padding-top", 50, 20);
+		//@include adaptiveValue("padding-left", 47, 20);
+		@include adaptiveValue("padding-right", 47, 20);
+	}
+	// .slide-hero__title
+	&__title {
+	}
+	// .slide-hero__text
+	&__text {
+	}
+	// .slide-hero__more
+	&__more {
+	}
+	// .slide-hero__actions
+	&__actions {
+		display: flex;
+		column-gap: rem(15);
+	}
+	// .slide-hero__button
+	&__button {
+	}
+}
+.swiper-slide {
+}
+.button {
+	// .button--cart
+	&--cart {
+	}
+}
+
+.cicil {
+	// .cicil--c1
+	&--c1 {
+	}
+	// .cicil--i1-dot
+	&--i1-dot {
+	}
+	// .cicil--i1
+	&--i1 {
+	}
+	// .cicil--i1-bend
+	&--i1-bend {
+	}
+	// .cicil--c2
+	&--c2 {
+	}
+	// .cicil--i2
+	&--i2 {
+	}
+	// .cicil--i2-dot
+	&--i2-dot {
+	}
+	// .cicil--l
+	&--l {
+	}
+}
+
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
 //====================================================================================================
